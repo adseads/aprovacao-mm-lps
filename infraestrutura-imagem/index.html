@@ -1,748 +1,413 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Setor de Infraestrutura | Menndel & Melo</title>
-  <meta name="description" content="Análise técnica, atuação estratégica e soluções jurídicas para empresas, concessionárias e entidades do setor de infraestrutura." />
-  <style>
-    :root{
-      --navy:#0E2D4B;
-      --navy-2:#143B60;
-      --orange:#ED8444;
-      --white:#FFFFFF;
-      --light:#EBEBEB;
-      --text:#DDE6EE;
-      --muted:#B7C4D1;
-      --border:rgba(255,255,255,.14);
-      --shadow:0 18px 45px rgba(0,0,0,.22);
-      --container:1240px;
-      --radius:16px;
-    }
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Análise jurídica e tributária para empresas do setor de infraestrutura: ANEOR, ANETRAMS e contratos administrativos na Reforma Tributária."/>
+<title>Infraestrutura | Menndel & Melo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#0e2d4b; --navy2:#09243d; --orange:#ed8444; --cream:#ebebeb;
+  --white:#fff; --text:#17354e; --sub:#617282; --line:#d9e0e5;
+  --container:1400px; --shadow:0 18px 40px rgba(5,25,42,.08)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;color:var(--navy);font-family:'Open Sans',Arial,sans-serif;background:var(--cream);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.wrap{width:min(calc(100% - 72px),var(--container));margin:auto}
+.impact{font-family:Impact,'Arial Narrow',sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:.007em;line-height:1.01}
+.eyebrow{text-transform:uppercase;color:var(--orange);font-size:10px;font-weight:800;letter-spacing:.16em}
+.btn,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:47px;padding:12px 19px;font-size:12px;font-weight:800;transition:.2s}
+.btn{background:var(--orange);border:1px solid var(--orange);color:#102c45}
+.btn:hover{background:#ffa064;border-color:#ffa064}
+.btn-secondary{border:1px solid currentColor;background:transparent}
+.btn-secondary:hover{background:rgba(255,255,255,.08)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      background:var(--white);
-      color:#13263A;
-      font-family:Arial, Helvetica, sans-serif;
-    }
+/* HEADER — padrão compacto */
+.site-head{height:70px;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.16)}
+.headinner{height:70px;display:flex;align-items:center;gap:30px}
+.brand{width:164px;flex-shrink:0}
+.brand img{width:100%;height:auto;display:block}
+.headnav{display:flex;align-items:center;justify-content:center;gap:clamp(11px,1.5vw,27px);margin-left:auto}
+.headnav a{color:#f3f5f7;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.035em;white-space:nowrap}
+.headnav a:hover{color:var(--orange)}
+.navcta{flex-shrink:0;color:#fff;text-transform:uppercase;font-size:10px;letter-spacing:.08em;font-weight:800;border-bottom:1px solid var(--orange);padding:8px 0}
 
-    img{max-width:100%;display:block}
-    a{text-decoration:none}
-    .container{
-      width:min(var(--container), calc(100% - 40px));
-      margin:0 auto;
-    }
+/* HERO — imagem + primeira dobra compacta */
+.hero{
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(14,45,75,.89),rgba(14,45,75,.93)),
+    url('assets/hero-bg.jpg') center center/cover no-repeat,
+    var(--navy);
+}
+.hero-main{
+  position:relative;z-index:1;
+  display:grid;
+  grid-template-columns:1.04fr .96fr;
+  gap:5%;
+  align-items:start;
+  padding-top:30px;
+  padding-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(42px,4.2vw,66px);
+  line-height:1.01;
+  max-width:690px;
+  margin:11px 0 19px
+}
+.hero .lead{
+  font-size:15px;line-height:1.44;max-width:600px;
+  padding-left:14px;border-left:3px solid var(--orange);
+  margin:0 0 13px;font-weight:700
+}
+.hero .body{font-size:12px;line-height:1.59;max-width:610px;color:#d1dae2}
+.hero .body p{margin:0 0 9px}
+.hero .micro{margin-top:9px;font-size:10px;color:#cbd4dd}
 
-    /* HEADER */
-    .site-header{
-      background:var(--navy);
-      border-bottom:1px solid rgba(255,255,255,.12);
-      position:sticky;
-      top:0;
-      z-index:20;
-    }
-    .site-header .container{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:24px;
-      padding:16px 0;
-    }
-    .brand img{
-      width:182px;
-      height:auto;
-      object-fit:contain;
-    }
-    .nav{
-      display:flex;
-      align-items:center;
-      gap:28px;
-      flex-wrap:wrap;
-      justify-content:center;
-      margin-left:auto;
-    }
-    .nav a{
-      color:#F2F5F8;
-      font-size:14px;
-      font-weight:700;
-      letter-spacing:.02em;
-    }
-    .nav a:hover{color:var(--orange)}
-    .header-cta{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:48px;
-      padding:0 24px;
-      border-radius:10px;
-      background:var(--orange);
-      color:#fff;
-      font-weight:700;
-      font-size:16px;
-      white-space:nowrap;
-    }
+/* FORM — mesma escala do NTT */
+.form{
+  background:#f6f6f6;color:var(--navy);
+  padding:20px 24px 17px;border-top:4px solid var(--orange);
+  box-shadow:0 24px 80px #00172b50;align-self:start
+}
+.form h2{font:normal clamp(22px,2.1vw,30px)/1.08 Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:6px 0 7px}
+.form .intro{font-size:11px;line-height:1.5;color:#53677a;margin:0 0 12px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:8px 11px}
+.field.full{grid-column:1/-1}
+.field label{display:block;font-weight:700;font-size:10px;margin-bottom:4px}
+.field input,.field select{background:#fff;border:1px solid #d1d8de;width:100%;height:35px;padding:0 9px;color:#17354e;font-size:11px}
+.form .btn{width:100%;margin-top:12px}
+.form small{display:block;font-size:9px;margin-top:7px;line-height:1.45;color:#6c7d8b}
 
-    /* HERO */
-    .hero{
-      position:relative;
-      overflow:hidden;
-      background:
-        linear-gradient(rgba(14,45,75,.86), rgba(14,45,75,.90)),
-        url('ativos/hero-bg.jpg') center center / cover no-repeat;
-      color:#fff;
-      padding:56px 0 0;
-    }
-    .hero-inner{
-      display:grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(380px, 520px);
-      gap:36px;
-      align-items:start;
-    }
-    .eyebrow{
-      color:var(--orange);
-      font-size:15px;
-      font-weight:800;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      margin:0 0 18px;
-    }
-    .hero h1{
-      margin:0 0 20px;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:clamp(58px, 6vw, 92px);
-      line-height:.93;
-      letter-spacing:.01em;
-      text-transform:uppercase;
-      max-width:780px;
-    }
-    .hero h1 .accent{color:var(--orange)}
-    .hero-lead{
-      display:block;
-      margin:0 0 18px;
-      padding-left:22px;
-      border-left:4px solid var(--orange);
-      font-size:21px;
-      line-height:1.32;
-      font-weight:800;
-      max-width:760px;
-      color:#F4F7FA;
-    }
-    .hero-copy{
-      margin:0;
-      color:var(--text);
-      font-size:18px;
-      line-height:1.6;
-      max-width:760px;
-    }
-    .hero-actions{
-      display:flex;
-      gap:16px;
-      flex-wrap:wrap;
-      margin-top:28px;
-    }
-    .btn-primary,
-    .btn-secondary{
-      min-height:56px;
-      padding:0 28px;
-      border-radius:12px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:800;
-      font-size:18px;
-      transition:.2s ease;
-    }
-    .btn-primary{
-      background:var(--orange);
-      color:#fff;
-    }
-    .btn-primary:hover{filter:brightness(1.04)}
-    .btn-secondary{
-      border:2px solid rgba(255,255,255,.65);
-      color:#fff;
-      background:transparent;
-    }
-    .btn-secondary:hover{
-      background:rgba(255,255,255,.08);
-    }
+/* CLIENTES — final da primeira dobra */
+.clients-strip{
+  position:relative;z-index:1;
+  padding:13px 0 17px;
+  background:rgba(5,28,48,.26);
+  border-top:1px solid rgba(255,255,255,.10)
+}
+.clients-title{text-align:center;margin:0 0 11px;font-size:10px;letter-spacing:.19em;text-transform:uppercase;color:rgba(255,255,255,.72);font-weight:600}
+.clients-row{display:grid;grid-template-columns:repeat(10,minmax(70px,1fr));gap:20px;align-items:center}
+.client-logo{height:32px;display:flex;align-items:center;justify-content:center;opacity:.58}
+.client-logo img{width:100%;height:100%;object-fit:contain;filter:grayscale(1);mix-blend-mode:luminosity}
+.client-logo:hover{opacity:.78}
 
-    /* FORM */
-    .hero-form{
-      background:#F6F6F7;
-      border-radius:22px;
-      padding:26px 26px 24px;
-      box-shadow:var(--shadow);
-      border-top:5px solid var(--orange);
-      color:#17314A;
-      align-self:start;
-    }
-    .form-eyebrow{
-      margin:0 0 10px;
-      color:var(--orange);
-      font-size:15px;
-      font-weight:800;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
-    .hero-form h2{
-      margin:0 0 12px;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:clamp(32px, 2.4vw, 50px);
-      line-height:.95;
-      text-transform:uppercase;
-      color:#0E2D4B;
-    }
-    .hero-form p{
-      margin:0 0 18px;
-      color:#657789;
-      font-size:16px;
-      line-height:1.5;
-    }
-    .form-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px 16px;
-    }
-    .field{display:flex;flex-direction:column;gap:6px}
-    .field.full{grid-column:1 / -1}
-    .field label{
-      font-size:14px;
-      font-weight:700;
-      color:#17314A;
-    }
-    .field input,
-    .field select{
-      width:100%;
-      height:50px;
-      border:1px solid #C9D1D8;
-      border-radius:10px;
-      padding:0 14px;
-      font-size:15px;
-      color:#17314A;
-      background:#fff;
-      outline:none;
-    }
-    .field input:focus,
-    .field select:focus{
-      border-color:var(--orange);
-      box-shadow:0 0 0 3px rgba(237,132,68,.15);
-    }
-    .form-submit{
-      width:100%;
-      min-height:56px;
-      border:0;
-      border-radius:12px;
-      background:var(--orange);
-      color:#fff;
-      font-size:18px;
-      font-weight:800;
-      margin-top:18px;
-      cursor:pointer;
-    }
-    .form-note{
-      font-size:12px;
-      color:#7B8896;
-      line-height:1.5;
-      margin-top:12px;
-    }
+/* SEÇÕES */
+.section{padding:72px 0}
+.section-title{font-size:clamp(35px,3.7vw,56px);line-height:1.035;max-width:900px;margin:12px 0 20px}
+.section-intro{font-size:15px;line-height:1.72;color:#516779;max-width:890px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:31px}
+.card{background:#fff;padding:25px 23px;border-top:4px solid var(--orange);display:flex;flex-direction:column;min-height:290px;box-shadow:var(--shadow)}
+.card .id{font-size:10px;letter-spacing:.1em;color:var(--orange);font-weight:800}
+.card h3{font-size:18px!important;line-height:1.35!important;margin:15px 0;color:var(--navy)}
+.card p{font-size:14px!important;line-height:1.72!important;color:#576b7c;margin:0 0 20px}
+.card .tag{margin-top:auto;font-size:10px;font-weight:800;border-top:1px solid #d6dce0;padding-top:13px;color:var(--navy)}
+.band{background:var(--navy);color:#fff}
+.band .section-intro{color:#cedae4}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:27px}
+.fact{padding:25px;background:#183b59;border-top:3px solid var(--orange)}
+.fact small{font-weight:800;letter-spacing:.1em;color:#d7e2ea;text-transform:uppercase}
+.fact h3{font:normal 18px/1.35 'Open Sans',sans-serif;margin:14px 0;color:var(--orange);font-weight:800}
+.fact p{font-size:14px;line-height:1.72;color:#dce4eb;margin:0}
+.tablewrap{overflow-x:auto;margin-top:32px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:16px}
+.compare{width:100%;border-collapse:separate;border-spacing:0 12px;min-width:700px}
+.compare th{text-align:left;background:#e9eef2;font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:18px 22px}
+.compare td{font-size:13px;line-height:1.65;padding:22px;background:#fbfbfa;border-top:1px solid #edf1f4;border-bottom:1px solid #edf1f4;vertical-align:top;color:#425a6d}
+.compare td:first-child{font-weight:800;width:23%;border-left:4px solid var(--orange)}
+.compare .label{display:inline-block;background:#fff4ec;border:1px solid #f3c19f;color:#b75e25;padding:7px 10px;border-radius:999px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.sector-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.sector-card{background:#fff;border:1px solid #dde4e8;padding:22px 20px 20px;box-shadow:var(--shadow);min-height:170px;border-top:4px solid var(--orange)}
+.sector-card .sector-kicker{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--orange);font-weight:800;margin-bottom:10px}
+.sector-card h3{font-size:18px;line-height:1.25;margin:0 0 10px}
+.sector-card p{font-size:12px;line-height:1.65;color:#5f7484;margin:0}
 
-    /* CLIENTES */
-    .clients-strip{
-      margin-top:28px;
-      background:rgba(8,24,40,.20);
-      border-top:1px solid rgba(255,255,255,.12);
-      padding:16px 0 18px;
-    }
-    .clients-title{
-      text-align:center;
-      color:rgba(255,255,255,.88);
-      font-size:14px;
-      letter-spacing:.24em;
-      text-transform:uppercase;
-      margin:0 0 14px;
-    }
-    .clients-logos{
-      display:grid;
-      grid-template-columns:repeat(10, minmax(70px, 1fr));
-      align-items:center;
-      gap:18px;
-    }
-    .clients-logos img{
-      max-height:38px;
-      width:100%;
-      object-fit:contain;
-      filter: grayscale(1) brightness(2.3);
-      opacity:.82;
-    }
+/* COMO ATUAMOS */
+.process-featured{background:#e2eaf0;border-top:5px solid var(--orange)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}
+.step{background:var(--navy);color:#fff;border-top:4px solid var(--orange);padding:22px 19px 24px;min-height:190px}
+.step strong{display:block;color:var(--orange);font:normal 37px Impact,'Arial Narrow',sans-serif}
+.step h3{font-size:16px;margin:11px 0 8px}
+.step p{font-size:12px;color:#d9e3eb;line-height:1.65;margin:0}
 
-    /* SECTIONS */
-    section{padding:78px 0}
-    .section-title{
-      margin:0 0 24px;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:clamp(34px, 4vw, 62px);
-      line-height:.94;
-      color:var(--navy);
-      text-transform:uppercase;
-      letter-spacing:.01em;
-    }
-    .section-kicker{
-      color:var(--orange);
-      font-size:14px;
-      font-weight:800;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      margin:0 0 12px;
-    }
-    .cards-3{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:22px;
-    }
-    .card{
-      background:#fff;
-      border:1px solid #DCE3EA;
-      border-radius:18px;
-      padding:26px 24px;
-      box-shadow:0 8px 22px rgba(10,34,58,.06);
-    }
-    .card h3{
-      margin:0 0 10px;
-      color:var(--navy);
-      font-size:24px;
-      line-height:1.1;
-      text-transform:uppercase;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      letter-spacing:.01em;
-    }
-    .card p{
-      margin:0;
-      color:#4C5F72;
-      font-size:16px;
-      line-height:1.65;
-    }
+/* SOBRE — padrão aprovado em branco */
+.about-section{background:#fff;color:var(--navy);padding:72px 0 64px}
+.about-shell{background:#fff;padding:0}
+.about-top{display:grid;grid-template-columns:1fr;gap:20px}
+.about-copy h2{max-width:820px;color:var(--navy)}
+.about-copy p{font-size:14px;line-height:1.82;color:#536779;margin:0 0 16px;max-width:820px}
+.about-section .eyebrow,.about-section .mini-label{color:var(--orange)}
+.about-numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px;margin:34px 0 38px}
+.about-number{padding:0;min-height:auto;background:transparent;border:0}
+.about-value{font:normal clamp(32px,3vw,46px)/1 Impact,'Arial Narrow',sans-serif;color:var(--navy)}
+.about-caption{font-size:10px;line-height:1.4;color:#607487;margin-top:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.seal-showcase{margin-top:12px}
+.mini-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:14px}
+.seal-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:14px;align-items:center}
+.seal-card{background:#fff;border:1px solid #e0e6eb;border-radius:4px;display:flex;align-items:center;justify-content:center;padding:10px;min-height:118px}
+.seal-card img{width:100%;height:92px;object-fit:contain;display:block}
+.about-bottom-cta{margin-top:24px}
+.about-section .btn-secondary{color:var(--navy)}
+.about-section .btn-secondary:hover{background:#f2f5f7}
 
-    /* ABOUT */
-    .about{
-      background:var(--navy);
-      color:#fff;
-    }
-    .about .section-title{color:#fff}
-    .about-text{
-      max-width:980px;
-      color:#DDE6EE;
-      font-size:19px;
-      line-height:1.7;
-      margin:0 0 34px;
-    }
-    .metrics{
-      display:grid;
-      grid-template-columns:repeat(5, 1fr);
-      gap:18px;
-      margin-bottom:38px;
-    }
-    .metric{
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:14px;
-      padding:20px 16px;
-      text-align:center;
-    }
-    .metric .value{
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:46px;
-      line-height:1;
-      color:#fff;
-      margin-bottom:10px;
-    }
-    .metric .label{
-      font-size:13px;
-      color:#D8E2EA;
-      font-weight:700;
-      letter-spacing:.06em;
-      text-transform:uppercase;
-    }
+/* FINAL + FOOTER */
+.end{background:var(--navy);color:#fff;padding:70px 0}
+.end p{font-size:15px;line-height:1.75;color:#d8e1e9;max-width:820px}
+.end small{display:block;max-width:930px;color:#b4c4d0;font-size:10px;line-height:1.65;margin-top:24px}
+.footer{background:var(--navy2);color:#d4e0e8;padding:35px 0}
+.footergrid{display:grid;grid-template-columns:1.3fr 1fr .8fr;gap:30px}
+.footer img{width:190px;display:block}
+.footer p,.footer a{font-size:12px;line-height:1.8}
+.footer h3{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:#fff;margin:0 0 12px}
+.footerbottom{border-top:1px solid #ffffff26;margin-top:25px;padding-top:17px;font-size:10px;color:#a6b9c7}
+.social{display:flex;gap:10px}
+.social a{border:1px solid #ffffff6b;width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:11px;font-weight:800}
 
-    /* AWARDS */
-    .awards{
-      background:#fff;
-      color:#17314A;
-      border-radius:18px;
-      padding:28px;
-    }
-    .awards h3{
-      margin:0 0 18px;
-      color:var(--navy);
-      font-size:18px;
-      font-weight:800;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
-    .award-grid{
-      display:grid;
-      grid-template-columns:repeat(7, 1fr);
-      gap:16px;
-      align-items:stretch;
-    }
-    .award-item{
-      background:#fff;
-      border:1px solid #DEE5EC;
-      border-radius:14px;
-      min-height:120px;
-      padding:14px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .award-item img{
-      max-height:82px;
-      object-fit:contain;
-    }
-
-    /* FOOTER CTA */
-    .final-cta{
-      background:linear-gradient(135deg, var(--navy), var(--navy-2));
-      color:#fff;
-      text-align:center;
-    }
-    .final-cta h2{
-      margin:0 0 14px;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:clamp(34px, 4vw, 62px);
-      line-height:.95;
-      text-transform:uppercase;
-    }
-    .final-cta p{
-      margin:0 auto 24px;
-      max-width:760px;
-      color:#DCE5ED;
-      font-size:18px;
-      line-height:1.6;
-    }
-    .footer{
-      background:#0B243C;
-      color:#D8E2EA;
-      padding:22px 0;
-      font-size:14px;
-      text-align:center;
-    }
-
-    /* RESPONSIVO */
-    @media (max-width: 1200px){
-      .hero-inner{grid-template-columns:1fr}
-      .hero h1{max-width:none}
-      .clients-logos{grid-template-columns:repeat(5, 1fr)}
-      .metrics{grid-template-columns:repeat(3, 1fr)}
-      .award-grid{grid-template-columns:repeat(4, 1fr)}
-    }
-
-    @media (max-width: 860px){
-      .site-header .container{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-      .nav{
-        gap:14px 18px;
-        margin-left:0;
-      }
-      .header-cta{width:100%}
-      .form-grid,
-      .cards-3,
-      .metrics,
-      .award-grid{
-        grid-template-columns:1fr;
-      }
-      .clients-logos{
-        grid-template-columns:repeat(2, 1fr);
-      }
-      .hero{
-        padding-top:36px;
-      }
-      .hero h1{
-        font-size:52px;
-      }
-      .hero-lead{
-        font-size:18px;
-      }
-      .hero-actions{
-        flex-direction:column;
-      }
-      .btn-primary,.btn-secondary{
-        width:100%;
-      }
-    }
-  </style>
+@media(max-width:1000px){
+  .hero-main{grid-template-columns:1fr;gap:35px;padding-bottom:30px}
+  .clients-row{grid-template-columns:repeat(5,1fr)}
+  .cards{grid-template-columns:1fr}
+  .sector-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .about-numbers{grid-template-columns:repeat(3,1fr)}
+  .seal-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:650px){
+  .wrap{width:min(calc(100% - 36px),var(--container))}
+  .headnav{display:none}
+  .brand{width:145px}
+  .hero-main{padding-top:28px}
+  .hero h1{font-size:clamp(42px,10.2vw,58px)}
+  .hero .lead{font-size:17px}
+  .fields{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .clients-row{display:flex;overflow-x:auto;gap:20px}
+  .client-logo{flex:0 0 110px}
+  .section{padding:64px 0}
+  .section-title{font-size:clamp(35px,9vw,48px)}
+  .facts,.sector-grid,.steps,.about-numbers,.seal-grid{grid-template-columns:1fr}
+  .step{min-height:0}
+  .footergrid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#inicio">
-        <img src="ativos/logo-white-transparent.png" alt="Menndel & Melo">
-      </a>
+<header class="site-head" id="inicio">
+  <div class="wrap headinner">
+    <a class="brand" href="#inicio"><img src="assets/logo-white.png" alt="Menndel & Melo"></a>
+    <nav class="headnav" aria-label="Navegação">
+      <a href="#sobre">Sobre</a>
+      <a href="#oportunidades">Oportunidades</a>
+      <a href="#acoes">Ações coletivas</a>
+      <a href="#contratos">Contratos</a>
+      <a href="#setores">Setores</a>
+      <a href="#atuacao">Atuação</a>
+    </nav>
+    <a class="navcta" href="#formulario">ANÁLISE DE ENQUADRAMENTO ↗</a>
+  </div>
+</header>
 
-      <nav class="nav">
-        <a href="#inicio">Início</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#atuacao">Como atuamos</a>
-        <a href="#etapas">Etapas</a>
-        <a href="#sobre">Sobre</a>
-      </nav>
-
-      <a href="#contato" class="header-cta">Fale com um especialista</a>
+<main>
+<section class="hero">
+  <div class="wrap hero-main">
+    <div>
+      <div class="eyebrow">SETOR DE INFRAESTRUTURA / ANÁLISE JURÍDICA E TRIBUTÁRIA</div>
+      <h1 class="impact">SUA EMPRESA PODE TER <span style="color:var(--orange)">CRÉDITOS A RECUPERAR</span> E CONTRATOS A REVISAR.</h1>
+      <p class="lead">Três frentes de análise. Uma visão estratégica para empresas de infraestrutura.</p>
+      <div class="body">
+        <p>Decisões judiciais e mudanças tributárias podem abrir possibilidades de recuperação de valores e exigir uma nova avaliação de contratos administrativos.</p>
+        <p>Conheça as frentes ANEOR, ANETRAMS e Reforma Tributária, todas com requisitos próprios.</p>
+      </div>
+      <div class="micro">Análise inicial de enquadramento, sem promessa de resultado.</div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-content">
-            <p class="eyebrow">Setor de infraestrutura</p>
+    <aside class="form" id="formulario">
+      <div class="eyebrow">ANÁLISE INICIAL</div>
+      <h2 class="impact">IDENTIFIQUE AS FRENTES QUE MERECEM ATENÇÃO NA SUA EMPRESA.</h2>
+      <p class="intro">Informe os dados para uma avaliação preliminar de enquadramento.</p>
+      <form id="leadform">
+        <div class="fields">
+          <div class="field"><label>Nome *</label><input required placeholder="Seu nome"></div>
+          <div class="field"><label>Empresa *</label><input required placeholder="Razão social"></div>
+          <div class="field"><label>Cargo *</label><input required placeholder="Seu cargo"></div>
+          <div class="field"><label>E-mail corporativo *</label><input required type="email" placeholder="nome@empresa.com.br"></div>
+          <div class="field"><label>Telefone *</label><input required type="tel" placeholder="(00) 00000-0000"></div>
+          <div class="field"><label>Segmento *</label><select required><option value="">Selecione</option><option>Construção / engenharia</option><option>Obras rodoviárias</option><option>Projetos e serviços</option><option>Fornecimento e operação</option><option>Transportes / concessões</option><option>Outro</option></select></div>
+          <div class="field"><label>Regime tributário</label><select><option value="">Selecione</option><option>Lucro Real</option><option>Lucro Presumido</option><option>Simples Nacional</option><option>Não sei informar</option></select></div>
+          <div class="field"><label>Faturamento anual</label><select><option value="">Selecione</option><option>Até R$ 5 milhões</option><option>R$ 5 a 20 milhões</option><option>R$ 20 a 100 milhões</option><option>Acima de R$ 100 milhões</option><option>Prefiro não informar</option></select></div>
+          <div class="field full"><label>Frente de interesse *</label><select required><option value="">Selecione</option><option>ANEOR</option><option>ANETRAMS</option><option>Contratos administrativos</option><option>Todas as oportunidades</option></select></div>
+        </div>
+        <button class="btn" type="submit">SOLICITAR ANÁLISE DE ENQUADRAMENTO ↗</button>
+        <small id="status">Formulário demonstrativo. Antes da publicação, integrar ao RD Station e acrescentar política de privacidade.</small>
+      </form>
+    </aside>
+  </div>
 
-            <h1>
-              Reforma tributária<br>
-              e segurança jurídica<br>
-              para a infraestrutura.
-            </h1>
+  <div class="clients-strip">
+    <div class="wrap">
+      <div class="clients-title">NOSSOS CLIENTES</div>
+      <div class="clients-row">
+        <div class="client-logo"><img src="assets/clientes/aneor.webp" alt="ANEOR"></div>
+        <div class="client-logo"><img src="assets/clientes/fenop.png" alt="FENOP"></div>
+        <div class="client-logo"><img src="assets/clientes/barbosa-mello.webp" alt="Barbosa Mello"></div>
+        <div class="client-logo"><img src="assets/clientes/alya.png" alt="ALYA"></div>
+        <div class="client-logo"><img src="assets/clientes/sicepot-mg.jpg" alt="SICEPOT MG"></div>
+        <div class="client-logo"><img src="assets/clientes/lcm.jpg" alt="LCM"></div>
+        <div class="client-logo"><img src="assets/clientes/ogmo-suape.jpg" alt="OGMO Suape"></div>
+        <div class="client-logo"><img src="assets/clientes/abemi.png" alt="ABEMI"></div>
+        <div class="client-logo"><img src="assets/clientes/ogmo-paranagua.jpg" alt="OGMO Paranaguá"></div>
+        <div class="client-logo"><img src="assets/clientes/ogmo-santos.png" alt="OGMO Santos"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <p class="hero-lead">
-              Análise técnica, atuação estratégica e soluções jurídicas para empresas, concessionárias e entidades do setor.
-            </p>
+<section class="section" id="oportunidades">
+  <div class="wrap">
+    <div class="eyebrow">VISÃO INTEGRADA</div>
+    <h2 class="impact section-title">TRÊS FRENTES QUE PODEM IMPACTAR SUA EMPRESA.</h2>
+    <p class="section-intro">A estrutura de pessoal, os recolhimentos históricos e os contratos em execução podem exigir análises diferentes. Reunimos as principais possibilidades em uma visão objetiva.</p>
+    <div class="cards">
+      <article class="card"><div class="id">AÇÃO COLETIVA / ANEOR</div><h3>CONTRIBUIÇÕES A TERCEIROS</h3><p>Possível enquadramento em título coletivo relacionado a recolhimentos destinados ao SESI, SENAI, SESC e SENAC, conforme os critérios da ação.</p><div class="tag">TEMA 1.079 / STJ · MODULAÇÃO</div></article>
+      <article class="card"><div class="id">AÇÃO COLETIVA / ANETRAMS</div><h3>INSS PATRONAL SOBRE RUBRICAS</h3><p>Análise de valores recolhidos sobre verbas abrangidas por decisão coletiva transitada em julgado, com apuração individual dos créditos.</p><div class="tag">RUBRICAS DA FOLHA · TÍTULO JUDICIAL</div></article>
+      <article class="card"><div class="id">REFORMA TRIBUTÁRIA</div><h3>CONTRATOS ADMINISTRATIVOS</h3><p>Revisão dos possíveis efeitos da transição para CBS e IBS sobre custos, cláusulas e equilíbrio econômico-financeiro de contratos vigentes.</p><div class="tag">IMPACTOS EFETIVOS · ANÁLISE CONTRATUAL</div></article>
+    </div>
+  </div>
+</section>
 
-            <p class="hero-copy">
-              O escritório assessora empresas de infraestrutura em frentes estratégicas relacionadas à Reforma Tributária, contratos administrativos e ações coletivas, com leitura jurídica aprofundada e visão prática para a tomada de decisão.
-            </p>
+<section class="section band" id="acoes">
+  <div class="wrap">
+    <div class="eyebrow">AÇÕES COLETIVAS</div>
+    <h2 class="impact section-title">DECISÕES JUDICIAIS QUE MERECEM SER ANALISADAS.</h2>
+    <p class="section-intro">As ações ANEOR e ANETRAMS tratam de matérias distintas. O potencial de recuperação depende dos requisitos do título, da situação associativa e do histórico de cada empresa.</p>
+    <div class="facts">
+      <article class="fact"><small>ANEOR · CONTRIBUIÇÕES A TERCEIROS</small><h3>ANÁLISE INDIVIDUAL DO ENQUADRAMENTO</h3><p>A avaliação considera os critérios do título judicial, a compatibilidade da atividade da empresa e os recolhimentos realizados.</p></article>
+      <article class="fact"><small>ANETRAMS · INSS PATRONAL</small><h3>ANÁLISE DAS RUBRICAS E DOS PERÍODOS APLICÁVEIS</h3><p>A apuração depende da decisão coletiva, das verbas efetivamente recolhidas e dos requisitos jurídicos aplicáveis ao caso concreto.</p></article>
+    </div>
+  </div>
+</section>
 
-            <div class="hero-actions">
-              <a href="#contato" class="btn-primary">Solicitar diagnóstico →</a>
-              <a href="#atuacao" class="btn-secondary">Falar com o time especialista</a>
-            </div>
-          </div>
+<section class="section" id="contratos">
+  <div class="wrap">
+    <div class="eyebrow">REFORMA TRIBUTÁRIA / CONTRATOS ADMINISTRATIVOS</div>
+    <h2 class="impact section-title">O CONTRATO FOI FIRMADO EM UMA REALIDADE TRIBUTÁRIA. SUA EXECUÇÃO PODE ATRAVESSAR OUTRA.</h2>
+    <p class="section-intro">Contratos de longo prazo merecem avaliação técnica para identificar efeitos econômicos efetivos decorrentes da transição para CBS e IBS. Nem toda mudança tributária gera, automaticamente, direito à recomposição.</p>
+    <div class="tablewrap">
+      <table class="compare">
+        <thead><tr><th>Frente de revisão</th><th>O que avaliar</th><th>Objetivo da análise</th></tr></thead>
+        <tbody>
+          <tr><td><span class="label">Frente 01</span><br>Estrutura tributária</td><td>Tributos considerados na formação de preços, matriz econômica e execução contratual.</td><td>Identificar diferenças relevantes trazidas pela transição tributária.</td></tr>
+          <tr><td><span class="label">Frente 02</span><br>Custos e margens</td><td>Possíveis impactos econômicos sobre custos, fluxo financeiro e margens.</td><td>Dimensionar efeitos demonstráveis que possam justificar providências.</td></tr>
+          <tr><td><span class="label">Frente 03</span><br>Cláusulas contratuais</td><td>Revisão, reajuste, reequilíbrio e mecanismos previstos em contrato.</td><td>Avaliar medidas juridicamente cabíveis em cada contratação.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-          <aside class="hero-form" id="contato">
-            <p class="form-eyebrow">Diagnóstico personalizado</p>
-            <h2>Solicite um diagnóstico personalizado</h2>
-            <p>Preencha os dados abaixo para que a equipe avalie o seu caso e entre em contato.</p>
+<section class="section" id="setores" style="background:#f8f8f7">
+  <div class="wrap">
+    <div class="eyebrow">QUEM DEVE AVALIAR</div>
+    <h2 class="impact section-title">EMPRESAS DE DIFERENTES ELOS DA INFRAESTRUTURA.</h2>
+    <div class="sector-grid">
+      <article class="sector-card"><div class="sector-kicker">Infraestrutura</div><h3>Construção e engenharia</h3><p>Construtoras, empresas de engenharia e executoras de obras públicas ou privadas.</p></article>
+      <article class="sector-card"><div class="sector-kicker">Obras rodoviárias</div><h3>Terraplenagem e pavimentação</h3><p>Empresas ligadas à infraestrutura viária, drenagem, sinalização e atividades relacionadas.</p></article>
+      <article class="sector-card"><div class="sector-kicker">Projetos e serviços</div><h3>Geotecnia, topografia e consultoria</h3><p>Negócios voltados a projetos, sondagem, estudos e serviços especializados.</p></article>
+      <article class="sector-card"><div class="sector-kicker">Operação</div><h3>Máquinas, logística e concessões</h3><p>Fornecedores, operadores, transportadoras, concessionárias e empresas complementares.</p></article>
+    </div>
+  </div>
+</section>
 
-            <form>
-              <div class="form-grid">
-                <div class="field full">
-                  <label for="nome">Nome completo *</label>
-                  <input id="nome" type="text" placeholder="Seu nome" />
-                </div>
+<section class="section process-featured" id="atuacao">
+  <div class="wrap">
+    <div class="eyebrow">COMO ATUAMOS</div>
+    <h2 class="impact section-title">DO ENQUADRAMENTO À ESTRATÉGIA JURÍDICA.</h2>
+    <div class="steps">
+      <div class="step"><strong>01</strong><h3>Diagnóstico</h3><p>Perfil, atividade, recolhimentos e contratos.</p></div>
+      <div class="step"><strong>02</strong><h3>Validação jurídica</h3><p>Requisitos dos títulos e regras contratuais.</p></div>
+      <div class="step"><strong>03</strong><h3>Documentação</h3><p>Levantamento fiscal, previdenciário ou contratual.</p></div>
+      <div class="step"><strong>04</strong><h3>Apuração</h3><p>Quantificação de créditos ou efeitos econômicos.</p></div>
+      <div class="step"><strong>05</strong><h3>Encaminhamento</h3><p>Orientação sobre medidas cabíveis em cada frente.</p></div>
+    </div>
+  </div>
+</section>
 
-                <div class="field">
-                  <label for="email">E-mail corporativo *</label>
-                  <input id="email" type="email" placeholder="nome@empresa.com.br" />
-                </div>
-
-                <div class="field">
-                  <label for="telefone">Telefone *</label>
-                  <input id="telefone" type="text" placeholder="(00) 00000-0000" />
-                </div>
-
-                <div class="field full">
-                  <label for="empresa">Empresa *</label>
-                  <input id="empresa" type="text" placeholder="Razão social" />
-                </div>
-
-                <div class="field full">
-                  <label for="area">Área de atuação</label>
-                  <select id="area">
-                    <option>Selecione</option>
-                    <option>Concessionária</option>
-                    <option>Operador portuário</option>
-                    <option>Construtora</option>
-                    <option>Entidade setorial</option>
-                    <option>Outro</option>
-                  </select>
-                </div>
-              </div>
-
-              <button type="submit" class="form-submit">Enviar solicitação →</button>
-
-              <div class="form-note">
-                Ao enviar, você concorda com o uso das informações para contato e comunicações relacionadas aos serviços do escritório.
-              </div>
-            </form>
-          </aside>
+<section class="about-section" id="sobre">
+  <div class="wrap">
+    <div class="about-shell">
+      <div class="about-top">
+        <div class="about-copy">
+          <div class="eyebrow">SOBRE A MENNDEL & MELO</div>
+          <h2 class="impact section-title">ATUAÇÃO TRIBUTÁRIA SOFISTICADA PARA EMPRESAS QUE EXIGEM PROFUNDIDADE, DISCRIÇÃO E SEGURANÇA JURÍDICA.</h2>
+          <p>A Menndel & Melo atua em temas tributários e estratégicos voltados a empresas de médio e grande porte, com foco em análises que exigem consistência técnica, leitura de risco e visão de negócio.</p>
         </div>
       </div>
 
-      <div class="clients-strip">
-        <div class="container">
-          <p class="clients-title">Nossos clientes</p>
-          <div class="clients-logos">
-            <img src="ativos/clientes/aneor.webp" alt="ANEOR">
-            <img src="ativos/clientes/fenop.png" alt="FENOP">
-            <img src="ativos/clientes/barbosa-mello.webp" alt="Barbosa Mello">
-            <img src="ativos/clientes/alya.png" alt="ALYA">
-            <img src="ativos/clientes/sicepot-mg.jpg" alt="SICEPOT MG">
-            <img src="ativos/clientes/lcm.jpg" alt="LCM Construção">
-            <img src="ativos/clientes/ogmo-suape.jpg" alt="OGMO Suape">
-            <img src="ativos/clientes/abemi.png" alt="ABEMI">
-            <img src="ativos/clientes/ogmo-paranagua.jpg" alt="OGMO Paranaguá">
-            <img src="ativos/clientes/ogmo-santos.png" alt="OGMO Santos">
-          </div>
+      <div class="about-numbers">
+        <div class="about-number"><div class="about-value">+100</div><div class="about-caption">Casos de sucesso</div></div>
+        <div class="about-number"><div class="about-value">+500</div><div class="about-caption">Empresas atendidas</div></div>
+        <div class="about-number"><div class="about-value">+20</div><div class="about-caption">Estados de atuação</div></div>
+        <div class="about-number"><div class="about-value">+15</div><div class="about-caption">Entidades representadas ou parceiras</div></div>
+        <div class="about-number"><div class="about-value">+45</div><div class="about-caption">Publicações técnicas entre artigos e livros</div></div>
+      </div>
+
+      <div class="seal-showcase">
+        <div class="mini-label">RECONHECIMENTOS E PREMIAÇÕES</div>
+        <div class="seal-grid">
+          <div class="seal-card"><img src="assets/advogado-latino-americano.png" alt="The Latin American Lawyer"></div>
+          <div class="seal-card"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></div>
+          <div class="seal-card"><img src="assets/legal-500.png" alt="The Legal 500"></div>
+          <div class="seal-card"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></div>
+          <div class="seal-card"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
+          <div class="seal-card"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></div>
+          <div class="seal-card"><img src="assets/leaders-league-2026.png" alt="Leaders League 2026"></div>
+          <div class="seal-card"><img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026 — reconhecimento prata"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="solucoes">
-      <div class="container">
-        <p class="section-kicker">Frentes de atuação</p>
-        <h2 class="section-title">Nossas frentes de atuação</h2>
+<section class="end" id="contato">
+  <div class="wrap">
+    <div class="eyebrow">PRÓXIMO PASSO</div>
+    <h2 class="impact section-title">SUA EMPRESA PODE TER MAIS DE UMA OPORTUNIDADE PARA AVALIAR.</h2>
+    <p>Uma análise inicial permite identificar quais das três frentes merecem aprofundamento: créditos relacionados às ações coletivas ANEOR e ANETRAMS ou impactos da Reforma Tributária sobre contratos administrativos.</p>
+    <div class="cta-row">
+      <a class="btn" href="#formulario">SOLICITAR ANÁLISE DAS OPORTUNIDADES ↗</a>
+      <a class="btn-secondary" href="#rodape">FALAR COM NOSSA EQUIPE</a>
+    </div>
+    <small>Possibilidades de recuperação tributária e revisão contratual dependem de análise individual, dos títulos judiciais, dos documentos e da legislação aplicável. Não há garantia de recuperação de valores ou de revisão contratual.</small>
+  </div>
+</section>
+</main>
 
-        <div class="cards-3">
-          <article class="card">
-            <h3>Ação ANEOR</h3>
-            <p>
-              Avaliação jurídica e tributária voltada às discussões setoriais relacionadas às empresas de obras rodoviárias, com leitura de impactos financeiros e regulatórios.
-            </p>
-          </article>
+<footer class="footer" id="rodape">
+  <div class="wrap">
+    <div class="footergrid">
+      <div><img src="assets/logo-white-transparent.png" alt="Menndel & Melo"><p>Assessoria jurídica e tributária para empresas.</p></div>
+      <div><h3>Contatos</h3><p><b>Jurídico</b><br><a href="tel:+5561992884739">(61) 99288-4739</a><br><b>Comercial</b><br><a href="tel:+5561947581726">(61) 94758-1726</a></p></div>
+      <div><h3>Redes sociais</h3><div class="social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="LinkedIn">in</a></div></div>
+    </div>
+    <div class="footerbottom">© 2026 Menndel & Melo. Todos os direitos reservados.</div>
+  </div>
+</footer>
 
-          <article class="card">
-            <h3>Ação ANETRAMS</h3>
-            <p>
-              Análise das teses e oportunidades aplicáveis ao setor, com foco na identificação de direitos, mitigação de riscos e suporte à tomada de decisão empresarial.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Revisão de contratos</h3>
-            <p>
-              Revisão de contratos administrativos sob a ótica da Reforma Tributária, considerando reequilíbrio econômico-financeiro, alocação de riscos e repercussões operacionais.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="atuacao">
-      <div class="container">
-        <p class="section-kicker">Como atuamos</p>
-        <h2 class="section-title">Atuação jurídica orientada por profundidade técnica e segurança</h2>
-
-        <div class="cards-3">
-          <article class="card">
-            <h3>Leitura setorial</h3>
-            <p>
-              Compreensão das particularidades do setor de infraestrutura, inclusive operadores portuários, concessionárias e entidades representativas.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Integração fiscal e jurídica</h3>
-            <p>
-              Atuação conjunta entre advogados tributaristas e analistas fiscais para transformar teses, mudanças legais e riscos contratuais em encaminhamentos práticos.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Estratégia aplicável</h3>
-            <p>
-              Apoio na definição de prioridades, análise de enquadramento e construção de caminhos jurídicos consistentes para decisões de curto e médio prazo.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="etapas">
-      <div class="container">
-        <p class="section-kicker">Etapas</p>
-        <h2 class="section-title">Como conduzimos a análise</h2>
-
-        <div class="cards-3">
-          <article class="card">
-            <h3>1. Diagnóstico</h3>
-            <p>
-              Levantamento preliminar das informações da empresa, com identificação dos pontos que demandam análise prioritária.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>2. Avaliação técnica</h3>
-            <p>
-              Exame jurídico e fiscal das oportunidades e riscos envolvidos, com foco em consistência normativa e impacto para o negócio.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>3. Encaminhamento</h3>
-            <p>
-              Entrega de direcionamento objetivo para implementação das medidas cabíveis, defesa de interesses e suporte à tomada de decisão.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="sobre">
-      <div class="container">
-        <h2 class="section-title">Atuação tributária sofisticada para empresas que exigem profundidade, discrição e segurança jurídica.</h2>
-
-        <p class="about-text">
-          A Menndel & Melo atua em temas tributários e estratégicos voltados a empresas de médio e grande porte, com foco em análises que exigem consistência técnica, leitura de risco e visão de negócio.
-        </p>
-
-        <div class="metrics">
-          <div class="metric">
-            <div class="value">+100</div>
-            <div class="label">casos de sucesso</div>
-          </div>
-          <div class="metric">
-            <div class="value">+500</div>
-            <div class="label">empresas atendidas</div>
-          </div>
-          <div class="metric">
-            <div class="value">+20</div>
-            <div class="label">estados de atuação</div>
-          </div>
-          <div class="metric">
-            <div class="value">+15</div>
-            <div class="label">entidades representadas ou parceiras</div>
-          </div>
-          <div class="metric">
-            <div class="value">+45</div>
-            <div class="label">publicações técnicas entre artigos e livros</div>
-          </div>
-        </div>
-
-        <div class="awards">
-          <h3>Selos e prêmios</h3>
-          <div class="award-grid">
-            <div class="award-item"><img src="ativos/great-place-to-work.png" alt="Great Place to Work"></div>
-            <div class="award-item"><img src="ativos/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
-            <div class="award-item"><img src="ativos/analise-dna-2026.png" alt="Análise DNA 2026"></div>
-            <div class="award-item"><img src="ativos/advogado-latino-americano.png" alt="The Latin American Lawyer"></div>
-            <div class="award-item"><img src="ativos/legal-500.png" alt="Legal 500"></div>
-            <div class="award-item"><img src="ativos/leaders-league-2026.png" alt="Leaders League 2026"></div>
-            <div class="award-item"><img src="ativos/women-awards-2026.jpg" alt="Women Awards 2026"></div>
-            <div class="award-item"><img src="ativos/fenalaw-2026-prata.png" alt="Fenalaw 2026 Prata"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container">
-        <h2>Fale com o time da Menndel & Melo</h2>
-        <p>
-          Se a sua empresa atua no setor de infraestrutura e precisa avaliar impactos da Reforma Tributária, oportunidades de atuação ou riscos contratuais, entre em contato conosco.
-        </p>
-        <a href="#contato" class="btn-primary">Solicitar diagnóstico →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    [Razão social da sociedade] — Inscrição na OAB/DF nº [número]
-  </footer>
-
+<script>
+document.getElementById('leadform').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('status').textContent='Prévia: os dados não foram enviados. Integre este formulário ao RD Station antes de publicar.';
+});
+</script>
 </body>
 </html>
+
