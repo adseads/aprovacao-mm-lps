@@ -191,10 +191,7 @@ img{max-width:100%;display:block}
   background:#FFFFFF;
   padding:72px 0 78px;
 }
-.about-mm__wrap{
-  width:min(calc(100% - 64px),1680px);
-  margin:0 auto;
-}
+.about-mm__wrap{width:min(calc(100% - 64px),var(--container));margin:0 auto}
 .about-mm__topbar{
   display:flex;
   align-items:flex-start;
@@ -304,7 +301,7 @@ img{max-width:100%;display:block}
 }
 @media(max-width:900px){
   .about-mm{padding:56px 0 60px}
-  .about-mm__wrap{width:min(calc(100% - 32px),1680px)}
+  .about-mm__wrap{width:min(calc(100% - 64px),var(--container));margin:0 auto}
   .about-mm__topbar{flex-direction:column;align-items:flex-start}
   .about-mm__title{
   margin:0 0 28px;
@@ -546,7 +543,7 @@ img{max-width:100%;display:block}
     <div class="about-mm__awards">
       <figure class="about-mm__award"><img src="assets/latin-american-lawyer.png" alt="The Latin American Lawyer"></figure>
       <figure class="about-mm__award"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></figure>
-      <figure class="about-mm__award"><img src="assets/legal-500.png" alt="The Legal 500"></figure>
+      <figure class="about-mm__award"><img src="assets/legal-500.jpg" alt="The Legal 500"></figure>
       <figure class="about-mm__award"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></figure>
       <figure class="about-mm__award"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></figure>
       <figure class="about-mm__award"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></figure>
