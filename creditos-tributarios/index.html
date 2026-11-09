@@ -335,6 +335,13 @@ img{max-width:100%;display:block}
 .stat-box .stat-label{margin:0 0 20px;font-size:13px;line-height:1.4;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .stat-box p{margin:0 0 12px;font-size:14px;line-height:1.65;color:#D9E3EB}
 .stat-box .stat-close{margin:16px 0 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-weight:700;color:#fff}
+.split--aligned{grid-template-columns:minmax(0,1.25fr) minmax(320px,.85fr);align-items:center}
+.split--aligned .section-title{margin-top:12px;color:var(--navy)}
+.stat-box--compact{padding:26px 28px 28px}
+.stat-box--compact .stat-value{font-size:clamp(60px,4.6vw,76px);margin:10px 0 4px}
+.stat-box--compact p{font-size:13.5px;line-height:1.6}
+.checklist.checklist--3{grid-template-columns:repeat(3,1fr)}
+#processo .section-intro{max-width:900px}
 .cards.cards--4{grid-template-columns:repeat(4,1fr)}
 .steps.steps--4{grid-template-columns:repeat(4,1fr)}
 .steps--4 .step p{font-size:13px}
@@ -345,11 +352,12 @@ img{max-width:100%;display:block}
 .end .note{color:#DDE6EE}
 .end p + p{margin-top:0}
 @media(max-width:1050px){
-  .split{grid-template-columns:1fr;gap:32px}
+  .split,.split--aligned{grid-template-columns:1fr;gap:32px}
+  .checklist.checklist--3{grid-template-columns:1fr 1fr}
   .cards.cards--4,.steps.steps--4{grid-template-columns:1fr 1fr}
 }
 @media(max-width:700px){
-  .cards.cards--4,.steps.steps--4,.checklist{grid-template-columns:1fr}
+  .cards.cards--4,.steps.steps--4,.checklist,.checklist.checklist--3{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -387,7 +395,6 @@ img{max-width:100%;display:block}
 
       <div class="hero-body">
         <p>Empresas podem possuir créditos tributários já identificados, reconhecidos judicialmente ou ainda sujeitos a levantamento. Entre o direito e a utilização efetiva, porém, existe uma etapa técnica de apuração, validação e operacionalização.</p>
-        <p>A Menndel &amp; Melo estrutura esse processo de forma integrada entre as áreas fiscal e jurídica, com foco em consistência dos cálculos, documentação e segurança na utilização.</p>
       </div>
 
       <div class="hero-micro">Solicite uma análise inicial da situação dos créditos.</div>
@@ -482,11 +489,10 @@ img{max-width:100%;display:block}
 
 <section class="section" id="contexto">
   <div class="wrap">
-    <div class="eyebrow">APURAÇÃO COM PRECISÃO</div>
-    <h2 class="impact section-title">ENTRE O DIREITO AO CRÉDITO E SUA UTILIZAÇÃO EXISTE UMA ETAPA QUE EXIGE PRECISÃO.</h2>
-
-    <div class="split">
+    <div class="split split--aligned">
       <div class="section-intro">
+        <div class="eyebrow">APURAÇÃO COM PRECISÃO</div>
+        <h2 class="impact section-title">ENTRE O DIREITO AO CRÉDITO E SUA UTILIZAÇÃO EXISTE UMA ETAPA QUE EXIGE PRECISÃO.</h2>
         <p>A identificação de um crédito não encerra o trabalho. É necessário compreender sua origem, delimitar o período aplicável, organizar a documentação e apurar os valores de forma consistente.</p>
         <p>Quando o crédito decorre de decisão judicial, também é necessário observar os limites do direito reconhecido e estruturar sua operacionalização conforme o caso concreto.</p>
         <div class="cta-row">
@@ -494,7 +500,7 @@ img{max-width:100%;display:block}
         </div>
       </div>
 
-      <aside class="stat-box">
+      <aside class="stat-box stat-box--compact">
         <div class="eyebrow">UMA ATUAÇÃO INTEGRADA</div>
         <div class="stat-value">02</div>
         <p class="stat-label">frentes conectadas: fiscal e jurídica</p>
@@ -541,33 +547,22 @@ img{max-width:100%;display:block}
 
 <section class="section" id="processo">
   <div class="wrap">
-    <div class="eyebrow">FLUXO DE TRABALHO</div>
+    <div class="eyebrow">ESTRUTURA DO TRABALHO</div>
     <h2 class="impact section-title">UM PROCESSO ORGANIZADO EM QUATRO ETAPAS.</h2>
 
-    <div class="split">
-      <div>
-        <p class="section-intro">A atuação começa pela compreensão da origem e do estágio atual do crédito e avança até a sua operacionalização, com registros que permitam à empresa acompanhar cada etapa.</p>
-        <ul class="checklist">
-          <li>Levantamento preliminar</li>
-          <li>Apuração e memória de cálculo</li>
-          <li>Validação jurídica e documental</li>
-          <li>Operacionalização e acompanhamento</li>
-          <li>Organização das evidências</li>
-          <li>Apoio diante de questionamentos</li>
-        </ul>
-        <p class="note">O escopo é definido conforme a origem do crédito, o estágio em que ele se encontra e a documentação disponível.</p>
-        <div class="cta-row">
-          <a class="btn" href="#formulario">Entender o próximo passo →</a>
-        </div>
+      <p class="section-intro">A atuação começa pela compreensão da origem e do estágio atual do crédito e avança até a sua operacionalização, com registros que permitam à empresa acompanhar cada etapa.</p>
+      <ul class="checklist checklist--3">
+        <li>Levantamento preliminar</li>
+        <li>Apuração e memória de cálculo</li>
+        <li>Validação jurídica e documental</li>
+        <li>Operacionalização e acompanhamento</li>
+        <li>Organização das evidências</li>
+        <li>Apoio diante de questionamentos</li>
+      </ul>
+      <p class="note">O escopo é definido conforme a origem do crédito, o estágio em que ele se encontra e a documentação disponível.</p>
+      <div class="cta-row">
+        <a class="btn" href="#formulario">Entender o próximo passo →</a>
       </div>
-
-      <aside class="stat-box">
-        <div class="eyebrow">FLUXO DE TRABALHO</div>
-        <div class="stat-value">04</div>
-        <p class="stat-label">etapas</p>
-        <p>Da análise preliminar ao acompanhamento da utilização.</p>
-      </aside>
-    </div>
   </div>
 </section>
 
