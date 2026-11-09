@@ -419,6 +419,33 @@ img{max-width:100%;display:block}
   .hero-alt .hero-lead{font-size:17px}
 }
 </style>
+<style>
+/* ===== HERO AZUL COMPACTO (celular na primeira dobra) ===== */
+.hero-blue{background:var(--navy)}
+.hero-blue .hero-grid{padding:30px 0 34px;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr)}
+.hero-blue h1{margin:14px 0 14px}
+.hero-blue .hero-lead{font-size:18px;margin-bottom:0}
+.hero-blue .form-inline{margin-top:20px}
+.offer-tag{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.offer-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--orange);color:#fff;font-size:13px;font-weight:800;letter-spacing:.12em}
+.offer-pill::before{content:"";border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.offer-sub{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#DDE6EE}
+.hero-blue .phone{width:250px;padding:10px;border-radius:40px}
+.hero-blue .phone::before{top:18px;width:74px;height:19px}
+.hero-blue .phone-screen{border-radius:31px}
+.hero-blue .ps-status{height:26px}
+.hero-blue .ps-controls{padding:8px 12px}
+.hero-blue .ps-play{width:26px;height:26px}
+.hero-blue .ps-play::after{left:10px;top:8px;border-left-width:8px;border-top-width:5px;border-bottom-width:5px}
+.hero-blue .ps-info{padding:8px 14px 10px}
+.hero-blue .ps-info strong{font-size:16px;margin:3px 0 7px}
+.hero-blue .ps-info ol{gap:4px}
+.hero-blue .ps-info li{font-size:10px}
+@media(max-width:1050px){
+  .hero-blue .grid,.hero-blue .hero-grid{grid-template-columns:1fr}
+  .hero-blue .phone{width:240px}
+}
+</style>
 </head>
 <body>
 
@@ -429,20 +456,16 @@ img{max-width:100%;display:block}
 </header>
 
 <main>
-<section class="hero hero-alt ">
+<section class="hero hero-alt hero-blue">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">CONTEÚDO EXCLUSIVO • REFORMA TRIBUTÁRIA</div>
+      <div class="offer-tag"><span class="offer-pill">AULA GRATUITA</span><span class="offer-sub">Reforma Tributária · com Dr. Menndel Macedo</span></div>
       <h1 class="impact">
         PLANILHAS NÃO RESOLVEM<br>
         A TRANSIÇÃO TRIBUTÁRIA.<br>
         <span class="accent">CRITÉRIO RESOLVE.</span>
       </h1>
       <p class="hero-lead">3 pontos que sua empresa precisa analisar agora na transição da Reforma Tributária.</p>
-      <div class="speaker-chip">
-        <img src="assets/menndel-macedo.jpg" alt="Dr. Menndel Macedo">
-        <div><strong>Com Dr. Menndel Macedo</strong><span>Advogado tributarista · Mestrando em Economia (IDP)</span></div>
-      </div>
       <div class="form-inline" id="formulario">
         <div class="eyebrow">ACESSO GRATUITO · RECEBA A AULA COMPLETA</div>
         <form id="leadform">
