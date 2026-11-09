@@ -124,7 +124,7 @@ img{max-width:100%;display:block}
 .client-logo img{width:100%;height:100%;object-fit:contain;opacity:.96}
 /* CONTEÚDO */
 .section{padding:72px 0}
-.section-title{margin:12px 0 18px;max-width:940px;font-size:clamp(35px,3.7vw,56px);line-height:1.035}
+.section-title{margin:12px 0 18px;max-width:940px;font-size:clamp(40px,3.55vw,57px);line-height:1.01}
 .section-intro{max-width:900px;font-size:15px;line-height:1.72;color:#516779}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:31px}
 .card{background:#fff;padding:27px 24px;border-top:4px solid var(--orange);box-shadow:var(--shadow);min-height:290px;display:flex;flex-direction:column}
@@ -138,12 +138,12 @@ img{max-width:100%;display:block}
 .step strong{font:normal 37px Impact,"Arial Narrow",sans-serif;color:var(--orange)}
 .step h3{font-size:15px;margin:10px 0 8px}
 .step p{font-size:12px;line-height:1.65;color:#D9E3EB;margin:0}
-.process .section-title{color:#fff}
+.process .section-title{margin:12px 0 18px;max-width:940px;font-size:clamp(40px,3.55vw,57px);line-height:1.01}
 .process .eyebrow{color:var(--orange)}
 
 /* SOBRE — branco aprovado */
 .about{background:#fff;padding:72px 0 64px}
-.about .section-title{color:var(--navy)}
+.about .section-title{margin:12px 0 18px;max-width:940px;font-size:clamp(40px,3.55vw,57px);line-height:1.01}
 .about-copy{max-width:850px;font-size:14px;line-height:1.82;color:#536779}
 .numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;align-items:start;margin:34px 0 40px}
 .number{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
@@ -238,8 +238,8 @@ img{max-width:100%;display:block}
   margin:0 0 28px;
   max-width:1180px;
   font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
-  font-size:clamp(56px,5vw,86px);
-  line-height:.95;
+  font-size:clamp(40px,3.55vw,57px);
+  line-height:1.01;
   letter-spacing:.01em;
   text-transform:uppercase;
   color:#0E2D4B;
@@ -250,14 +250,8 @@ img{max-width:100%;display:block}
   font:400 19px/1.72 "Open Sans",Arial,sans-serif;
   color:#5D7690;
 }
-.about-mm__numbers{
-  display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:40px;
-  align-items:start;
-  margin:0 0 52px;
-}
-.about-mm__number{text-align:center}
+.about-mm__numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:40px;align-items:start;margin:0 0 52px}
+.about-mm__number{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 .about-mm__number .value{
   margin:0 0 14px;
   font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
@@ -271,6 +265,10 @@ img{max-width:100%;display:block}
   letter-spacing:.07em;
   color:#ED8444;
   text-transform:uppercase;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  text-align:center;
 }
 .about-mm__awards-header{
   display:flex;
@@ -298,41 +296,35 @@ img{max-width:100%;display:block}
   gap:18px;
   align-items:center;
 }
-.about-mm__award{
-  margin:0;
-  min-height:128px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;
-  border:0;
-}
-.about-mm__award img{
-  display:block;
-  max-width:100%;
-  max-height:108px;
-  width:auto;
-  height:auto;
-  object-fit:contain;
-}
+.about-mm__award{margin:0;min-height:128px;display:flex;align-items:center;justify-content:center;background:transparent;border:0;padding:0}
+.about-mm__award img{display:block;max-width:100%;max-height:108px;width:auto;height:auto;object-fit:contain}
 @media(max-width:1400px){
-  .about-mm__numbers{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+  .about-mm__numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:40px;align-items:start;margin:0 0 52px}
   .about-mm__awards{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
 @media(max-width:900px){
   .about-mm{padding:56px 0 60px}
   .about-mm__wrap{width:min(calc(100% - 32px),1680px)}
   .about-mm__topbar{flex-direction:column;align-items:flex-start}
-  .about-mm__title{font-size:clamp(42px,11vw,66px)}
+  .about-mm__title{
+  margin:0 0 28px;
+  max-width:1180px;
+  font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
+  font-size:clamp(40px,3.55vw,57px);
+  line-height:1.01;
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  color:#0E2D4B;
+}
   .about-mm__text{font-size:17px}
-  .about-mm__numbers{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+  .about-mm__numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:40px;align-items:start;margin:0 0 52px}
   .about-mm__awards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
   .about-mm__awards-header{align-items:flex-start;flex-direction:column;gap:12px}
   .about-mm__awards-header span{display:none}
 }
 @media(max-width:560px){
-  .about-mm__numbers{grid-template-columns:1fr}
-  .about-mm__number{text-align:left}
+  .about-mm__numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:40px;align-items:start;margin:0 0 52px}
+  .about-mm__number{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 }
 
 </style>
@@ -550,31 +542,16 @@ img{max-width:100%;display:block}
       <span></span>
     </div>
 
+    
     <div class="about-mm__awards">
-      <figure class="about-mm__award">
-        <img src="assets/advogado-latino-americano.png" alt="The Latin American Lawyer">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/analise-dna-2026.png" alt="Análise DNA 2026">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/legal-500.png" alt="The Legal 500">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/women-awards-2026.jpg" alt="Women Awards 2026">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/great-place-to-work.png" alt="Great Place to Work">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/leaders-league-2026.png" alt="Leaders League 2026">
-      </figure>
-      <figure class="about-mm__award">
-        <img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026 — Reconhecimento Prata">
-      </figure>
+      <figure class="about-mm__award"><img src="assets/latin-american-lawyer.png" alt="The Latin American Lawyer"></figure>
+      <figure class="about-mm__award"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></figure>
+      <figure class="about-mm__award"><img src="assets/legal-500.png" alt="The Legal 500"></figure>
+      <figure class="about-mm__award"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></figure>
+      <figure class="about-mm__award"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></figure>
+      <figure class="about-mm__award"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></figure>
+      <figure class="about-mm__award"><img src="assets/leaders-league-2026.png" alt="Leaders League 2026"></figure>
+      <figure class="about-mm__award"><img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026 — Reconhecimento Prata"></figure>
     </div>
 
   </div>
