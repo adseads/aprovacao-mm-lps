@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aula Gratuita | Reforma Tributária | Menndel & Melo</title>
-<meta name="description" content="Aula gratuita: 3 pontos que sua empresa precisa analisar na transição da Reforma Tributária, com especialista em Direito Tributário e Economia.">
+<title>Aula Gratuita | Reforma Tributária com Dr. Menndel Macedo | Menndel & Melo</title>
+<meta name="description" content="Aula gratuita com Dr. Menndel Macedo: 3 pontos que sua empresa precisa analisar na transição da Reforma Tributária.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -326,60 +326,52 @@ img{max-width:100%;display:block}
 
 </style>
 <style>
-/* ===== EXTENSÕES DO LAYOUT (LPs com mais conteúdo) — não altera o CSS base ===== */
-.section--soft{background:#F4F6F8}
-.split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.9fr);gap:56px;align-items:start}
-.split .section-intro p{margin:0 0 16px}
-.stat-box{background:var(--navy);color:#fff;border-top:4px solid var(--orange);padding:30px 30px 32px;box-shadow:var(--shadow)}
-.stat-box .stat-value{font:normal clamp(72px,6vw,96px)/1 Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;color:var(--orange);margin:14px 0 6px}
-.stat-box .stat-label{margin:0 0 20px;font-size:13px;line-height:1.4;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.stat-box p{margin:0 0 12px;font-size:14px;line-height:1.65;color:#D9E3EB}
-.stat-box .stat-close{margin:16px 0 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-weight:700;color:#fff}
-.split--aligned{grid-template-columns:minmax(0,1.25fr) minmax(320px,.85fr);align-items:center}
-.split--aligned .section-title{margin-top:12px;color:var(--navy)}
-.stat-box--compact{padding:26px 28px 28px}
-.stat-box--compact .stat-value{font-size:clamp(60px,4.6vw,76px);margin:10px 0 4px}
-.stat-box--compact p{font-size:13.5px;line-height:1.6}
-.checklist.checklist--3{grid-template-columns:repeat(3,1fr)}
-#processo .section-intro{max-width:900px}
-.cards.cards--4{grid-template-columns:repeat(4,1fr)}
-.steps.steps--4{grid-template-columns:repeat(4,1fr)}
-.steps--4 .step p{font-size:13px}
-.checklist{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
-.checklist li{position:relative;padding:15px 16px 15px 42px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:700;line-height:1.4;color:var(--navy)}
-.checklist li::before{content:"";position:absolute;left:16px;top:50%;width:14px;height:2px;background:var(--orange)}
-.note{margin:18px 0 0;font-size:13px;line-height:1.6;font-style:italic;color:#617282}
-.end .note{color:#DDE6EE}
-.end p + p{margin-top:0}
-.lead-close{margin:30px 0 0;max-width:920px;font-size:17px;line-height:1.6;color:var(--navy)}
-.expert p{max-width:880px;margin:0 0 14px;font-size:16px;line-height:1.75;color:#D8E1E9}
-.expert strong{color:#fff}
-#solucoes .card{min-height:220px}
+/* ===== LP DE TOPO DE FUNIL (aula) — layout B: foco no especialista ===== */
+.headinner--min{justify-content:flex-start}
+.hero-grid{padding-bottom:40px}
 .hero-body strong{color:#fff}
-@media(max-width:1050px){
-  .split,.split--aligned{grid-template-columns:1fr;gap:32px}
-  .checklist.checklist--3{grid-template-columns:1fr 1fr}
-  .cards.cards--4,.steps.steps--4{grid-template-columns:1fr 1fr}
+.speaker-chip{display:flex;align-items:center;gap:14px;width:fit-content;margin:18px 0 6px;padding:10px 16px 10px 10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:12px}
+.speaker-chip img{width:48px;height:auto;display:block}
+.speaker-chip strong{display:block;font-size:14px;color:#fff}
+.speaker-chip span{display:block;margin-top:2px;font-size:12px;color:#DDE6EE}
+.fields.fields--single{grid-template-columns:1fr}
+.cards .card{min-height:220px}
+.lead-close{margin:30px 0 0;max-width:920px;font-size:17px;line-height:1.6;color:var(--navy)}
+.speaker{background:#F4F6F8}
+.speaker-grid{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.4fr);gap:56px;align-items:start}
+.speaker-photo{position:sticky;top:24px}
+.speaker-photo img{width:100%;height:auto;display:block;box-shadow:var(--shadow)}
+.speaker .section-title{margin-bottom:22px}
+.speaker-name{margin:0 0 4px;font:normal clamp(30px,2.6vw,40px)/1.05 Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;text-transform:uppercase;color:var(--navy)}
+.speaker-role{margin:0 0 20px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.speaker-text p{margin:0 0 12px;font-size:15px;line-height:1.75;color:#536779}
+.speaker-text strong{color:var(--navy)}
+.speaker-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.speaker-stats strong{display:block;font:normal clamp(30px,2.6vw,38px)/1 Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;color:var(--navy)}
+.speaker-stats span{display:block;margin-top:8px;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#607487}
+.cred-list{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.cred-list li{position:relative;padding-left:28px;font-size:14px;line-height:1.55;color:var(--navy)}
+.cred-list li::before{content:"";position:absolute;left:0;top:10px;width:14px;height:2px;background:var(--orange)}
+.media-row{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;line-height:1.7;color:#536779}
+.media-row b{display:block;margin-bottom:4px;font-size:10px;letter-spacing:.16em;color:var(--orange)}
+.end .cta-row{margin-top:24px}
+.foot-min{background:var(--navy2);color:#A6B9C7;padding:26px 0;font-size:11px}
+.foot-min .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot-min img{width:140px}
+@media(max-width:900px){
+  .speaker-grid{grid-template-columns:1fr;gap:32px}
+  .speaker-photo{position:static;max-width:420px}
 }
 @media(max-width:700px){
-  .cards.cards--4,.steps.steps--4,.checklist,.checklist.checklist--3{grid-template-columns:1fr}
+  .speaker-stats{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 
 <header class="site-head" id="inicio">
-  <div class="wrap headinner">
-    <a class="brand" href="#inicio">
-      <img src="assets/logo-white.png" alt="Menndel & Melo">
-    </a>
-    <nav class="headnav">
-      <a href="#inicio">Início</a>
-      <a href="#solucoes">Soluções</a>
-      <a href="#atuacao">Como atuamos</a>
-      <a href="#sobre">Sobre</a>
-    </nav>
-    <a class="header-cta" href="#formulario">Fale com um especialista</a>
+  <div class="wrap headinner headinner--min">
+    <span class="brand"><img src="assets/logo-white.png" alt="Menndel & Melo"></span>
   </div>
 </header>
 
@@ -404,6 +396,11 @@ img{max-width:100%;display:block}
         <p>Você vai conhecer três pontos que ajudam a sair da lógica de “preencher a planilha” para construir uma análise mais consistente da transição.</p>
       </div>
 
+      <div class="speaker-chip">
+        <img src="assets/menndel-macedo.jpg" alt="Dr. Menndel Macedo">
+        <div><strong>Com Dr. Menndel Macedo</strong><span>Advogado tributarista · Mestrando em Economia (IDP)</span></div>
+      </div>
+
       <div class="hero-micro">Gratuita · Direta ao ponto · Pensada para empresas</div>
 
       <div class="cta-row">
@@ -417,30 +414,22 @@ img{max-width:100%;display:block}
       <p class="intro">Preencha seus dados para acessar o conteúdo e receber o link também por e-mail.</p>
 
       <form id="leadform">
-        <div class="fields">
-          <div class="field full">
+        <div class="fields fields--single">
+          <div class="field">
             <label for="nome">Nome *</label>
             <input id="nome" name="nome" required placeholder="Seu nome">
           </div>
-
           <div class="field">
             <label for="email">E-mail corporativo *</label>
             <input id="email" name="email" required type="email" placeholder="nome@empresa.com.br">
           </div>
-
           <div class="field">
             <label for="telefone">Telefone *</label>
             <input id="telefone" name="telefone" required type="tel" placeholder="(00) 00000-0000">
           </div>
-
           <div class="field">
             <label for="empresa">Empresa *</label>
             <input id="empresa" name="empresa" required placeholder="Razão social">
-          </div>
-
-          <div class="field">
-            <label for="cargo">Cargo *</label>
-            <input id="cargo" name="cargo" required placeholder="Seu cargo">
           </div>
         </div>
 
@@ -448,24 +437,6 @@ img{max-width:100%;display:block}
         <small id="status">* Campos obrigatórios. Ao enviar, você concorda com o uso das informações para contato e comunicações relacionadas aos serviços do escritório.</small>
       </form>
     </aside>
-  </div>
-
-  <div class="clients-strip">
-    <div class="wrap">
-      <div class="clients-title">NOSSOS CLIENTES</div>
-      <div class="clients-row">
-        <div class="client-logo"><img src="assets/clientes/aneor.png" alt="ANEOR"></div>
-        <div class="client-logo"><img src="assets/clientes/fenop.png" alt="FENOP"></div>
-        <div class="client-logo"><img src="assets/clientes/barbosa-mello.png" alt="Barbosa Mello"></div>
-        <div class="client-logo"><img src="assets/clientes/alya.png" alt="ALYA"></div>
-        <div class="client-logo"><img src="assets/clientes/sicepot-mg.png" alt="SICEPOT MG"></div>
-        <div class="client-logo"><img src="assets/clientes/lcm.png" alt="LCM"></div>
-        <div class="client-logo"><img src="assets/clientes/ogmo-suape.png" alt="OGMO Suape"></div>
-        <div class="client-logo"><img src="assets/clientes/abemi.png" alt="ABEMI"></div>
-        <div class="client-logo"><img src="assets/clientes/ogmo-paranagua.png" alt="OGMO Paranaguá"></div>
-        <div class="client-logo"><img src="assets/clientes/ogmo-santos.png" alt="OGMO Santos"></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -499,87 +470,45 @@ img{max-width:100%;display:block}
   </div>
 </section>
 
-<section class="section process expert" id="atuacao">
-  <div class="wrap">
-    <div class="eyebrow">QUEM CONDUZ A AULA</div>
-    <h2 class="impact section-title">PARA QUEM PRECISA ENTENDER O IMPACTO, NÃO APENAS A REGRA.</h2>
-    <p>O conteúdo é conduzido por <strong>especialista em Direito Tributário e mestrando em Economia</strong>, com uma abordagem que conecta legislação, impactos econômicos e decisões empresariais.</p>
-    <p>Sem excesso de teoria.</p>
-    <p>Sem promessa de fórmula pronta.</p>
-    <p>Com foco nos <strong>critérios que ajudam uma empresa a avaliar melhor sua própria transição</strong>.</p>
+<section class="section speaker" id="atuacao">
+  <div class="wrap speaker-grid">
+    <div class="speaker-photo">
+      <img src="assets/menndel-macedo.jpg" alt="Dr. Menndel Macedo, advogado tributarista">
+    </div>
+
+    <div>
+      <div class="eyebrow">QUEM CONDUZ A AULA</div>
+      <h2 class="impact section-title">PARA QUEM PRECISA ENTENDER O IMPACTO, NÃO APENAS A REGRA.</h2>
+
+      <p class="speaker-name">Dr. Menndel Macedo</p>
+      <p class="speaker-role">Advogado tributarista · Sócio-fundador da Menndel &amp; Melo</p>
+
+      <div class="speaker-text">
+          <p>O conteúdo é conduzido por <strong>especialista em Direito Tributário e mestrando em Economia</strong>, com uma abordagem que conecta legislação, impactos econômicos e decisões empresariais.</p>
+          <p>Sem excesso de teoria.</p>
+          <p>Sem promessa de fórmula pronta.</p>
+          <p>Com foco nos <strong>critérios que ajudam uma empresa a avaliar melhor sua própria transição</strong>.</p>
+      </div>
+
+      <div class="speaker-stats">
+        <div><strong>+15</strong><span>anos de experiência em Direito Tributário</span></div>
+        <div><strong>+20</strong><span>eventos institucionais em 2024 e 2025</span></div>
+        <div><strong>IBS/CBS</strong><span>autor de livro sobre a transição</span></div>
+      </div>
+
+      <ul class="cred-list">
+          <li>Advogado tributarista com mais de 15 anos de experiência na assessoria estratégica a empresas de diversos setores.</li>
+          <li>Sócio-fundador da Menndel &amp; Melo Advocacia, em Brasília.</li>
+          <li>Mestrando em Economia (IDP), MBA em Gestão Jurídica Aduaneira e Internacional (MIB), especialista em Contabilidade Tributária (IBET) e graduado em Direito (CEUB).</li>
+          <li>Representante técnico de entidades empresariais em audiências públicas sobre a Reforma Tributária na Câmara dos Deputados e no Senado Federal.</li>
+          <li>Coordenador tributário da ANEOR, da ABICOPI e da ABEMI; membro da Comissão de Direito Tributário da OAB/DF e do Conselho Jurídico da CBIC.</li>
+          <li>Autor do livro <em>A Travessia Tributária da Infraestrutura Brasileira na Era do IBS/CBS</em>.</li>
+      </ul>
+
+      <div class="media-row"><b>NA MÍDIA</b>CNN Brasil · Estadão · O Globo · Folha de S.Paulo · Valor Econômico · InfoMoney · Poder360</div>
+    </div>
   </div>
 </section>
-
-<section id="sobre" class="about-mm">
-  <div class="about-mm__wrap">
-
-    <div class="about-mm__topbar">
-      <div class="about-mm__eyebrow">
-        <span class="about-mm__line"></span>
-        <span>SOBRE A MENNDEL &amp; MELO</span>
-      </div>
-
-      <div class="about-mm__flags" aria-label="Idiomas">
-        <span class="flag-pill">
-          <img src="assets/flag-us.png" alt="English">
-          <img src="assets/flag-es.png" alt="Español">
-        </span>
-      </div>
-    </div>
-
-    <h2 class="about-mm__title">
-      ATUAÇÃO TRIBUTÁRIA SOFISTICADA PARA EMPRESAS QUE EXIGEM PROFUNDIDADE,
-      DISCRIÇÃO E SEGURANÇA JURÍDICA.
-    </h2>
-
-    <p class="about-mm__text">
-      A Menndel &amp; Melo atua em temas tributários e estratégicos voltados a empresas de médio e grande porte,
-      com foco em análises que exigem consistência técnica, leitura de risco e visão de negócio.
-    </p>
-
-    <div class="about-mm__numbers">
-      <div class="about-mm__number">
-        <div class="value">+100</div>
-        <div class="label">CASOS DE SUCESSO</div>
-      </div>
-      <div class="about-mm__number">
-        <div class="value">+500</div>
-        <div class="label">EMPRESAS ATENDIDAS</div>
-      </div>
-      <div class="about-mm__number">
-        <div class="value">+20</div>
-        <div class="label">ESTADOS DE ATUAÇÃO</div>
-      </div>
-      <div class="about-mm__number">
-        <div class="value">+15</div>
-        <div class="label">ENTIDADES REPRESENTADAS OU PARCEIRAS</div>
-      </div>
-      <div class="about-mm__number">
-        <div class="value">+45</div>
-        <div class="label">PUBLICAÇÕES TÉCNICAS ENTRE ARTIGOS E LIVROS</div>
-      </div>
-    </div>
-
-    <div class="about-mm__awards-header">
-      <h3>RECONHECIMENTOS E PREMIAÇÕES</h3>
-      <span></span>
-    </div>
-
-    
-    <div class="about-mm__awards">
-      <figure class="about-mm__award"><img src="assets/latin-american-lawyer.png" alt="The Latin American Lawyer"></figure>
-      <figure class="about-mm__award"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></figure>
-      <figure class="about-mm__award"><img src="assets/legal-500.jpg" alt="The Legal 500"></figure>
-      <figure class="about-mm__award"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></figure>
-      <figure class="about-mm__award"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></figure>
-      <figure class="about-mm__award"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></figure>
-      <figure class="about-mm__award"><img src="assets/leaders-league-2026.png" alt="Leaders League 2026"></figure>
-      <figure class="about-mm__award"><img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026 — Reconhecimento Prata"></figure>
-    </div>
-
-  </div>
-</section>
-
 
 <section class="end">
   <div class="wrap">
@@ -592,23 +521,10 @@ img{max-width:100%;display:block}
 </section>
 </main>
 
-<footer class="footer" id="rodape">
+<footer class="foot-min" id="rodape">
   <div class="wrap">
-    <div class="footergrid">
-      <div>
-        <img src="assets/logo-white-transparent.png" alt="Menndel & Melo">
-        <p>Assessoria jurídica e tributária para empresas.</p>
-      </div>
-      <div>
-        <h3>Contatos</h3>
-        <p><b>Jurídico</b><br>(61) 99288-4739<br><b>Comercial</b><br>(61) 94758-1726</p>
-      </div>
-      <div>
-        <h3>Redes sociais</h3>
-        <p>Instagram · LinkedIn</p>
-      </div>
-    </div>
-    <div class="footerbottom">© 2026 Menndel & Melo. Todos os direitos reservados.</div>
+    <img src="assets/logo-white-transparent.png" alt="Menndel & Melo">
+    <span>© 2026 Menndel &amp; Melo Advocacia. Todos os direitos reservados.</span>
   </div>
 </footer>
 
@@ -621,4 +537,3 @@ document.getElementById("leadform").addEventListener("submit",function(e){
 
 </body>
 </html>
-
