@@ -145,13 +145,14 @@ img{max-width:100%;display:block}
 .about{background:#fff;padding:72px 0 64px}
 .about .section-title{color:var(--navy)}
 .about-copy{max-width:850px;font-size:14px;line-height:1.82;color:#536779}
-.numbers{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin:34px 0 40px}
-.number .value{font:normal clamp(34px,3vw,46px)/1 Impact,"Arial Narrow",sans-serif}
-.number .label{margin-top:9px;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#607487}
+.numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;align-items:start;margin:34px 0 40px}
+.number{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.number .value{font:normal clamp(34px,3vw,46px)/1 Impact,"Arial Narrow",sans-serif;color:var(--navy);margin:0 0 10px}
+.number .label{margin:0;min-height:34px;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#607487;display:flex;align-items:flex-start}
 .awards-title{margin-bottom:14px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
-.awards{display:grid;grid-template-columns:repeat(8,1fr);gap:14px}
-.award{min-height:104px;padding:6px;display:flex;align-items:center;justify-content:center;background:transparent}
-.award img{width:100%;height:86px;object-fit:contain}
+.awards{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:18px;align-items:center}
+.award{min-height:118px;padding:6px;display:flex;align-items:center;justify-content:center;background:transparent;border:0}
+.award img{display:block;max-width:100%;width:auto;height:92px;object-fit:contain}
 
 /* CTA FINAL / FOOTER */
 .end{background:var(--navy);color:#fff;padding:68px 0}
@@ -168,8 +169,8 @@ img{max-width:100%;display:block}
   .clients-row{grid-template-columns:repeat(5,1fr)}
   .cards{grid-template-columns:1fr}
   .steps{grid-template-columns:repeat(3,1fr)}
-  .numbers{grid-template-columns:repeat(3,1fr)}
-  .awards{grid-template-columns:repeat(4,1fr)}
+  .numbers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;align-items:start;margin:34px 0 40px}
+  .awards{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:18px;align-items:center}
 }
 @media(max-width:700px){
   .wrap{width:min(calc(100% - 34px),var(--container))}
@@ -362,14 +363,14 @@ img{max-width:100%;display:block}
 
     <div class="awards-title">RECONHECIMENTOS E PREMIAÇÕES</div>
     <div class="awards">
-      <div class="award"><img onerror="this.style.display='none'" src="assets/advogado-latino-americano.png" alt="The Latin American Lawyer"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/legal-500.png" alt="The Legal 500"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/great-place-to-work.png" alt="Great Place to Work"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/leaders-league-2026.png" alt="Leaders League 2026"></div>
-      <div class="award"><img onerror="this.style.display='none'" src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026"></div>
+      <div class="award"><img src="assets/advogado-latino-americano.png" alt="The Latin American Lawyer"></div>
+      <div class="award"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></div>
+      <div class="award"><img src="assets/legal-500.png" alt="The Legal 500"></div>
+      <div class="award"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></div>
+      <div class="award"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
+      <div class="award"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></div>
+      <div class="award"><img src="assets/leaders-league-2026.png" alt="Leaders League 2026"></div>
+      <div class="award"><img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026"></div>
     </div>
   </div>
 </section>
