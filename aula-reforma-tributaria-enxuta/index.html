@@ -552,6 +552,25 @@ img{max-width:100%;display:block}
   .duo-list li>span{font-size:32px}
 }
 </style>
+<style>
+/* ===== PLAYER COMPACTO: formulário na primeira dobra ===== */
+:root{--pw:min(900px,max(440px,calc((100vh - 500px) * 1.7778)))}
+.yt-grid{padding:16px 0 32px}
+.yt h1.yt-title{margin:12px 0 10px;font-size:20px}
+.yt-channel{padding-bottom:12px}
+.yt-channel .yt-badge{display:none}
+.yt-form{margin-top:14px;padding:16px 20px 12px}
+.yt-form-head{margin-bottom:10px}
+.yt-locked{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;background:rgba(237,132,68,.18);color:#FFC9A6;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.yt-locked::before{content:"";width:7px;height:6px;border:2px solid #FFC9A6;border-bottom:0;border-radius:5px 5px 0 0;box-shadow:0 5px 0 -1px #FFC9A6}
+.yt-unlock{cursor:pointer}
+.yt-thumb{container-type:inline-size}
+.yt-thumb-copy{gap:2.6cqw}
+.yt .yt-thumb-title{font-size:clamp(15px,5cqw,46px)}
+.yt .offer-pill{font-size:clamp(9px,1.4cqw,12px)}
+@media(max-width:1100px){:root{--pw:900px}}
+</style>
+<style>.yt-compact .yt-grid{width:min(calc(100% - 64px),var(--pw))}</style>
 </head>
 <body>
 
@@ -570,13 +589,13 @@ img{max-width:100%;display:block}
           <div class="yt-thumb-copy">
             <span class="offer-pill">AULA GRATUITA</span>
             <p class="yt-thumb-title impact">Planilhas não resolvem a transição tributária. <span class="accent">Critério resolve.</span></p>
-            <a class="yt-unlock" href="#formulario"><span class="yt-play" aria-hidden="true"></span><span><strong>Assistir à aula</strong><em class="yt-sub">Preencha seus dados abaixo para liberar</em></span></a>
+            <a class="yt-unlock" href="#formulario"><span class="yt-play" aria-hidden="true"></span><span><strong>Aula bloqueada</strong><em class="yt-sub">Preencha seus dados abaixo para assistir</em></span></a>
           </div>
           <div class="yt-thumb-photo"><img src="assets/menndel-macedo.jpg" alt="Dr. Menndel Macedo"></div>
         </div>
         <div class="yt-chrome" aria-hidden="true">
           <span class="yt-ctl-play"></span>
-          <span class="yt-time">0:00</span>
+          <span class="yt-time">0:00</span><span class="yt-locked">Bloqueado</span>
           <span class="yt-progress"><i></i></span>
           <span class="yt-icons"><i></i><i></i><i></i></span>
         </div>
