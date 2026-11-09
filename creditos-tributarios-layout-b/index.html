@@ -664,6 +664,41 @@ img{max-width:100%;display:block}
   .rules.rules-4{grid-template-columns:1fr}
 }
 </style>
+<style>
+/* ===== HERO LEVE: dor → solução ===== */
+.hl{background:#F5F7F9;color:var(--navy)}
+.hl .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.85fr);gap:7%;align-items:center;padding:72px 0 76px}
+.hl-eye{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+.hl-eye::before{content:"";width:26px;height:2px;background:var(--orange)}
+.hl h1{margin:20px 0 22px;max-width:640px;font-size:clamp(42px,4vw,62px);line-height:1.02;color:var(--navy)}
+.hl-sol{margin:0 0 30px;max-width:560px;font-size:19px;line-height:1.6;color:#4F6478}
+.hl .btn{border-radius:8px}
+.hl-card{padding:28px 28px 22px;border-radius:18px;background:#fff;box-shadow:0 24px 60px rgba(14,45,75,.12);color:var(--navy)}
+.hl-card .hl-step{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#8A99A8}
+.hl-card .hl-dots{display:flex;gap:6px}.hl-card .hl-dots i{width:22px;height:4px;border-radius:2px;background:#E3E8EC}.hl-card .hl-dots i.on{background:var(--orange)}
+.hl-card h2{margin:0 0 6px;font-size:22px;line-height:1.25;font-weight:800;font-family:"Open Sans",Arial,sans-serif;text-transform:none}
+.hl-card .intro{margin:0 0 18px;font-size:13px;line-height:1.5;color:#627489}
+.hl-card .fields{grid-template-columns:1fr;gap:12px}
+.hl-card .fields.two{grid-template-columns:1fr 1fr}
+.hl-card .field.full{grid-column:1/-1}
+.hl-card .field label{font-size:11px}
+.hl-card .field input,.hl-card .field select{height:44px;font-size:13px;border-color:#D5DCE2}
+.hl-card .btn{width:100%;margin-top:16px;border:0}
+.hl-card small{display:block;margin-top:10px;font-size:10px;line-height:1.45;color:#8A99A8}
+.hl-back{margin-top:10px;border:0;background:none;color:#627489;font-size:12px;text-decoration:underline;cursor:pointer}
+.hl-err{margin:8px 0 0;font-size:12px;color:#C0392B}
+.hl .clients-strip{background:var(--navy)}
+/* quiz uma pergunta por vez */
+.hlq-q{display:none}.hlq-q.on{display:block}
+.hlq-q p{margin:0 0 18px;font-size:20px;line-height:1.35;font-weight:800}
+.hlq-opts{display:grid;gap:10px}
+.hlq-opts button{height:50px;border:1px solid #D5DCE2;border-radius:10px;background:#fff;color:var(--navy);font-size:15px;font-weight:700;text-align:left;padding:0 18px;cursor:pointer;transition:.15s}
+.hlq-opts button:hover{border-color:var(--orange);background:#FFF8F3}
+.hlq-res{margin:0 0 14px;padding:12px 14px;border-radius:10px;background:#FFF4EC;font-size:13px;line-height:1.5}
+.hlq-res strong{display:block;font-size:14px}
+@media(max-width:1050px){.hl .hero-grid{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}}
+@media(max-width:560px){.hl-card .fields.two{grid-template-columns:1fr}.hl h1{font-size:38px}}
+</style>
 </head>
 <body>
 
@@ -682,61 +717,52 @@ img{max-width:100%;display:block}
   </div>
 </header>
 
-<section class="hero hx svc-b">
+<section class="hero hl svc-b">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="offer-tag"><span class="offer-pill">CRÉDITOS TRIBUTÁRIOS</span><span class="offer-sub">Apuração e operacionalização</span></div>
-      <h1 class="impact">
-        CRÉDITO IDENTIFICADO<br>
-        SÓ GERA EFEITO QUANDO<br>
-        É CORRETAMENTE APURADO<br>
-        <span class="accent">E UTILIZADO.</span>
-      </h1>
-      <p class="hero-lead">Apuração e operacionalização de créditos administrativos e judiciais com análise técnica, documentação e acompanhamento da utilização.</p>
-
-      <div class="hero-facts"><div><strong>02 frentes</strong><span>fiscal e jurídica conectadas</span></div><div><strong>2 origens</strong><span>créditos administrativos e judiciais</span></div></div>
+      <span class="hl-eye">Créditos tributários · apuração e operacionalização</span>
+      <h1 class="impact">Crédito identificado não é crédito utilizado.</h1>
+      <p class="hl-sol">Ele só gera efeito quando é corretamente apurado e utilizado. Cuidamos dessa etapa com integração entre as áreas fiscal e jurídica.</p>
+      <a class="btn" href="#formulario">Fazer o diagnóstico rápido →</a>
     </div>
-    <aside class="form qz" id="formulario">
-      <div class="eyebrow">DIAGNÓSTICO RÁPIDO · 4 PERGUNTAS</div>
-      <h2>SEUS CRÉDITOS ESTÃO PRONTOS PARA SER UTILIZADOS?</h2>
-      <p class="intro">Responda em menos de 1 minuto e receba o contato da equipe.</p>
+    <aside class="hl-card" id="formulario">
       <form id="leadform">
-        <div id="qzQuestions">
-          <div class="qz-progress"><i id="qzBar"></i></div>
-          <div class="qz-q" data-signal="Sim">
-            <p><span>01</span>Sua empresa possui créditos tributários já identificados?</p>
-            <div class="qz-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
+        <div class="hl-step"><span id="hlqTxt">Diagnóstico · 1 de 4</span><span class="hl-dots"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+        <div id="hlqQs">
+          <div class="hlq-q on" data-signal="Sim">
+            <p>Sua empresa possui créditos tributários já identificados?</p>
+            <div class="hlq-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
             <input type="hidden" name="diag_1" value="">
           </div>
-          <div class="qz-q" data-signal="Sim">
-            <p><span>02</span>Há créditos reconhecidos em decisão judicial?</p>
-            <div class="qz-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
+          <div class="hlq-q" data-signal="Sim">
+            <p>Há créditos reconhecidos em decisão judicial?</p>
+            <div class="hlq-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
             <input type="hidden" name="diag_2" value="">
           </div>
-          <div class="qz-q" data-signal="Não">
-            <p><span>03</span>Os valores já têm memória de cálculo e documentação organizadas?</p>
-            <div class="qz-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
+          <div class="hlq-q" data-signal="Não">
+            <p>Os valores já têm memória de cálculo e documentação organizadas?</p>
+            <div class="hlq-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
             <input type="hidden" name="diag_3" value="">
           </div>
-          <div class="qz-q" data-signal="Não">
-            <p><span>04</span>O crédito já está sendo utilizado ou compensado?</p>
-            <div class="qz-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
+          <div class="hlq-q" data-signal="Não">
+            <p>O crédito já está sendo utilizado ou compensado?</p>
+            <div class="hlq-opts"><button type="button" data-v="Sim">Sim</button><button type="button" data-v="Não">Não</button><button type="button" data-v="Não sei">Não sei</button></div>
             <input type="hidden" name="diag_4" value="">
           </div>
         </div>
-        <div id="qzForm" hidden>
-          <div class="qz-result" id="qzResult"></div>
-          <div class="fields">
-          <div class="field full"><label for="nome">Nome *</label><input id="nome" name="nome" required placeholder="Seu nome"></div>
-          <div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" required placeholder="Razão social"></div>
-          <div class="field"><label for="cargo">Cargo *</label><input id="cargo" name="cargo" required placeholder="Seu cargo"></div>
-          <div class="field"><label for="email">E-mail corporativo *</label><input id="email" name="email" required type="email" placeholder="nome@empresa.com.br"></div>
-          <div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone" required type="tel" placeholder="(00) 00000-0000"></div>
-          <div class="field"><label for="origem">Origem do crédito *</label><select id="origem" name="origem" required><option value="">Selecione</option><option>Administrativo</option><option>Judicial</option><option>Administrativo e judicial</option><option>Ainda não sei</option></select></div>
-          <div class="field"><label for="situacao">Situação atual *</label><select id="situacao" name="situacao" required><option value="">Selecione</option><option>Ainda em levantamento</option><option>Identificado, ainda não apurado</option><option>Apurado, ainda não utilizado</option><option>Reconhecido judicialmente</option><option>Em utilização</option><option>Outro</option></select></div>
+        <div id="hlqForm" hidden>
+          <div class="hlq-res" id="hlqRes"></div>
+          <div class="fields two">
+            <div class="field full"><label for="nome">Nome *</label><input id="nome" name="nome" required placeholder="Seu nome"></div>
+            <div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" required placeholder="Razão social"></div>
+            <div class="field"><label for="cargo">Cargo *</label><input id="cargo" name="cargo" required placeholder="Seu cargo"></div>
+            <div class="field"><label for="email">E-mail corporativo *</label><input id="email" name="email" required type="email" placeholder="nome@empresa.com.br"></div>
+            <div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone" required type="tel" placeholder="(00) 00000-0000"></div>
+            <div class="field"><label for="origem">Origem do crédito *</label><select id="origem" name="origem" required><option value="">Selecione</option><option>Administrativo</option><option>Judicial</option><option>Administrativo e judicial</option><option>Ainda não sei</option></select></div>
+            <div class="field"><label for="situacao">Situação atual *</label><select id="situacao" name="situacao" required><option value="">Selecione</option><option>Ainda em levantamento</option><option>Identificado, ainda não apurado</option><option>Apurado, ainda não utilizado</option><option>Reconhecido judicialmente</option><option>Em utilização</option><option>Outro</option></select></div>
           </div>
           <button class="btn" type="submit">Solicitar análise inicial →</button>
-          <button class="qz-back" type="button" id="qzBack">← Rever respostas</button>
+          <button class="hl-back" type="button" id="hlqBack">← Refazer diagnóstico</button>
         </div>
         <small id="status">* Campos obrigatórios. Ao enviar, você concorda com o uso das informações para contato e comunicações relacionadas aos serviços do escritório.</small>
       </form>
@@ -874,24 +900,28 @@ document.getElementById("leadform").addEventListener("submit",function(e){
 
 <script>
 (function(){
-  var qs=[].slice.call(document.querySelectorAll(".qz-q")),bar=document.getElementById("qzBar");
-  function val(q){return q.querySelector("input").value;}
-  function show(){
-    var sig=qs.filter(function(q){return val(q)===q.getAttribute("data-signal");}).length;
-    var unk=qs.filter(function(q){return val(q)==="Não sei";}).length;
-    var r=document.getElementById("qzResult");
-    if(sig>0){r.innerHTML="<strong>Identificamos "+sig+(sig>1?" pontos":" ponto")+" de atenção.</strong>"+'Esses pontos indicam etapas de apuração ou operacionalização que podem precisar de estrutura antes da utilização.';}
-    else if(unk>0){r.innerHTML="<strong>Algumas respostas precisam de verificação.</strong>"+'A origem e o estágio do crédito definem o escopo. A análise inicial esclarece esses pontos.';}
-    else{r.innerHTML="<strong>Pelas respostas, o cenário parece organizado.</strong>"+'Ainda assim, a validação prévia ajuda a sustentar a utilização. Se quiser, a equipe pode revisar o cenário.';}
-    document.getElementById("qzQuestions").hidden=true;document.getElementById("qzForm").hidden=false;
+  var qs=[].slice.call(document.querySelectorAll(".hlq-q")),dots=document.querySelectorAll(".hl-dots i"),txt=document.getElementById("hlqTxt"),i=0;
+  function paint(){qs.forEach(function(q,k){q.classList.toggle("on",k===i);});[].forEach.call(dots,function(d,k){d.className=k<=i?"on":"";});}
+  function result(){
+    var sig=qs.filter(function(q){return q.querySelector("input").value===q.getAttribute("data-signal");}).length;
+    var unk=qs.filter(function(q){return q.querySelector("input").value==="Não sei";}).length;
+    var r=document.getElementById("hlqRes");
+    if(sig>0)r.innerHTML="<strong>Identificamos "+sig+(sig>1?" pontos":" ponto")+" de atenção.</strong>"+'Esses pontos indicam etapas de apuração ou operacionalização que podem precisar de estrutura antes da utilização.';
+    else if(unk>0)r.innerHTML="<strong>Algumas respostas precisam de verificação.</strong>"+'A origem e o estágio do crédito definem o escopo. A análise inicial esclarece esses pontos.';
+    else r.innerHTML="<strong>Pelas respostas, o cenário parece organizado.</strong>"+'Ainda assim, a validação prévia ajuda a sustentar a utilização. Se quiser, a equipe pode revisar o cenário.';
+    document.getElementById("hlqQs").hidden=true;document.getElementById("hlqForm").hidden=false;
+    txt.textContent="Seus dados";[].forEach.call(dots,function(d){d.className="on";});
     document.getElementById("nome").focus();
   }
   qs.forEach(function(q){q.querySelectorAll("button").forEach(function(b){b.addEventListener("click",function(){
-    q.querySelectorAll("button").forEach(function(x){x.classList.remove("on");});b.classList.add("on");
     q.querySelector("input").value=b.getAttribute("data-v");
-    var n=qs.filter(function(x){return val(x);}).length;bar.style.width=(n/qs.length*100)+"%";
-    if(n===qs.length)setTimeout(show,250);});});});
-  document.getElementById("qzBack").addEventListener("click",function(){document.getElementById("qzForm").hidden=true;document.getElementById("qzQuestions").hidden=false;});
+    if(i<qs.length-1){i++;txt.textContent="Diagnóstico · "+(i+1)+" de "+qs.length;paint();}else{result();}
+  });});});
+  document.getElementById("hlqBack").addEventListener("click",function(){
+    i=0;qs.forEach(function(q){q.querySelector("input").value="";});
+    document.getElementById("hlqForm").hidden=true;document.getElementById("hlqQs").hidden=false;
+    txt.textContent="Diagnóstico · 1 de "+qs.length;paint();
+  });
 })();
 </script>
 </body>
