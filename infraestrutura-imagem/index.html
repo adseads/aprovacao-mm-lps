@@ -40,8 +40,8 @@ img{max-width:100%;display:block}
 /* HEADER */
 .site-head{height:68px;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
 .headinner{height:68px;display:flex;align-items:center;gap:26px}
-.brand{width:132px;flex:none}
-.brand img{width:132px;height:auto}
+.brand{width:108px;flex:none}
+.brand img{width:108px;height:auto}
 .headnav{margin-left:auto;display:flex;align-items:center;gap:clamp(12px,1.7vw,28px)}
 .headnav a{font-size:11px;font-weight:700;white-space:nowrap}
 .headnav a:hover{color:var(--orange)}
@@ -114,13 +114,26 @@ img{max-width:100%;display:block}
 .clients-strip{padding:12px 0 17px;background:rgba(8,39,64,.58)}
 .clients-title{text-align:center;margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#fff}
 .clients-row{display:grid;grid-template-columns:repeat(10,minmax(78px,1fr));gap:22px;align-items:center}
-.client-logo{height:34px;display:flex;align-items:center;justify-content:center}
+.client-logo{
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  isolation:isolate;
+}
 .client-logo img{
   width:100%;
   height:100%;
   object-fit:contain;
-  filter:grayscale(1) brightness(0) invert(1);
-  opacity:.95;
+  filter:grayscale(1) invert(1) contrast(1.2) brightness(1.15);
+  mix-blend-mode:screen;
+  opacity:.92;
+}
+/* Arquivos com fundo branco: o branco vira preto pelo invert e o screen elimina o bloco no azul */
+.client-logo img[src$=".jpg"],
+.client-logo img[src$=".jpeg"]{
+  filter:grayscale(1) invert(1) contrast(1.35) brightness(1.05);
+  mix-blend-mode:screen;
 }
 
 /* CONTEÚDO */
@@ -133,12 +146,14 @@ img{max-width:100%;display:block}
 .card h3{font-size:18px;line-height:1.35;margin:15px 0}
 .card p{font-size:14px;line-height:1.72;color:#576B7C;margin:0 0 20px}
 .card .tag{margin-top:auto;padding-top:13px;border-top:1px solid #D6DCE0;font-size:10px;font-weight:800}
-.process{background:#E8EEF2;border-top:4px solid var(--orange)}
+.process{background:var(--navy);color:#fff;border-top:0}
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
-.step{background:var(--navy);color:#fff;border-top:4px solid var(--orange);padding:21px 18px 23px;min-height:185px}
+.step{background:#173B5C;color:#fff;border-top:3px solid var(--orange);padding:21px 18px 23px;min-height:185px}
 .step strong{font:normal 37px Impact,"Arial Narrow",sans-serif;color:var(--orange)}
 .step h3{font-size:15px;margin:10px 0 8px}
 .step p{font-size:12px;line-height:1.65;color:#D9E3EB;margin:0}
+.process .section-title{color:#fff}
+.process .eyebrow{color:var(--orange)}
 
 /* SOBRE — branco aprovado */
 .about{background:#fff;padding:72px 0 64px}
@@ -149,8 +164,8 @@ img{max-width:100%;display:block}
 .number .label{margin-top:9px;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#607487}
 .awards-title{margin-bottom:14px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
 .awards{display:grid;grid-template-columns:repeat(8,1fr);gap:14px}
-.award{min-height:116px;border:1px solid #E0E6EB;padding:10px;display:flex;align-items:center;justify-content:center}
-.award img{width:100%;height:90px;object-fit:contain}
+.award{min-height:104px;padding:6px;display:flex;align-items:center;justify-content:center;background:transparent}
+.award img{width:100%;height:86px;object-fit:contain}
 
 /* CTA FINAL / FOOTER */
 .end{background:var(--navy);color:#fff;padding:68px 0}
@@ -174,7 +189,7 @@ img{max-width:100%;display:block}
   .wrap{width:min(calc(100% - 34px),var(--container))}
   .headnav{display:none}
   .header-cta{font-size:11px;padding:10px 12px}
-  .brand,.brand img{width:118px}
+  .brand,.brand img{width:98px}
   .hero h1{font-size:clamp(39px,10vw,51px)}
   .hero-lead{font-size:16px}
   .fields{grid-template-columns:1fr}
@@ -361,14 +376,14 @@ img{max-width:100%;display:block}
 
     <div class="awards-title">RECONHECIMENTOS E PREMIAÇÕES</div>
     <div class="awards">
-      <div class="award"><img src="assets/latin-american-lawyer.png" alt="The Latin American Lawyer"></div>
-      <div class="award"><img src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></div>
-      <div class="award"><img src="assets/legal-500.png" alt="The Legal 500"></div>
-      <div class="award"><img src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></div>
-      <div class="award"><img src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
-      <div class="award"><img src="assets/great-place-to-work.png" alt="Great Place to Work"></div>
-      <div class="award"><img src="assets/leaders-league-2026.png" alt="Leaders League 2026"></div>
-      <div class="award"><img src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/advogado-latino-americano.png" alt="The Latin American Lawyer"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/analise-dna-2026.png" alt="Análise DNA 2026"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/legal-500.png" alt="The Legal 500"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/women-awards-2026.jpg" alt="Women Awards 2026"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/parceira-natureza.png" alt="Empresa Parceira da Natureza"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/great-place-to-work.png" alt="Great Place to Work"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/leaders-league-2026.png" alt="Leaders League 2026"></div>
+      <div class="award"><img onerror="this.style.display='none'" src="assets/fenalaw-2026-prata.png" alt="Fenalaw 2026"></div>
     </div>
   </div>
 </section>
