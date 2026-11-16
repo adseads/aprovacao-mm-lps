@@ -224,3 +224,19 @@ button,input,select{font:inherit}
   .selo.grande{font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* ---------- agenda: evento institucional e destaque ---------- */
+.ev-inst{display:grid;grid-template-columns:96px minmax(0,1fr);gap:22px;background:var(--marinho);color:#fff;padding:24px 26px;border-left:6px solid var(--laranja)}
+.ev-inst-data{background:var(--laranja);text-align:center;padding:12px 0;align-self:start}
+.ev-inst-data b{display:block;font:900 40px/1 var(--f-marca)}
+.ev-inst-data span{font:800 14px/1 var(--f-marca);text-transform:uppercase;letter-spacing:.1em}
+.ev-tag{display:inline-block;font:800 11px/1 var(--f-marca);letter-spacing:.16em;text-transform:uppercase;color:#f3a57f;margin-bottom:8px}
+.ev-inst h3{font:800 clamp(22px,2.2vw,28px)/1.15 var(--f-titulo);margin:0 0 8px;color:#fff}
+.ev-chamada{margin:0 0 10px;color:#d7daf3;font-size:15px}
+.ev-local{display:flex;align-items:center;gap:6px;font:700 14px var(--f-apoio);color:#fff;margin:0 0 16px}
+.ev-local svg{width:16px;height:16px;fill:#f3a57f;flex:none}
+.ev-grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:24px}
+.ev-tag-d,.ev-tag-a{display:inline-block;font:800 10.5px/1 var(--f-apoio);letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;margin-bottom:8px}
+.ev-tag-d{background:var(--laranja);color:#fff}
+.ev-tag-a{background:var(--agro);color:#fff}
+@media (max-width:820px){.ev-grade{grid-template-columns:1fr}.ev-inst{grid-template-columns:64px 1fr;gap:14px;padding:18px}.ev-inst-data b{font-size:28px}}
