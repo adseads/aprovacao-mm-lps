@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portal Diálogos Estruturantes | Variações de layout</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--marinho:#050b4d;--laranja:#ed713a;--tinta:#1b2033;--cinza:#5a6273;--linha:#e1e5ee;--nevoa:#f3f5f9}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 Arial,Helvetica,sans-serif;color:var(--tinta);background:#fff}
+a{color:var(--marinho)}:focus-visible{outline:3px solid var(--laranja);outline-offset:2px}
+header{background:var(--marinho);color:#fff;padding:44px 0 36px}
+.wrap{width:min(1100px,100% - 32px);margin:auto}
+h1{font-size:34px;line-height:1.1;margin:0 0 10px;letter-spacing:-.5px}
+header p{margin:0;max-width:680px;color:#cdd2f0}
+.dir{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:32px 0;border-bottom:1px solid var(--linha)}
+.dir h2{font-size:24px;margin:0 0 4px;color:var(--marinho)}
+.dir .tag{font-size:14px;color:var(--cinza);margin:0}
+.dir p{margin:0 0 14px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{display:inline-block;padding:10px 14px;border:1px solid var(--linha);border-radius:6px;text-decoration:none;font-weight:700;font-size:14px}
+.links a:hover{border-color:var(--marinho);background:var(--nevoa)}
+.niveis{background:var(--nevoa);border-radius:8px;padding:22px 24px;margin:32px 0}
+.niveis h2{margin:0 0 8px;font-size:20px;color:var(--marinho)}
+.niveis table{width:100%;border-collapse:collapse;font-size:15px;margin-top:10px}
+.niveis th,.niveis td{text-align:left;padding:10px 8px;border-top:1px solid var(--linha);vertical-align:top}
+.niveis th{font-size:13px;color:var(--cinza)}
+footer{font-size:13px;color:var(--cinza);padding:24px 0 40px}
+@media (max-width:700px){.dir{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Portal Diálogos Estruturantes: variações de layout</h1>
+<p>Três direções visuais para a home, a matéria com foto e a matéria com vídeo. Em todas as páginas, o seletor no canto inferior direito mostra os três níveis de anúncio.</p>
+</div></header>
+<main class="wrap">
+
+<section class="dir">
+  <div><h2>A. Dossiê</h2><p class="tag">Jornal de referência</p></div>
+  <div>
+    <p>Títulos e texto em serifa, cabeçalho branco com o nome do portal em destaque e barra de editorias em azul-marinho. O contexto da manchete ("Por que importa" e próximos marcos) fica ao lado dela, e a temperatura de decisão aparece numa faixa logo abaixo.</p>
+    <div class="links"><a href="a/index.html">Home</a><a href="a/materia-foto.html">Matéria com foto</a><a href="a/materia-video.html">Matéria com vídeo</a></div>
+  </div>
+</section>
+
+<section class="dir">
+  <div><h2>B. Painel</h2><p class="tag">Briefing de decisões</p></div>
+  <div>
+    <p>A home abre com o Painel de decisões: uma tabela com cada tema, a situação, o próximo marco e a data, ao lado da agenda. Fonte sem serifa, fundo cinza-azulado e blocos brancos. Na matéria, um resumo "Em 30 segundos" e o tema acompanhado na lateral.</p>
+    <div class="links"><a href="b/index.html">Home</a><a href="b/materia-foto.html">Matéria com foto</a><a href="b/materia-video.html">Matéria com vídeo</a></div>
+  </div>
+</section>
+
+<section class="dir">
+  <div><h2>C. Revista</h2><p class="tag">Imagem e tipografia larga</p></div>
+  <div>
+    <p>Manchete com foto em tela cheia e título em letra larga e pesada, faixa "Em pauta" com a temperatura de decisão, faixa de vídeo em modo cinema e Minuta em laranja. A matéria usa capa grande e texto em serifa.</p>
+    <div class="links"><a href="c/index.html">Home</a><a href="c/materia-foto.html">Matéria com foto</a><a href="c/materia-video.html">Matéria com vídeo</a></div>
+  </div>
+</section>
+
+<section class="niveis" aria-labelledby="nv-h">
+  <h2 id="nv-h">Os três níveis de anúncio</h2>
+  <p>Seguem a mesma lógica dos layouts Discreta, Equilibrada e Intensiva. Também dá para abrir direto num nível pelo endereço, por exemplo <code>a/materia-foto.html?anuncios=intensiva</code>.</p>
+  <table>
+    <thead><tr><th>Nível</th><th>Matéria</th><th>Home</th></tr></thead>
+    <tbody>
+      <tr><td><b>Leve</b></td><td>Banner do topo</td><td>Banner do topo</td></tr>
+      <tr><td><b>Equilibrada</b></td><td>Topo, um anúncio entre parágrafos, 320×100 no celular, lateral 300×250 e half page 300×600</td><td>Topo, lateral 300×250 e rodapé</td></tr>
+      <tr><td><b>Intensiva</b></td><td>Tudo da equilibrada, mais um segundo anúncio no texto e o banner de rodapé</td><td>Tudo da equilibrada, mais um ou dois espaços extras no meio da página</td></tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+<footer class="wrap">Conteúdo ilustrativo para aprovação de layout. Títulos, datas, status e pessoas não são reais. Fotos de demonstração: Unsplash. O nome do portal está em texto provisório até recebermos o arquivo do logo oficial.</footer>
+</body>
+</html>
