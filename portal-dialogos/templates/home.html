@@ -19,7 +19,7 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
-
+.nao-cabe{display:none!important}
 .manchete{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:40px;padding:36px 0 44px}
 .manchete .foto{position:relative}
 .manchete .foto img{aspect-ratio:16/10;object-fit:cover;width:100%}
@@ -100,8 +100,8 @@
 
 <section class="bloco" aria-labelledby="h-op"><div class="wrap com-lateral">
   <div><div class="cab-bloco"><h2 id="h-op" class="titulo-secao">Opinião</h2><a class="ver-tudo" href="opiniao.html" data-componente="ver-tudo" data-posicao="opiniao">Todos os artigos</a></div>
-  <div class="opinioes"><a class="ed-portos" href="opiniao.html" data-componente="opiniao" data-posicao="1" data-conteudo-id="ormuz"><span class="avatar ed-portos" aria-hidden="true">MB</span><span><span class="h4 t">De Ormuz aos portos brasileiros: os custos de uma crise distante</span><small>Marília Fernanda de Souza Bernardes</small></span></a><a class="ed-infra" href="opiniao.html" data-componente="opiniao" data-posicao="2" data-conteudo-id="quemdecide"><span class="avatar ed-infra" aria-hidden="true">LD</span><span><span class="h4 t">Quem decide o futuro da infraestrutura?</span><small>Luciana Dutra</small></span></a><a class="ed-regulacao" href="opiniao.html" data-componente="opiniao" data-posicao="3" data-conteudo-id="secex"><span class="avatar ed-regulacao" aria-hidden="true">MJ</span><span><span class="h4 t">SecexConsenso e CCAF: as portas e os limites da consensualidade nas concessões</span><small>Murilo Jacoby</small></span></a><a class="ed-agro" href="opiniao.html" data-componente="opiniao" data-posicao="4" data-conteudo-id="seguro"><span class="avatar ed-agro" aria-hidden="true">TZ</span><span><span class="h4 t">Seguro rural: proteção para produzir em tempos de incerteza</span><small>Tânia Zanella</small></span></a></div></div>
-  <aside class="lateral" aria-label="Destaques e publicidade"><div class="ad  nv-eq" data-componente="anuncio" data-posicao="lateral-1"><span class="ad-label">Publicidade</span><div class="ad-box" style="aspect-ratio:300/250;max-width:300px">300 × 250</div></div><section class="mais-lidas" aria-labelledby="ml-h"><h3 id="ml-h">Mais lidas</h3><ol><li><a class="t" href="explicador.html" data-componente="mais-lidas" data-posicao="1">STF tira o ISS da conta do PIS e da Cofins: o que muda para quem presta serviço</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="2">ZPE em Mato Grosso do Sul será a 5ª a operar no país</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="3">Um ano depois, o Pacto ainda espera pelo futuro</a></li><li><a class="t" href="materia-video.html" data-componente="mais-lidas" data-posicao="4">“A conta do frete ainda não fecha”</a></li><li><a class="t" href="opiniao.html" data-componente="mais-lidas" data-posicao="5">De Ormuz aos portos brasileiros: os custos de uma crise distante</a></li></ol></section></aside>
+  <div class="opinioes"><a class="ed-portos" href="opiniao.html" data-componente="opiniao" data-posicao="1" data-conteudo-id="ormuz"><span class="avatar ed-portos" aria-hidden="true">MB</span><span><span class="h4 t">De Ormuz aos portos brasileiros: os custos de uma crise distante</span><small>Marília Fernanda de Souza Bernardes</small></span></a><a class="ed-infra" href="opiniao.html" data-componente="opiniao" data-posicao="2" data-conteudo-id="quemdecide"><span class="avatar ed-infra" aria-hidden="true">LD</span><span><span class="h4 t">Quem decide o futuro da infraestrutura?</span><small>Luciana Dutra</small></span></a><a class="ed-regulacao" href="opiniao.html" data-componente="opiniao" data-posicao="3" data-conteudo-id="secex"><span class="avatar ed-regulacao" aria-hidden="true">MJ</span><span><span class="h4 t">SecexConsenso e CCAF: as portas e os limites da consensualidade nas concessões</span><small>Murilo Jacoby</small></span></a><a class="ed-agro" href="opiniao.html" data-componente="opiniao" data-posicao="4" data-conteudo-id="seguro"><span class="avatar ed-agro" aria-hidden="true">TZ</span><span><span class="h4 t">Seguro rural: proteção para produzir em tempos de incerteza</span><small>Tânia Zanella</small></span></a><a class="ed-portos" href="opiniao.html" data-componente="opiniao" data-posicao="5" data-conteudo-id="datacenter"><span class="avatar ed-portos" aria-hidden="true">HG</span><span><span class="h4 t">Data centers e ZPEs: o nexo virtuoso</span><small>Helson Braga e Raul Gouveia</small></span></a><a class="ed-direito" href="opiniao.html" data-componente="opiniao" data-posicao="6" data-conteudo-id="reforma"><span class="avatar ed-direito" aria-hidden="true">WM</span><span><span class="h4 t">A reforma tributária e o preço dos serviços públicos</span><small>Waleska Lemos Morais</small></span></a></div></div>
+  <aside class="lateral" aria-label="Destaques e publicidade"><div class="ad  nv-eq" data-componente="anuncio" data-posicao="lateral-1"><span class="ad-label">Publicidade</span><div class="ad-box" style="aspect-ratio:300/250;max-width:300px">300 × 250</div></div><section class="mais-lidas" aria-labelledby="ml-h"><h3 id="ml-h">Mais lidas</h3><ol><li><a class="t" href="explicador.html" data-componente="mais-lidas" data-posicao="1">STF tira o ISS da conta do PIS e da Cofins: o que muda para quem presta serviço</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="2">ZPE em Mato Grosso do Sul será a 5ª a operar no país</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="3">Um ano depois, o Pacto ainda espera pelo futuro</a></li></ol></section></aside>
 </div></section>
 
 <section class="faixa-ed ed-agro bloco" aria-labelledby="h-agro"><div class="wrap">
@@ -178,6 +178,35 @@
     var open = document.body.classList.toggle('menu-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
+
+(function(){
+  // A coluna lateral nunca fica maior que o conteúdo: blocos do fim que não cabem são ocultados
+  // (no WordPress, o espaço de anúncio oculto não é solicitado ao Ad Manager).
+  var FOLGA = 130;
+  function fundo(el){ var t = el.getBoundingClientRect().top, m = t;
+    Array.prototype.forEach.call(el.children, function(c){ if (c.offsetParent !== null) m = Math.max(m, c.getBoundingClientRect().bottom); });
+    return m - t; }
+  function ajustar(){
+    document.querySelectorAll('.com-lateral, .trio').forEach(function(g){
+      var aside = g.querySelector(':scope > aside'); if (!aside) return;
+      aside.querySelectorAll('.nao-cabe').forEach(function(e){ e.classList.remove('nao-cabe'); });
+      if (window.innerWidth <= 980) return;
+      var alvo = 0;
+      Array.prototype.forEach.call(g.children, function(c){ if (c !== aside) alvo = Math.max(alvo, fundo(c)); });
+      var itens = [];
+      Array.prototype.forEach.call(aside.children, function(c){
+        if (c.classList.contains('gruda')) Array.prototype.forEach.call(c.children, function(x){ itens.push(x); });
+        else itens.push(c);
+      });
+      itens = itens.filter(function(x){ return x.offsetParent !== null; });
+      for (var i = itens.length - 1; i > 0 && fundo(aside) > alvo + FOLGA; i--) itens[i].classList.add('nao-cabe');
+    });
+  }
+  window.addEventListener('load', ajustar);
+  window.addEventListener('resize', function(){ clearTimeout(window.__aj); window.__aj = setTimeout(ajustar, 150); });
+  document.querySelectorAll('[data-nivel]').forEach(function(b){ b.addEventListener('click', function(){ setTimeout(ajustar, 30); }); });
+  ajustar();
 })();
 </script>
 </body>

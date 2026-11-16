@@ -19,7 +19,7 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
-
+.nao-cabe{display:none!important}
 .manchete2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:36px;padding:30px 0 34px}
 .manchete2 .foto{position:relative}
 .manchete2 .foto img{aspect-ratio:16/9;object-fit:cover;width:100%}
@@ -117,9 +117,11 @@
 <div class="wrap trio">
   <article class="pod-mini ed-podcast"><a class="video" href="episodio.html" data-componente="podcast-destaque" data-posicao="home"><img class="" src="assets/img/podcast-ep05.jpg" alt="Rafael Sacchi e Luiz Roberto Marinho no estúdio" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></span><span class="duracao">42 min</span></a>
     <div class="in"><span class="seta-rotulo"><span class="s">→</span><span class="r">Podcast | Ep. 05</span></span><h2 class="h3"><a class="t" href="episodio.html" data-componente="podcast-destaque" data-posicao="titulo">Investimento em infraestrutura deve ser política de Estado</a></h2><p>Com Rafael Sacchi, presidente do Sicepot-RS</p><a class="btn btn-laranja" href="podcast.html" data-componente="podcast-cta" data-posicao="home">Todos os episódios</a></div></article>
-  <div class="op-lista"><h2>Opinião</h2><a class="ed-portos" href="opiniao.html" data-componente="opiniao" data-posicao="1"><span class="avatar ed-portos" aria-hidden="true">MB</span><span><span class="h4 t">De Ormuz aos portos brasileiros: os custos de uma crise distante</span><small>Marília Fernanda de Souza Bernardes</small></span></a><a class="ed-infra" href="opiniao.html" data-componente="opiniao" data-posicao="2"><span class="avatar ed-infra" aria-hidden="true">LD</span><span><span class="h4 t">Quem decide o futuro da infraestrutura?</span><small>Luciana Dutra</small></span></a><a class="ed-agro" href="opiniao.html" data-componente="opiniao" data-posicao="3"><span class="avatar ed-agro" aria-hidden="true">TZ</span><span><span class="h4 t">Seguro rural: proteção para produzir em tempos de incerteza</span><small>Tânia Zanella</small></span></a><p style="margin:14px 0 0"><a class="ver-tudo" href="opiniao.html" data-componente="ver-tudo" data-posicao="opiniao">Todos os artigos</a></p></div>
-  <aside class="lateral"><div class="ad  nv-eq" data-componente="anuncio" data-posicao="lateral-1"><span class="ad-label">Publicidade</span><div class="ad-box" style="aspect-ratio:300/250;max-width:300px">300 × 250</div></div><section class="mais-lidas" aria-labelledby="ml-h"><h3 id="ml-h">Mais lidas</h3><ol><li><a class="t" href="explicador.html" data-componente="mais-lidas" data-posicao="1">STF tira o ISS da conta do PIS e da Cofins: o que muda para quem presta serviço</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="2">ZPE em Mato Grosso do Sul será a 5ª a operar no país</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="3">Um ano depois, o Pacto ainda espera pelo futuro</a></li></ol></section><div class="ad  nv-int" data-componente="anuncio" data-posicao="meio-half-page"><span class="ad-label">Publicidade</span><div class="ad-box" style="aspect-ratio:300/600;max-width:300px">300 × 600</div></div></aside>
+  <div class="op-lista"><h2>Opinião</h2><a class="ed-portos" href="opiniao.html" data-componente="opiniao" data-posicao="1"><span class="avatar ed-portos" aria-hidden="true">MB</span><span><span class="h4 t">De Ormuz aos portos brasileiros: os custos de uma crise distante</span><small>Marília Fernanda de Souza Bernardes</small></span></a><a class="ed-infra" href="opiniao.html" data-componente="opiniao" data-posicao="2"><span class="avatar ed-infra" aria-hidden="true">LD</span><span><span class="h4 t">Quem decide o futuro da infraestrutura?</span><small>Luciana Dutra</small></span></a><a class="ed-agro" href="opiniao.html" data-componente="opiniao" data-posicao="3"><span class="avatar ed-agro" aria-hidden="true">TZ</span><span><span class="h4 t">Seguro rural: proteção para produzir em tempos de incerteza</span><small>Tânia Zanella</small></span></a><a class="ed-regulacao" href="opiniao.html" data-componente="opiniao" data-posicao="4"><span class="avatar ed-regulacao" aria-hidden="true">MJ</span><span><span class="h4 t">SecexConsenso e CCAF: as portas e os limites da consensualidade nas concessões</span><small>Murilo Jacoby</small></span></a><p style="margin:14px 0 0"><a class="ver-tudo" href="opiniao.html" data-componente="ver-tudo" data-posicao="opiniao">Todos os artigos</a></p></div>
+  <aside class="lateral"><div class="ad  nv-eq" data-componente="anuncio" data-posicao="lateral-1"><span class="ad-label">Publicidade</span><div class="ad-box" style="aspect-ratio:300/250;max-width:300px">300 × 250</div></div><section class="mais-lidas" aria-labelledby="ml-h"><h3 id="ml-h">Mais lidas</h3><ol><li><a class="t" href="explicador.html" data-componente="mais-lidas" data-posicao="1">STF tira o ISS da conta do PIS e da Cofins: o que muda para quem presta serviço</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="2">ZPE em Mato Grosso do Sul será a 5ª a operar no país</a></li><li><a class="t" href="materia.html" data-componente="mais-lidas" data-posicao="3">Um ano depois, o Pacto ainda espera pelo futuro</a></li></ol></section></aside>
 </div>
+
+<div class="ad-faixa wrap nv-int"><div class="ad " data-componente="anuncio" data-posicao="meio"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/90;--mw:970px"><span class="d">970 × 90</span><span class="m">320 × 100</span></div></div></div>
 
 <section class="agenda-faixa" id="agenda" aria-labelledby="h-ag2"><div class="wrap linha">
   <div><h2 id="h-ag2" class="titulo-secao" style="font-size:26px">Agenda</h2></div>
@@ -182,6 +184,35 @@
     var open = document.body.classList.toggle('menu-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
+
+(function(){
+  // A coluna lateral nunca fica maior que o conteúdo: blocos do fim que não cabem são ocultados
+  // (no WordPress, o espaço de anúncio oculto não é solicitado ao Ad Manager).
+  var FOLGA = 130;
+  function fundo(el){ var t = el.getBoundingClientRect().top, m = t;
+    Array.prototype.forEach.call(el.children, function(c){ if (c.offsetParent !== null) m = Math.max(m, c.getBoundingClientRect().bottom); });
+    return m - t; }
+  function ajustar(){
+    document.querySelectorAll('.com-lateral, .trio').forEach(function(g){
+      var aside = g.querySelector(':scope > aside'); if (!aside) return;
+      aside.querySelectorAll('.nao-cabe').forEach(function(e){ e.classList.remove('nao-cabe'); });
+      if (window.innerWidth <= 980) return;
+      var alvo = 0;
+      Array.prototype.forEach.call(g.children, function(c){ if (c !== aside) alvo = Math.max(alvo, fundo(c)); });
+      var itens = [];
+      Array.prototype.forEach.call(aside.children, function(c){
+        if (c.classList.contains('gruda')) Array.prototype.forEach.call(c.children, function(x){ itens.push(x); });
+        else itens.push(c);
+      });
+      itens = itens.filter(function(x){ return x.offsetParent !== null; });
+      for (var i = itens.length - 1; i > 0 && fundo(aside) > alvo + FOLGA; i--) itens[i].classList.add('nao-cabe');
+    });
+  }
+  window.addEventListener('load', ajustar);
+  window.addEventListener('resize', function(){ clearTimeout(window.__aj); window.__aj = setTimeout(ajustar, 150); });
+  document.querySelectorAll('[data-nivel]').forEach(function(b){ b.addEventListener('click', function(){ setTimeout(ajustar, 30); }); });
+  ajustar();
 })();
 </script>
 <script>

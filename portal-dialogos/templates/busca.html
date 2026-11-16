@@ -19,7 +19,7 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
-
+.nao-cabe{display:none!important}
 .cab-ed{background:var(--ed-bg);padding:36px 0 30px}
 .cab-ed .desc{font:700 18px/1.45 var(--f-apoio);color:var(--marinho);max-width:640px;margin:18px 0 20px}
 .lead-ed{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;padding-bottom:30px;border-bottom:1px solid var(--linha);margin-bottom:10px}
@@ -108,6 +108,35 @@ mark{background:#fde3d4;color:inherit;padding:0 2px}
     var open = document.body.classList.toggle('menu-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
+
+(function(){
+  // A coluna lateral nunca fica maior que o conteúdo: blocos do fim que não cabem são ocultados
+  // (no WordPress, o espaço de anúncio oculto não é solicitado ao Ad Manager).
+  var FOLGA = 130;
+  function fundo(el){ var t = el.getBoundingClientRect().top, m = t;
+    Array.prototype.forEach.call(el.children, function(c){ if (c.offsetParent !== null) m = Math.max(m, c.getBoundingClientRect().bottom); });
+    return m - t; }
+  function ajustar(){
+    document.querySelectorAll('.com-lateral, .trio').forEach(function(g){
+      var aside = g.querySelector(':scope > aside'); if (!aside) return;
+      aside.querySelectorAll('.nao-cabe').forEach(function(e){ e.classList.remove('nao-cabe'); });
+      if (window.innerWidth <= 980) return;
+      var alvo = 0;
+      Array.prototype.forEach.call(g.children, function(c){ if (c !== aside) alvo = Math.max(alvo, fundo(c)); });
+      var itens = [];
+      Array.prototype.forEach.call(aside.children, function(c){
+        if (c.classList.contains('gruda')) Array.prototype.forEach.call(c.children, function(x){ itens.push(x); });
+        else itens.push(c);
+      });
+      itens = itens.filter(function(x){ return x.offsetParent !== null; });
+      for (var i = itens.length - 1; i > 0 && fundo(aside) > alvo + FOLGA; i--) itens[i].classList.add('nao-cabe');
+    });
+  }
+  window.addEventListener('load', ajustar);
+  window.addEventListener('resize', function(){ clearTimeout(window.__aj); window.__aj = setTimeout(ajustar, 150); });
+  document.querySelectorAll('[data-nivel]').forEach(function(b){ b.addEventListener('click', function(){ setTimeout(ajustar, 30); }); });
+  ajustar();
 })();
 </script>
 </body>
