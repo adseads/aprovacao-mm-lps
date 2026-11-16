@@ -6,9 +6,9 @@
 @font-face{font-family:"Source Serif 4";src:url(fontes/source-serif-4-latin-wght-italic.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
 
 :root{
-  --marinho:#00054c;--laranja:#d95924;--creme:#f7ebdd;--tinta:#1d2135;--cinza:#5b6072;--linha:#dfe2ea;--papel:#fff;--nevoa:#f4f5f9;
+  --marinho:#00054c;--laranja:#d95924;--creme:#f4f5f9;--tinta:#1d2135;--cinza:#5b6072;--linha:#dfe2ea;--papel:#fff;--nevoa:#f4f5f9;
   --portos:#1b5ec2;--portos-bg:#d4e3fa;--infra:#7653b5;--infra-bg:#e9e1fa;--agro:#209961;--agro-bg:#e6f2e1;
-  --regulacao:#00054c;--regulacao-bg:#dde3f3;--tributos:#d95924;--tributos-bg:#f7ebdd;
+  --regulacao:#00054c;--regulacao-bg:#dde3f3;--tributos:#d95924;--tributos-bg:#f4f5f9;
   --ed:var(--marinho);--ed-bg:var(--regulacao-bg);
   --f-marca:"Zalando Sans Expanded","Arial Black",Arial,sans-serif;
   --f-titulo:"Source Serif 4",Georgia,serif;
@@ -175,7 +175,7 @@ button,input,select{font:inherit}
 .rodape a:hover{color:#fff;text-decoration:underline}
 .rodape .base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.18);margin-top:36px;padding-top:18px;font-size:13px}
 .rodape .base b{color:#fff;font-weight:700}
-.aviso-modelo{background:#fff8d6;color:#5b4b00;font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid #eedc8a}
+.aviso-modelo{background:#eef0f5;color:#5b6072;font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid #dfe2ea}
 
 /* ---------- anúncios ---------- */
 .ad{display:flex;flex-direction:column;align-items:center;gap:4px;margin:0 auto;width:100%}
