@@ -107,6 +107,15 @@ function dp_tela_config() {
 			<?php submit_button( 'Salvar' ); ?>
 		</form>
 		<hr>
+		<h2>Texto legal</h2>
+		<p>Substitui o conteúdo da página <strong>Privacidade e termos</strong> pela versão mais recente que vem com este plugin. Use depois de atualizar o plugin. Alterações feitas à mão nessa página serão sobrescritas.</p>
+		<?php if ( isset( $_GET['legal'] ) ) { echo '<div class="notice notice-success inline"><p>Página Privacidade e termos atualizada.</p></div>'; } ?>
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+			<?php wp_nonce_field( 'dp_legal' ); ?>
+			<input type="hidden" name="action" value="dp_legal">
+			<?php submit_button( 'Atualizar texto legal', 'secondary' ); ?>
+		</form>
+		<hr>
 		<h2>Configuração inicial</h2>
 		<p>Cria as editorias, as páginas fixas (newsletter, confirmação, quem somos, privacidade e termos) e o menu, e ajusta os links permanentes. Pode ser usado mais de uma vez: o que já existe não é duplicado.</p>
 		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
@@ -117,3 +126,21 @@ function dp_tela_config() {
 	</div>
 	<?php
 }
+
+add_action( 'admin_post_dp_legal', function () {
+	if ( ! current_user_can( 'manage_options' ) || ! check_admin_referer( 'dp_legal' ) ) {
+		wp_die( 'Sem permissão.' );
+	}
+	$id = (int) get_option( 'wp_page_for_privacy_policy' );
+	if ( ! $id || get_post_status( $id ) === false ) {
+		$p  = get_page_by_path( 'privacidade-e-termos' );
+		$id = $p ? $p->ID : 0;
+	}
+	if ( $id ) {
+		wp_update_post( array( 'ID' => $id, 'post_content' => file_get_contents( DP_DIR . 'inc/legal.html' ) ) );
+		if ( function_exists( 'litespeed_purge_all' ) ) { litespeed_purge_all(); }
+		do_action( 'litespeed_purge_all' );
+	}
+	wp_safe_redirect( admin_url( 'options-general.php?page=dialogos-portal&legal=1' ) );
+	exit;
+} );
