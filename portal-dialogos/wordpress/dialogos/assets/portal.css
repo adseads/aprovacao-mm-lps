@@ -927,3 +927,6 @@ body.pg-explicador .texto h2.pergunta-t span{font:800 15px/1 var(--f-marca);back
 body.pg-home-v2 .ultimas .chapeu{color:var(--ed)}
 /* conteúdo de parceiro */
 body.pg-parceiro .parc-logo a{display:inline-flex;align-items:center}
+/* quadro (box) dentro do texto: parágrafo com a classe quadro */
+.texto p.quadro{background:var(--nevoa);border-left:4px solid var(--ed,var(--laranja));padding:16px 20px;font:16px/1.55 var(--f-apoio)}
+.texto p.quadro strong{display:block;color:var(--marinho);margin-bottom:4px}

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+<title>Diálogos Estruturantes — teste da Minuta ao Leitor (20/11)</title>
+<link>https://dialogosestruturantes.com.br</link>
+<language>pt-BR</language>
+<wp:wxr_version>1.2</wp:wxr_version>
+<wp:base_site_url>https://dialogosestruturantes.com.br</wp:base_site_url>
+<wp:base_blog_url>https://dialogosestruturantes.com.br</wp:base_blog_url>
+<wp:author><wp:author_id>2</wp:author_id><wp:author_login><![CDATA[redacao]]></wp:author_login><wp:author_email></wp:author_email><wp:author_display_name><![CDATA[Redação]]></wp:author_display_name><wp:author_first_name></wp:author_first_name><wp:author_last_name></wp:author_last_name></wp:author>
+<wp:category><wp:category_nicename>portos</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Portos]]></wp:cat_name></wp:category>
+<wp:category><wp:category_nicename>infra</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Infra]]></wp:cat_name></wp:category>
+<wp:category><wp:category_nicename>agro</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Agro]]></wp:cat_name></wp:category>
+<wp:category><wp:category_nicename>regulacao</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Regulação]]></wp:cat_name></wp:category>
+<wp:category><wp:category_nicename>tributos</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Tributos]]></wp:cat_name></wp:category>
+<wp:category><wp:category_nicename>no-direito</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[No Direito]]></wp:cat_name></wp:category>
+<wp:tag><wp:tag_slug>agro</wp:tag_slug><wp:tag_name><![CDATA[Agro]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>concessoes</wp:tag_slug><wp:tag_name><![CDATA[Concessões]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>debentures-incentivadas</wp:tag_slug><wp:tag_name><![CDATA[Debêntures incentivadas]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>ibs-e-cbs</wp:tag_slug><wp:tag_name><![CDATA[IBS e CBS]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>portos</wp:tag_slug><wp:tag_name><![CDATA[Portos]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>reforma-tributaria</wp:tag_slug><wp:tag_name><![CDATA[Reforma tributária]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>rodovias</wp:tag_slug><wp:tag_name><![CDATA[Rodovias]]></wp:tag_name></wp:tag>
+<wp:tag><wp:tag_slug>vbp</wp:tag_slug><wp:tag_name><![CDATA[VBP]]></wp:tag_name></wp:tag>
+<item>
+<title><![CDATA[Caminhoes]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5001</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5001</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 08:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 11:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[caminhoes]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>5002</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url><![CDATA[https://adseads.github.io/aprovacao-mm-lps/portal-dialogos/templates/assets/img/caminhoes.jpg]]></wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Navio porto]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5003</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5003</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 08:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 11:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[navio-porto]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>5004</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url><![CDATA[https://adseads.github.io/aprovacao-mm-lps/portal-dialogos/templates/assets/img/navio-porto.jpg]]></wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Obra rodovia]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5005</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5005</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 08:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 11:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[obra-rodovia]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>5006</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url><![CDATA[https://adseads.github.io/aprovacao-mm-lps/portal-dialogos/templates/assets/img/obra-rodovia.jpg]]></wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[Campo por do sol]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5007</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5007</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 08:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 11:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[campo-por-do-sol]]></wp:post_name>
+<wp:status>inherit</wp:status>
+<wp:post_parent>5008</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>attachment</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:attachment_url><![CDATA[https://adseads.github.io/aprovacao-mm-lps/portal-dialogos/templates/assets/img/campo-por-do-sol.jpg]]></wp:attachment_url>
+</item>
+<item>
+<title><![CDATA[IBS/CBS: produtor rural e transportador autônomo ficam dispensados de CNPJ em 2027 e 2028]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5002</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>O Ato Conjunto RFB/CGIBS nº 8 dispensou temporariamente a inscrição no CNPJ, entre 1º de janeiro de 2027 e 31 de dezembro de 2028, para o produtor rural pessoa física e para o transportador autônomo de carga (TAC) que não sejam contribuintes do IBS e da CBS e não tenham optado pelo regime regular.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">O que mudou</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A transição do IBS e da CBS ganhou uma regra operacional que alcança diretamente duas pontas da cadeia produtiva. No agro, a medida posterga a adaptação cadastral de produtores enquadrados no art. 164 da LC 214/2025. Na logística, faz o mesmo para o TAC do art. 169.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">O que não muda</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A dispensa não elimina os cadastros setoriais já exigidos — como o RNTRC — nem dispensa compradores e sistemas de registrarem corretamente operações, documentos e créditos presumidos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">O que fazer agora</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A consequência prática é uma janela adicional para ajustar cadastros, emissão documental e integrações. Empresas que compram do produtor ou contratam o TAC devem revisar como CPF, documento fiscal e crédito presumido conversam no ERP antes de 2027.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Fonte: CGIBS e ato oficial publicado em edição extra do DOU de 18/11/2026.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Ato Conjunto RFB/CGIBS nº 8 abre janela cadastral para dois públicos, mas não elimina registros setoriais nem a adaptação de documentos e sistemas.]]></excerpt:encoded>
+<wp:post_id>5002</wp:post_id>
+<wp:post_date><![CDATA[2026-11-20 07:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-20 10:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[ibs-cbs-produtor-rural-e-transportador-autonomo-ficam-dispensados-de-cnpj]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="tributos"><![CDATA[Tributos]]></category>
+<category domain="category" nicename="agro"><![CDATA[Agro]]></category>
+<category domain="category" nicename="infra"><![CDATA[Infra]]></category>
+<category domain="post_tag" nicename="reforma-tributaria"><![CDATA[Reforma tributária]]></category>
+<category domain="post_tag" nicename="ibs-e-cbs"><![CDATA[IBS e CBS]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[explicador]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_modelo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[Ato Conjunto RFB/CGIBS nº 8 abre janela cadastral para dois públicos, mas não elimina registros setoriais nem a adaptação de documentos e sistemas.]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_linha_fina]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[padrao]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_nivel]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[Minuta ao Leitor · 20/11]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chapeu]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_em_resumo]]></wp:meta_key><wp:meta_value><![CDATA[Produtor rural PF e TAC não contribuintes ficam dispensados de CNPJ em 2027 e 2028.
+A dispensa não elimina o RNTRC nem outros registros setoriais.
+Quem compra do produtor ou contrata o TAC deve revisar ERP, documento fiscal e crédito presumido.]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_em_resumo]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_em_resumo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[5001]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Projetos portuários no Amazonas e no Paraná podem captar R$ 1,9 bilhão em debêntures]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5004</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>O Ministério de Portos e Aeroportos (MPor) habilitou projetos no Amazonas e no Paraná a captar até R$ 1,9 bilhão em debêntures incentivadas. A carteira inclui a ampliação de um terminal de grãos e melhorias no acesso aquaviário ao Porto de Paranaguá.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Efeito no setor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A habilitação cria uma via de financiamento para capacidade, segurança da navegação e previsibilidade operacional. No terminal, capital de longo prazo pode ampliar a capacidade de armazenagem e movimentação do agro. No acesso aquaviário, o investimento pode afetar a segurança da navegação, a janela operacional e a confiabilidade do complexo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Habilitação não é obra entregue</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Habilitar o projeto não equivale a emissão concluída nem a obra pronta. Para as empresas da cadeia, vale separar três marcos: projeto habilitado, recurso efetivamente captado e ativo entregue. Cada um produz uma consequência distinta sobre prazo, capacidade e custo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Próximos passos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Estruturação da emissão, captação, licenciamento, desembolso e cronograma físico.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Fonte: Ministério de Portos e Aeroportos.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Carteira inclui terminal de grãos e acesso aquaviário a Paranaguá; habilitação ainda não é emissão concluída nem obra entregue.]]></excerpt:encoded>
+<wp:post_id>5004</wp:post_id>
+<wp:post_date><![CDATA[2026-11-20 07:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-20 10:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[projetos-portuarios-no-amazonas-e-no-parana-podem-captar-r-1-9-bilhao-em]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<category domain="post_tag" nicename="debentures-incentivadas"><![CDATA[Debêntures incentivadas]]></category>
+<category domain="post_tag" nicename="portos"><![CDATA[Portos]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[materia]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_modelo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[Carteira inclui terminal de grãos e acesso aquaviário a Paranaguá; habilitação ainda não é emissão concluída nem obra entregue.]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_linha_fina]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[padrao]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_nivel]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[Minuta ao Leitor · 20/11]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chapeu]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[5003]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Nova Ponte do Arranha-Céu, em Itaipava, é entregue quatro anos antes do prazo]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5006</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>A ANTT informou a entrega da nova Ponte do Arranha-Céu, em Itaipava (RJ), quatro anos antes do prazo contratual. A obra, concluída em seis meses, melhora a ligação entre a BR-040 e a Estrada União e Indústria.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Efeito no setor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>O ativo reduz o conflito de circulação e melhora a segurança e a fluidez local. A antecipação é evidência de execução contratual, mas não é prova isolada do desempenho global da concessão.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Próximos passos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Operação, manutenção e aferição de desempenho.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Fonte: ANTT.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Obra concluída em seis meses melhora a ligação entre a BR-040 e a Estrada União e Indústria.]]></excerpt:encoded>
+<wp:post_id>5006</wp:post_id>
+<wp:post_date><![CDATA[2026-11-20 07:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-20 10:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[nova-ponte-do-arranha-ceu-em-itaipava-e-entregue-quatro-anos-antes-do-prazo]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="infra"><![CDATA[Infra]]></category>
+<category domain="post_tag" nicename="concessoes"><![CDATA[Concessões]]></category>
+<category domain="post_tag" nicename="rodovias"><![CDATA[Rodovias]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[materia]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_modelo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[Obra concluída em seis meses melhora a ligação entre a BR-040 e a Estrada União e Indústria.]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_linha_fina]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[padrao]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_nivel]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[Minuta ao Leitor · 20/11]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chapeu]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[5005]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[VBP do agro chega a R$ 1,46 trilhão; Mapa projeta recuperação em 2027]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5008</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>O Valor Bruto da Produção (VBP) agropecuária de 2026 foi estimado em R$ 1,46 trilhão. As lavouras somam R$ 938,1 bilhões, queda de 3,9%; a pecuária chega a R$ 527 bilhões, com bovinos em alta de 11,8%.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Composição e direção</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A soja cresce 4,6%, para R$ 361,2 bilhões. Para 2027, o Ministério da Agricultura e Pecuária (Mapa) projeta recuperação de 2,6%, o que levaria o indicador acima de R$ 1,5 trilhão.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Como ler o número</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>O mix altera caixa, crédito e demanda logística, mas o VBP mede valor na porteira, não volume físico por corredor, margem do produtor ou receita já contratada. Para decisões de crédito e logística, precisa ser lido com preço, produção, tonelagem e destino.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Fonte: Mapa e confirmação secundária.</em></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+<excerpt:encoded><![CDATA[Lavouras recuam 3,9%; bovinos e soja sustentam parte do resultado.]]></excerpt:encoded>
+<wp:post_id>5008</wp:post_id>
+<wp:post_date><![CDATA[2026-11-20 07:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-20 10:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[vbp-do-agro-chega-a-r-1-46-trilhao-mapa-projeta-recuperacao-em-2027]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="agro"><![CDATA[Agro]]></category>
+<category domain="post_tag" nicename="vbp"><![CDATA[VBP]]></category>
+<category domain="post_tag" nicename="agro"><![CDATA[Agro]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[materia]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_modelo]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_modelo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[Lavouras recuam 3,9%; bovinos e soja sustentam parte do resultado.]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_linha_fina]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_linha_fina]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[padrao]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_nivel]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_nivel]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[Minuta ao Leitor · 20/11]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chapeu]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chapeu]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[5007]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[624ª reunião ordinária da ANTAQ]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5009</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5009</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[antaq-624]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<category domain="category" nicename="regulacao"><![CDATA[Regulação]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261123]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261125]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[Virtual]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: ANTAQ]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Diálogos Hidroviáveis]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5010</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5010</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[dialogos-hidroviaveis]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<category domain="category" nicename="infra"><![CDATA[Infra]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261125]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261126]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[CREA-DF, Brasília (DF)]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: Adecon e parceiros · navegação interior]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Lançamento do Review of Maritime Transport 2026 (UNCTAD)]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5011</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5011</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[unctad-rmt-2026]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261126]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261126]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[Online]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: UNCTAD · fretes, portos, custos e regulação]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Fim da consulta pública do PND]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5012</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5012</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[consulta-pnd]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261207]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261207]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[Brasil Participativo (online)]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: MPor · prazo para contribuições]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Leilões de arrendamento IQI16 e MUC04]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5013</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5013</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[leiloes-iqi16-muc04]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261209]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261209]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[B3, São Paulo]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: ANTAQ e MPor]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Fim da consulta sobre a revisão da Portaria 574 (gestão dos portos públicos)]]></title>
+<dc:creator><![CDATA[redacao]]></dc:creator>
+<guid isPermaLink="false">https://dialogosestruturantes.com.br/?p=5014</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>5014</wp:post_id>
+<wp:post_date><![CDATA[2026-11-01 09:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-11-01 12:00:00]]></wp:post_date_gmt>
+<wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status>
+<wp:post_name><![CDATA[consulta-portaria-574]]></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>evento</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<category domain="category" nicename="portos"><![CDATA[Portos]]></category>
+<category domain="category" nicename="regulacao"><![CDATA[Regulação]]></category>
+<wp:postmeta><wp:meta_key><![CDATA[dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[normal]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_prioridade]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_prioridade]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[20261226]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_inicio]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_inicio]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[20261226]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_fim]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_fim]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_local]]></wp:meta_key><wp:meta_value><![CDATA[Brasil Participativo (online)]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_local]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_local]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_info]]></wp:meta_key><wp:meta_value><![CDATA[Organização: MPor · prazo para contribuições]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_info]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_info]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_chamada]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_chamada]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[dp_link]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_dp_link]]></wp:meta_key><wp:meta_value><![CDATA[field_dp_link]]></wp:meta_value></wp:postmeta>
+</item>
+</channel>
+</rss>
