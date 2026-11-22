@@ -9,8 +9,8 @@
 <link rel="preload" href="assets/fontes/zalando-sans-expanded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/estilo.css">
 <style>
-.nv-eq,.nv-int,.only-mobile{display:none}
-.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int{display:block}
+.nv-eq,.nv-int,.nv-hard,.only-mobile{display:none}
+.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int,.ads-hard .nv-eq,.ads-hard .nv-int,.ads-hard .nv-hard{display:block}
 @media (min-width:821px){.only-mobile{display:none!important}}
 .ad-wide{aspect-ratio:var(--ar);max-width:var(--mw)}.ad-wide .m{display:none}
 @media (max-width:820px){.ad-wide{aspect-ratio:320/100;max-width:320px}.ad-wide .d{display:none}.ad-wide .m{display:inline}}
@@ -19,6 +19,17 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
+
+.ad-ancora{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:45;background:#fff;padding:6px 10px 8px;box-shadow:0 -4px 18px rgba(0,5,76,.16);width:748px;max-width:100%}
+.ads-hard .ad-ancora{display:flex!important;flex-direction:column;align-items:center;gap:3px}
+.ad-ancora .ad-box{width:728px;height:90px;max-width:100%}
+.ad-ancora .m{display:none}
+.fecha-ancora{position:absolute;top:-26px;right:0;width:28px;height:26px;border:0;background:#fff;color:var(--marinho);font:700 18px/1 var(--f-apoio);cursor:pointer;box-shadow:0 -3px 8px rgba(0,5,76,.12)}
+.ad-ancora.fechado{display:none!important}
+.ads-hard .nivel-bar{bottom:128px}
+.ads-hard .rodape{padding-bottom:110px}
+.ad-hard-lista{padding:20px 0;border-bottom:1px solid var(--linha);grid-column:1/-1}
+@media (max-width:820px){.ad-ancora{width:100%;padding:4px 0 6px}.ad-ancora .ad-box{width:320px;height:50px}.ad-ancora .d{display:none}.ad-ancora .m{display:inline}.ads-hard .nivel-bar{bottom:76px}.ads-hard .rodape{padding-bottom:70px}}
 .nao-cabe{display:none!important}
 .e404{padding:56px 0 40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
 .e404 .num{font:900 clamp(110px,16vw,200px)/.85 var(--f-marca);color:var(--marinho);margin:0;letter-spacing:-.02em}
@@ -45,6 +56,7 @@
 <section style="border-top:3px solid var(--marinho);padding:28px 0 48px"><h2 class="h2" style="margin-bottom:20px">Mais lidas agora</h2>
 <div class="grade-3"><a class="card ed-tributos" href="explicador.html" data-componente="card" data-posicao="404-1" data-conteudo-id="iss"><img class="img" src="assets/img/brasilia.jpg" alt="Prédios da Esplanada dos Ministérios" loading="lazy"><span class="chapeu">Entenda</span><h3 class="h4 t">STF tira o ISS da conta do PIS e da Cofins: o que muda para quem presta serviço</h3></a><a class="card ed-infra" href="materia.html" data-componente="card" data-posicao="404-2" data-conteudo-id="pacto"><img class="img" src="assets/img/pacto-cidade.jpg" alt="Vista aérea de cidade com avenidas e viadutos" loading="lazy"><span class="chapeu">Infra</span><h3 class="h4 t">Um ano depois, o Pacto ainda espera pelo futuro</h3></a><a class="card ed-portos" href="materia.html" data-componente="card" data-posicao="404-3" data-conteudo-id="zpe"><img class="img" src="assets/img/porto-guindastes.jpg" alt="Guindastes de um terminal portuário" loading="lazy"><span class="chapeu">Portos</span><h3 class="h4 t">ZPE em Mato Grosso do Sul será a 5ª a operar no país</h3></a></div></section>
 </div>
+
 
 </main>
 <footer class="rodape"><div class="wrap"><div class="topo"><div><img src="assets/logo-branco.png" alt="Diálogos Estruturantes" width="230" height="52" loading="lazy"><p class="lema">O ponto de encontro de quem faz o Brasil acontecer.</p></div><div><h4>Editorias</h4><ul><li><a href="editoria.html">Portos</a></li><li><a href="editoria.html">Infra</a></li><li><a href="editoria.html">Agro</a></li><li><a href="editoria.html">Regulação</a></li><li><a href="editoria.html">Tributos</a></li><li><a href="editoria.html">No Direito</a></li></ul></div><div><h4>Formatos</h4><ul><li><a href="opiniao.html">Opinião</a></li><li><a href="explicador.html">Entenda</a></li><li><a href="podcast.html">Podcast</a></li><li><a href="revista.html">Revista</a></li><li><a href="minuta.html">Newsletter</a></li><li><a href="minuta-arquivo.html">Edições da newsletter</a></li><li><a href="agenda.html">Agenda</a></li></ul></div><div><h4>O portal</h4><ul><li><a href="institucional.html">Quem somos</a></li><li><a href="institucional.html#expediente">Expediente</a></li><li><a href="institucional.html#anuncie">Anuncie</a></li><li><a href="institucional.html#contato">Contato</a></li><li><a href="legal.html">Privacidade e termos</a></li><li><a href="legal.html#cookies">Preferências de cookies</a></li></ul></div></div><div class="base"><span>© 2026 <b>Diálogos Estruturantes</b>. Uma publicação da M&amp;M Lexis Editora.</span><span>www.dialogosestruturantes.com.br | @dialogos.estruturantes</span></div></div></footer>
@@ -74,7 +86,7 @@
       v.innerHTML = '<p class="video-note">No portal, o vídeo do YouTube carrega aqui quando o leitor clica, sem cookies antes do play.</p>';
     }, {once:true});
   });
-  var niveis = ['leve','equilibrada','intensiva'];
+  var niveis = ['leve','equilibrada','intensiva','hard'];
   var q = new URLSearchParams(location.search).get('anuncios');
   function setNivel(n){
     if (niveis.indexOf(n) < 0) n = 'equilibrada';

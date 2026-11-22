@@ -9,8 +9,8 @@
 <link rel="preload" href="assets/fontes/zalando-sans-expanded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/estilo.css">
 <style>
-.nv-eq,.nv-int,.only-mobile{display:none}
-.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int{display:block}
+.nv-eq,.nv-int,.nv-hard,.only-mobile{display:none}
+.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int,.ads-hard .nv-eq,.ads-hard .nv-int,.ads-hard .nv-hard{display:block}
 @media (min-width:821px){.only-mobile{display:none!important}}
 .ad-wide{aspect-ratio:var(--ar);max-width:var(--mw)}.ad-wide .m{display:none}
 @media (max-width:820px){.ad-wide{aspect-ratio:320/100;max-width:320px}.ad-wide .d{display:none}.ad-wide .m{display:inline}}
@@ -19,6 +19,17 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
+
+.ad-ancora{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:45;background:#fff;padding:6px 10px 8px;box-shadow:0 -4px 18px rgba(0,5,76,.16);width:748px;max-width:100%}
+.ads-hard .ad-ancora{display:flex!important;flex-direction:column;align-items:center;gap:3px}
+.ad-ancora .ad-box{width:728px;height:90px;max-width:100%}
+.ad-ancora .m{display:none}
+.fecha-ancora{position:absolute;top:-26px;right:0;width:28px;height:26px;border:0;background:#fff;color:var(--marinho);font:700 18px/1 var(--f-apoio);cursor:pointer;box-shadow:0 -3px 8px rgba(0,5,76,.12)}
+.ad-ancora.fechado{display:none!important}
+.ads-hard .nivel-bar{bottom:128px}
+.ads-hard .rodape{padding-bottom:110px}
+.ad-hard-lista{padding:20px 0;border-bottom:1px solid var(--linha);grid-column:1/-1}
+@media (max-width:820px){.ad-ancora{width:100%;padding:4px 0 6px}.ad-ancora .ad-box{width:320px;height:50px}.ad-ancora .d{display:none}.ad-ancora .m{display:inline}.ads-hard .nivel-bar{bottom:76px}.ads-hard .rodape{padding-bottom:70px}}
 .nao-cabe{display:none!important}
 .cab-ed{background:var(--ed-bg);padding:36px 0 30px}
 .cab-ed .desc{font:700 18px/1.45 var(--f-apoio);color:var(--marinho);max-width:640px;margin:18px 0 20px}
@@ -46,7 +57,7 @@
 <a class="pular" href="#conteudo">Pular para o conteúdo</a><div class="faixa-topo"><div class="wrap"><span>Domingo, 15 de novembro de 2026</span><span class="dir"><a href="edicao.html" data-componente="topo" data-posicao="revista">Revista: 7ª edição</a><a href="institucional.html#anuncie" data-componente="topo" data-posicao="anuncie">Anuncie</a><a href="#" data-componente="topo" data-posicao="instagram">@dialogos.estruturantes</a></span></div></div><header class="cab"><div class="wrap"><a class="logo" href="home.html" data-componente="logo" data-posicao="cabecalho"><img src="assets/logo.png" alt="Diálogos Estruturantes" width="260" height="59"></a><div class="acoes"><a class="btn-icone" href="busca.html" aria-label="Buscar no portal" data-componente="busca" data-posicao="cabecalho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3a7 7 0 0 1 5.6 11.2l5.1 5.1-1.4 1.4-5.1-5.1A7 7 0 1 1 10 3zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" fill="currentColor"/></svg></a><a class="btn btn-laranja" href="minuta.html" data-componente="minuta-cta" data-posicao="cabecalho">Receber a newsletter</a><button class="btn-icone menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" fill="currentColor"/></svg></button></div></div></header><nav class="nav" aria-label="Editorias"><div class="wrap"><ul><li class="ed-portos"><a href="editoria.html" data-componente="menu" data-posicao="portos">Portos</a></li><li class="ed-infra"><a href="editoria.html" data-componente="menu" data-posicao="infra">Infra</a></li><li class="ed-agro"><a href="editoria.html" data-componente="menu" data-posicao="agro">Agro</a></li><li class="ed-regulacao"><a href="editoria.html" data-componente="menu" data-posicao="regulação">Regulação</a></li><li class="ed-tributos"><a href="editoria.html" data-componente="menu" data-posicao="tributos">Tributos</a></li><li class="ed-direito"><a href="editoria.html" data-componente="menu" data-posicao="no direito">No Direito</a></li><li class="ed-regulacao"><a href="opiniao.html" data-componente="menu" data-posicao="opinião">Opinião</a></li><li class="ed-podcast"><a href="podcast.html" data-componente="menu" data-posicao="podcast">Podcast</a></li><li class="ed-revista"><a href="revista.html" data-componente="menu" data-posicao="revista">Revista</a></li><li class="ed-eventos"><a href="agenda.html" data-componente="menu" data-posicao="agenda">Agenda</a></li></ul></div></nav>
 <main id="conteudo">
 
-<div class="ad-topo"><div class="ad " data-componente="anuncio" data-posicao="topo"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/90;--mw:970px"><span class="d">970 × 90</span><span class="m">320 × 100</span></div></div></div>
+<div class="ad-topo"><div class="ad " data-componente="anuncio" data-posicao="topo"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/90;--mw:970px"><span class="d">970 × 90</span><span class="m">320 × 100</span></div></div></div><div class="ad-faixa wrap nv-hard"><div class="ad " data-componente="anuncio" data-posicao="billboard"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/250;--mw:970px"><span class="d">970 × 250</span><span class="m">320 × 100</span></div></div></div>
 <section class="cab-autor ed-portos"><div class="wrap"><span class="retrato ed-portos "><img src="assets/autor.svg" alt="Foto de Luiz Roberto Marinho" loading="lazy"></span>
 <div><span class="chapeu laranja">Repórter</span><h1 class="h1" style="margin:0">Luiz Roberto Marinho</h1><p>Repórter da Diálogos Estruturantes e apresentador do podcast. Cobre portos, ZPEs e grandes projetos de infraestrutura.</p></div>
 <div class="redes"><div class="compartilhar" aria-label="Compartilhar"><a href="#" data-componente="compartilhar" data-posicao="whatsapp" aria-label="Compartilhar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.4.1.1.1.7-.1 1.3z"/></svg></a><a href="#" data-componente="compartilhar" data-posicao="linkedin" aria-label="Compartilhar no LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 8.5h3V21H3zm5.5 0h2.9v1.7c.4-.8 1.5-1.9 3.4-1.9 3.6 0 4.2 2.4 4.2 5.4V21h-3v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21h-3z"/></svg></a><a href="#" data-componente="compartilhar" data-posicao="x" aria-label="Compartilhar no X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a href="#" data-componente="compartilhar" data-posicao="copiar" aria-label="Copiar link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a1 1 0 1 1 1.4 1.4L12 13.4a1 1 0 0 1-1.4 0zM8.5 19.5a4.5 4.5 0 0 1-3.2-7.7l2.1-2.1 1.4 1.4-2.1 2.1a2.5 2.5 0 0 0 3.5 3.5l2.1-2.1 1.4 1.4-2.1 2.1a4.5 4.5 0 0 1-3.1 1.4zm8.1-5.2-1.4-1.4 2.1-2.1a2.5 2.5 0 0 0-3.5-3.5l-2.1 2.1-1.4-1.4 2.1-2.1a4.5 4.5 0 0 1 6.4 6.4z"/></svg></a></div></div></div></section>
@@ -56,9 +67,10 @@
 </div>
 <div class="ad-faixa wrap nv-int"><div class="ad " data-componente="anuncio" data-posicao="rodape"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/90;--mw:970px"><span class="d">970 × 90</span><span class="m">320 × 100</span></div></div></div>
 
+<div class="ad-faixa wrap nv-hard"><div class="ad " data-componente="anuncio" data-posicao="rodape-2"><span class="ad-label">Publicidade</span><div class="ad-box ad-wide" style="--ar:970/250;--mw:970px"><span class="d">970 × 250</span><span class="m">320 × 100</span></div></div></div>
 </main>
 <footer class="rodape"><div class="wrap"><div class="topo"><div><img src="assets/logo-branco.png" alt="Diálogos Estruturantes" width="230" height="52" loading="lazy"><p class="lema">O ponto de encontro de quem faz o Brasil acontecer.</p></div><div><h4>Editorias</h4><ul><li><a href="editoria.html">Portos</a></li><li><a href="editoria.html">Infra</a></li><li><a href="editoria.html">Agro</a></li><li><a href="editoria.html">Regulação</a></li><li><a href="editoria.html">Tributos</a></li><li><a href="editoria.html">No Direito</a></li></ul></div><div><h4>Formatos</h4><ul><li><a href="opiniao.html">Opinião</a></li><li><a href="explicador.html">Entenda</a></li><li><a href="podcast.html">Podcast</a></li><li><a href="revista.html">Revista</a></li><li><a href="minuta.html">Newsletter</a></li><li><a href="minuta-arquivo.html">Edições da newsletter</a></li><li><a href="agenda.html">Agenda</a></li></ul></div><div><h4>O portal</h4><ul><li><a href="institucional.html">Quem somos</a></li><li><a href="institucional.html#expediente">Expediente</a></li><li><a href="institucional.html#anuncie">Anuncie</a></li><li><a href="institucional.html#contato">Contato</a></li><li><a href="legal.html">Privacidade e termos</a></li><li><a href="legal.html#cookies">Preferências de cookies</a></li></ul></div></div><div class="base"><span>© 2026 <b>Diálogos Estruturantes</b>. Uma publicação da M&amp;M Lexis Editora.</span><span>www.dialogosestruturantes.com.br | @dialogos.estruturantes</span></div></div></footer>
-<div class="nivel-bar" role="group" aria-label="Prévia do nível de anúncios"><span>Prévia de anúncios</span><button type="button" data-nivel="leve">Leve</button><button type="button" data-nivel="equilibrada">Equilibrada</button><button type="button" data-nivel="intensiva">Intensiva</button></div>
+<div class="ad-ancora nv-hard" data-componente="anuncio" data-posicao="ancora"><button type="button" class="fecha-ancora" aria-label="Fechar anúncio">×</button><span class="ad-label">Publicidade</span><div class="ad-box"><span class="d">728 × 90</span><span class="m">320 × 50</span></div></div><div class="nivel-bar" role="group" aria-label="Prévia do nível de anúncios"><span>Prévia de anúncios</span><button type="button" data-nivel="leve">Leve</button><button type="button" data-nivel="equilibrada">Equilibrada</button><button type="button" data-nivel="intensiva">Intensiva</button><button type="button" data-nivel="hard">Hard</button></div>
 <script>
 (function(){
   var dl = window.dataLayer = window.dataLayer || [];
@@ -84,7 +96,7 @@
       v.innerHTML = '<p class="video-note">No portal, o vídeo do YouTube carrega aqui quando o leitor clica, sem cookies antes do play.</p>';
     }, {once:true});
   });
-  var niveis = ['leve','equilibrada','intensiva'];
+  var niveis = ['leve','equilibrada','intensiva','hard'];
   var q = new URLSearchParams(location.search).get('anuncios');
   function setNivel(n){
     if (niveis.indexOf(n) < 0) n = 'equilibrada';
@@ -108,6 +120,52 @@
     var open = document.body.classList.toggle('menu-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
+
+(function(){
+  function bloco(w, h, pos, cls){
+    var d = document.createElement('div');
+    d.className = 'ad nv-hard ' + (cls||''); d.dataset.componente = 'anuncio'; d.dataset.posicao = pos; d.dataset.hard = '1';
+    d.innerHTML = '<span class="ad-label">Publicidade</span>' + (w >= 728
+      ? '<div class="ad-box ad-wide" style="--ar:'+w+'/'+h+';--mw:'+w+'px"><span class="d">'+w+' × '+h+'</span><span class="m">320 × 100</span></div>'
+      : '<div class="ad-box" style="aspect-ratio:'+w+'/'+h+';max-width:'+w+'px">'+w+' × '+h+'</div>');
+    return d;
+  }
+  // 1. texto: um anúncio a cada 2 parágrafos no computador e a cada 5 no celular (limite de 30% de densidade), sem encostar em outro anúncio
+  document.querySelectorAll('.texto').forEach(function(t){
+    var passo = window.innerWidth <= 820 ? 5 : 2, n = 0, k = 0;
+    Array.prototype.slice.call(t.querySelectorAll(':scope > p, :scope > section > p')).forEach(function(el){
+      n++;
+      var prox = el.nextElementSibling;
+      if (n % passo === 0 && prox && !prox.classList.contains('ad') && !(el.previousElementSibling||{classList:{contains:function(){return false}}}).classList.contains('ad'))
+        el.after(bloco(300, 250, 'hard-inline-' + (++k), 'ad-inline'));
+    });
+  });
+  // 2. lateral: mais um 300x250 depois do primeiro bloco e um 300x600 no fim
+  document.querySelectorAll('.com-lateral > aside, .trio > aside').forEach(function(a, i){
+    var primeiro = a.firstElementChild;
+    if (primeiro) primeiro.after(bloco(300, 250, 'hard-lateral-' + (i+1)));
+    (a.querySelector('.gruda') || a).appendChild(bloco(300, 600, 'hard-half-' + (i+1)));
+  });
+  // 3. listas: um anúncio a cada 2 itens
+  ['.item', '.linha-ev', '.ep', '.lista-linha', '.capa'].forEach(function(sel){
+    var itens = document.querySelectorAll('main ' + sel);
+    itens.forEach(function(it, i){
+      if ((i + 1) % 2 === 0 && i < itens.length - 1) { var b = bloco(728, 90, 'hard-lista-' + (i+1), 'ad-hard-lista'); it.after(b); }
+    });
+  });
+  // 4. home e páginas de vitrine: faixa entre as seções principais
+  if (!document.querySelector('.texto')) {
+    var secoes = document.querySelectorAll('main > section');
+    secoes.forEach(function(sec, i){
+      var prox = sec.nextElementSibling;
+      if (i > 0 && i < secoes.length - 1 && prox && !prox.classList.contains('ad-faixa')) {
+        var w = document.createElement('div'); w.className = 'ad-faixa wrap nv-hard'; w.appendChild(bloco(970, 90, 'hard-entre-' + i)); sec.after(w);
+      }
+    });
+  }
+  var f = document.querySelector('.fecha-ancora');
+  if (f) f.addEventListener('click', function(){ f.parentNode.classList.add('fechado'); (window.dataLayer=window.dataLayer||[]).push({event:'anuncio_ancora_fechado'}); });
 })();
 
 (function(){

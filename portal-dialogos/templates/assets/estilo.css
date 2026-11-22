@@ -246,3 +246,46 @@ button,input,select{font:inherit}
 .avatar img{width:100%;height:100%;object-fit:cover;object-position:bottom}
 .retrato{display:block;aspect-ratio:3/4;background:var(--ed);overflow:hidden}
 .retrato img{width:100%;height:100%;object-fit:cover;object-position:bottom}
+
+/* ---------- popups (3 modelos) ---------- */
+.pp-raiz{position:relative;z-index:80}
+.pp{font-family:var(--f-apoio);color:var(--tinta);opacity:0;transition:opacity .2s,transform .25s}
+.pp-visivel .pp,.pp-visivel .pp-fundo{opacity:1;transform:none}
+.pp h2{font:800 24px/1.2 var(--f-titulo);color:var(--marinho);margin:0 0 8px}
+.pp p{margin:0 0 16px;font-size:15.5px;line-height:1.5}
+.pp-chapeu{display:block;font:800 11px/1 var(--f-marca);letter-spacing:.16em;text-transform:uppercase;color:var(--laranja);margin-bottom:10px}
+.pp-fechar{position:absolute;top:8px;right:8px;width:36px;height:36px;border:0;background:transparent;font:700 24px/1 var(--f-apoio);color:inherit;cursor:pointer;border-radius:50%}
+.pp-fechar:hover{background:rgba(0,5,76,.08)}
+/* 1. modal central */
+.pp-fundo{position:fixed;inset:0;background:rgba(0,5,76,.55);opacity:0;transition:opacity .2s;z-index:80}
+.pp-modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-46%);width:min(760px,calc(100% - 32px));max-height:calc(100% - 32px);overflow:auto;background:#fff;display:grid;grid-template-columns:300px 1fr;z-index:81;border-top:6px solid var(--laranja)}
+.pp-visivel .pp-modal{transform:translate(-50%,-50%)}
+.pp-modal .pp-img img{width:100%;height:100%;object-fit:cover;min-height:280px}
+.pp-modal .pp-corpo{padding:34px 30px 26px}
+.pp-modal .pp-cta{width:100%;justify-content:center;padding:14px}
+.pp-agora-nao{display:block;margin:12px auto 0;border:0;background:none;color:var(--cinza);font:600 14px var(--f-apoio);cursor:pointer;text-decoration:underline}
+.pp-modal.pp-marinho{border-top-color:var(--laranja)}
+@media (max-width:640px){.pp-modal{grid-template-columns:1fr;top:auto;bottom:0;left:0;transform:translateY(20px);width:100%;max-height:85vh}.pp-visivel .pp-modal{transform:none}.pp-modal .pp-img img{min-height:0;height:150px}.pp-modal .pp-corpo{padding:22px 20px 20px}}
+/* 2. canto (slide-in) */
+.pp-canto{position:fixed;left:20px;bottom:20px;width:min(380px,calc(100% - 40px));background:#fff;box-shadow:0 14px 40px rgba(0,5,76,.25);border-left:6px solid var(--laranja);padding:22px 22px 20px;display:grid;grid-template-columns:auto 1fr;gap:16px;transform:translateY(24px);z-index:81}
+.pp-canto .pp-mini{width:72px;height:72px;object-fit:cover}
+.pp-canto h2{font-size:19px;padding-right:22px}
+.pp-canto p{font-size:14.5px;margin-bottom:12px}
+.pp-canto .btn{padding:10px 14px}
+@media (max-width:640px){.pp-canto{left:12px;bottom:12px;width:calc(100% - 24px)}.pp-canto .pp-mini{width:56px;height:56px}}
+/* 3. faixa (topo ou rodapé) */
+.pp-faixa{position:fixed;left:0;right:0;z-index:81;background:var(--marinho);color:#fff;transform:translateY(100%)}
+.pp-faixa.pp-topo{top:0;transform:translateY(-100%)}
+.pp-faixa.pp-base{bottom:0}
+.pp-faixa.pp-laranja{background:var(--laranja)}
+.pp-faixa.pp-laranja .btn-laranja{background:#fff;color:var(--laranja)}
+.pp-faixa-in{width:min(var(--larg),100% - 32px);margin:auto;display:flex;align-items:center;gap:18px;padding:14px 44px 14px 0}
+.pp-faixa .pp-chapeu{color:#f3a57f;margin:0;white-space:nowrap}
+.pp-faixa.pp-laranja .pp-chapeu{color:#fff}
+.pp-faixa p{margin:0;flex:1;font-size:15px}
+.pp-faixa p b{font-weight:800}
+.pp-faixa .btn{white-space:nowrap;padding:10px 16px}
+.pp-faixa .pp-fechar{top:50%;transform:translateY(-50%);right:10px;color:#fff}
+@media (max-width:640px){.pp-faixa-in{flex-wrap:wrap;gap:8px 12px;padding:12px 44px 12px 0}.pp-faixa p{flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.pp,.pp-fundo{transition:none}}
+.pp-visivel .pp.pp-canto,.pp-visivel .pp.pp-faixa{transform:none}

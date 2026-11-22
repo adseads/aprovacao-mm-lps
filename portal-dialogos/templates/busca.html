@@ -9,8 +9,8 @@
 <link rel="preload" href="assets/fontes/zalando-sans-expanded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/estilo.css">
 <style>
-.nv-eq,.nv-int,.only-mobile{display:none}
-.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int{display:block}
+.nv-eq,.nv-int,.nv-hard,.only-mobile{display:none}
+.ads-equilibrada .nv-eq,.ads-intensiva .nv-eq,.ads-intensiva .nv-int,.ads-hard .nv-eq,.ads-hard .nv-int,.ads-hard .nv-hard{display:block}
 @media (min-width:821px){.only-mobile{display:none!important}}
 .ad-wide{aspect-ratio:var(--ar);max-width:var(--mw)}.ad-wide .m{display:none}
 @media (max-width:820px){.ad-wide{aspect-ratio:320/100;max-width:320px}.ad-wide .d{display:none}.ad-wide .m{display:inline}}
@@ -19,6 +19,17 @@
 .nivel-bar button{border:0;background:transparent;border-radius:999px;padding:8px 12px;font:600 13px Arial,sans-serif;color:#050b4d;cursor:pointer}
 .nivel-bar button[aria-pressed=true]{background:#050b4d;color:#fff}
 @media (max-width:560px){.nivel-bar{left:12px;right:12px;bottom:12px;justify-content:center}.nivel-bar span{display:none}}
+
+.ad-ancora{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:45;background:#fff;padding:6px 10px 8px;box-shadow:0 -4px 18px rgba(0,5,76,.16);width:748px;max-width:100%}
+.ads-hard .ad-ancora{display:flex!important;flex-direction:column;align-items:center;gap:3px}
+.ad-ancora .ad-box{width:728px;height:90px;max-width:100%}
+.ad-ancora .m{display:none}
+.fecha-ancora{position:absolute;top:-26px;right:0;width:28px;height:26px;border:0;background:#fff;color:var(--marinho);font:700 18px/1 var(--f-apoio);cursor:pointer;box-shadow:0 -3px 8px rgba(0,5,76,.12)}
+.ad-ancora.fechado{display:none!important}
+.ads-hard .nivel-bar{bottom:128px}
+.ads-hard .rodape{padding-bottom:110px}
+.ad-hard-lista{padding:20px 0;border-bottom:1px solid var(--linha);grid-column:1/-1}
+@media (max-width:820px){.ad-ancora{width:100%;padding:4px 0 6px}.ad-ancora .ad-box{width:320px;height:50px}.ad-ancora .d{display:none}.ad-ancora .m{display:inline}.ads-hard .nivel-bar{bottom:76px}.ads-hard .rodape{padding-bottom:70px}}
 .nao-cabe{display:none!important}
 .cab-ed{background:var(--ed-bg);padding:36px 0 30px}
 .cab-ed .desc{font:700 18px/1.45 var(--f-apoio);color:var(--marinho);max-width:640px;margin:18px 0 20px}
@@ -56,6 +67,7 @@ mark{background:#fde3d4;color:inherit;padding:0 2px}
   <p class="total"><b>3 resultados</b> para “ZPE”</p><a class="item ed-portos" href="materia.html" data-componente="resultado-busca" data-posicao="resultado-1" data-conteudo-id="zpe"><img class="" src="assets/img/porto-guindastes.jpg" alt="Guindastes de um terminal portuário" loading="lazy"><span><span class="chapeu">Reportagem</span><span class="h3 t"><mark>ZPE</mark> em Mato Grosso do Sul será a 5ª a operar no país</span><span class="resumo" style="display:block">A localização estratégica irá conectar São Paulo, Paraná e Goiás a países do Mercosul</span><span class="meta">Luiz Roberto Marinho | 14 nov 2026</span></span></a><a class="item ed-portos" href="episodio.html" data-componente="resultado-busca" data-posicao="resultado-2" data-conteudo-id="imbituba"><img class="" src="assets/img/podcast-ep04.jpg" alt="Gravação do podcast no estúdio" loading="lazy"><span><span class="chapeu">Podcast</span><span class="h3 t">Modelo de parceria em Santa Catarina pode ser replicado em outras <mark>ZPE</mark>s</span><span class="resumo" style="display:block">Renato Lacerda, diretor técnico da <mark>ZPE</mark> de Imbituba (SC), detalha o empreendimento que pode servir de modelo para o país</span><span class="meta">Luiz Roberto Marinho | 06 nov 2026</span></span></a><a class="item ed-portos" href="opiniao.html" data-componente="resultado-busca" data-posicao="resultado-3" data-conteudo-id="datacenter"><img class="" src="assets/img/data-center.jpg" alt="Corredor de servidores em um data center" loading="lazy"><span><span class="chapeu">Artigo</span><span class="h3 t">Data centers e <mark>ZPE</mark>s: o nexo virtuoso</span><span class="resumo" style="display:block">Incentivos e energia renovável tornam as <mark>ZPE</mark>s ideais para atrair data centers focados em IA</span><span class="meta">Helson Braga e Raul Gouveia | 13 nov 2026</span></span></a><nav class="paginacao" aria-label="Páginas"><a href="#" aria-current="page">1</a><a href="#">2</a><a href="#">3</a><a href="#">Próxima</a></nav>
 </div>
 
+
 </main>
 <footer class="rodape"><div class="wrap"><div class="topo"><div><img src="assets/logo-branco.png" alt="Diálogos Estruturantes" width="230" height="52" loading="lazy"><p class="lema">O ponto de encontro de quem faz o Brasil acontecer.</p></div><div><h4>Editorias</h4><ul><li><a href="editoria.html">Portos</a></li><li><a href="editoria.html">Infra</a></li><li><a href="editoria.html">Agro</a></li><li><a href="editoria.html">Regulação</a></li><li><a href="editoria.html">Tributos</a></li><li><a href="editoria.html">No Direito</a></li></ul></div><div><h4>Formatos</h4><ul><li><a href="opiniao.html">Opinião</a></li><li><a href="explicador.html">Entenda</a></li><li><a href="podcast.html">Podcast</a></li><li><a href="revista.html">Revista</a></li><li><a href="minuta.html">Newsletter</a></li><li><a href="minuta-arquivo.html">Edições da newsletter</a></li><li><a href="agenda.html">Agenda</a></li></ul></div><div><h4>O portal</h4><ul><li><a href="institucional.html">Quem somos</a></li><li><a href="institucional.html#expediente">Expediente</a></li><li><a href="institucional.html#anuncie">Anuncie</a></li><li><a href="institucional.html#contato">Contato</a></li><li><a href="legal.html">Privacidade e termos</a></li><li><a href="legal.html#cookies">Preferências de cookies</a></li></ul></div></div><div class="base"><span>© 2026 <b>Diálogos Estruturantes</b>. Uma publicação da M&amp;M Lexis Editora.</span><span>www.dialogosestruturantes.com.br | @dialogos.estruturantes</span></div></div></footer>
 
@@ -84,7 +96,7 @@ mark{background:#fde3d4;color:inherit;padding:0 2px}
       v.innerHTML = '<p class="video-note">No portal, o vídeo do YouTube carrega aqui quando o leitor clica, sem cookies antes do play.</p>';
     }, {once:true});
   });
-  var niveis = ['leve','equilibrada','intensiva'];
+  var niveis = ['leve','equilibrada','intensiva','hard'];
   var q = new URLSearchParams(location.search).get('anuncios');
   function setNivel(n){
     if (niveis.indexOf(n) < 0) n = 'equilibrada';
