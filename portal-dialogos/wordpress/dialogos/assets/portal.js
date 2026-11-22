@@ -13,7 +13,13 @@
     var cp = e.target.closest('[data-copiar]');
     if (cp) { e.preventDefault(); try { navigator.clipboard.writeText(cp.href); cp.setAttribute('aria-label','Link copiado'); } catch(x){} }
     var ck = e.target.closest('[data-preferencias-cookies]');
-    if (ck) { e.preventDefault(); dl.push({event:'abrir_preferencias_cookies'}); }
+    if (ck) {
+      e.preventDefault(); dl.push({event:'abrir_preferencias_cookies'});
+      // Complianz: reabre o banner pelo botão "Gerenciar consentimento" que ele mesmo coloca na página
+      var cm = document.querySelector('#cmplz-manage-consent button.cmplz-manage-consent') || document.querySelector('button.cmplz-manage-consent');
+      if (cm) { cm.click(); }
+      else if (typeof window.cmplz_set_banner_status === 'function') { window.cmplz_set_banner_status('show'); }
+    }
   });
 
   // Newsletter: envia ao WordPress, que repassa ao Brevo
