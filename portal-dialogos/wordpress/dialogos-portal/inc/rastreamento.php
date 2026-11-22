@@ -90,10 +90,18 @@ function dp_dados_pagina() {
 	return apply_filters( 'dp_dados_pagina', $d );
 }
 
+/**
+ * Quando o Complianz (banner de cookies) está ativo, ele mesmo insere o GTM e
+ * controla o Consent Mode. O portal continua enviando os dados da página.
+ */
+function dp_cmp_controla_gtm() {
+	return defined( 'cmplz_version' ) || defined( 'cmplz_plugin' ) || function_exists( 'cmplz_has_consent' );
+}
+
 add_action( 'wp_head', function () {
 	echo "<script>window.dataLayer=window.dataLayer||[];dataLayer.push(" . wp_json_encode( dp_dados_pagina() ) . ");</script>\n";
 	$gtm = dp_config( 'gtm_id' );
-	if ( $gtm ) {
+	if ( $gtm && ! dp_cmp_controla_gtm() ) {
 		// Consent Mode v2: tudo negado até o banner de cookies registrar a escolha do leitor.
 		echo "<script>function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>\n";
 		printf( "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','%s');</script>\n", esc_js( $gtm ) );
@@ -102,7 +110,7 @@ add_action( 'wp_head', function () {
 
 add_action( 'wp_body_open', function () {
 	$gtm = dp_config( 'gtm_id' );
-	if ( $gtm ) {
+	if ( $gtm && ! dp_cmp_controla_gtm() ) {
 		printf( '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=%s" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>', esc_attr( $gtm ) );
 	}
 } );

@@ -25,7 +25,7 @@
 			<li><a href="<?php echo esc_url( home_url( '/quem-somos/#anuncie' ) ); ?>">Anuncie</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/quem-somos/#contato' ) ); ?>">Contato</a></li>
 			<li><a href="<?php echo esc_url( get_privacy_policy_url() ?: home_url( '/privacidade-e-termos/' ) ); ?>">Privacidade e termos</a></li>
-			<li><a href="#" data-preferencias-cookies>Preferências de cookies</a></li>
+			<li><a href="#" class="cmplz-show-banner" data-preferencias-cookies>Preferências de cookies</a></li>
 		</ul></div>
 	</div>
 	<div class="base"><span>© <?php echo esc_html( wp_date( 'Y' ) ); ?> <b>Diálogos Estruturantes</b>. Uma publicação da M&amp;M Lexis Editora.</span>
