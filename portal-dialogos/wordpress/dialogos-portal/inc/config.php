@@ -15,6 +15,9 @@ function dp_config_padrao() {
 		'trava_densidade'  => '1',
 		'gtm_id'           => '',
 		'nome_newsletter'  => 'A Minuta',
+		'disparo_newsletter' => 'rd',
+		'rd_api_key'       => '',
+		'rd_identificador' => 'newsletter-portal',
 		'brevo_api_key'    => '',
 		'brevo_lista_id'   => '',
 		'brevo_template_id'=> '',
@@ -83,6 +86,19 @@ function dp_tela_config() {
 			<h2>Newsletter</h2>
 			<table class="form-table">
 				<tr><th>Nome da newsletter</th><td><input type="text" class="regular-text" name="dialogos_portal[nome_newsletter]" value="<?php echo esc_attr( $c['nome_newsletter'] ); ?>"></td></tr>
+				<tr><th>Ferramenta de disparo</th><td><?php $sel( 'disparo_newsletter', array( 'rd' => 'RD Station (padrão)', 'brevo' => 'Brevo (o RD continua recebendo todas as inscrições)' ) ); ?>
+					<p class="description">Toda inscrição vai sempre para o RD Station. Escolher Brevo só acrescenta o envio ao Brevo, com o e-mail de confirmação dele.</p></td></tr>
+			</table>
+			<h3>RD Station (sempre recebe as inscrições)</h3>
+			<table class="form-table">
+				<tr><th>Chave de API do RD Station</th><td><input type="password" class="regular-text" name="dialogos_portal[rd_api_key]" value="<?php echo esc_attr( $c['rd_api_key'] ); ?>" autocomplete="off">
+					<p class="description">RD Station Marketing › Configurações da conta › Integrações › Chaves de API (chave pública).</p>
+					<?php $erro = get_option( 'dp_rd_ultimo_erro' ); if ( $erro ) { printf( '<p style="color:#b32d2e"><strong>Último erro do RD (%s):</strong> %s</p>', esc_html( $erro['data'] ), esc_html( $erro['msg'] ) ); } ?></td></tr>
+				<tr><th>Identificador da conversão</th><td><input type="text" class="regular-text" name="dialogos_portal[rd_identificador]" value="<?php echo esc_attr( $c['rd_identificador'] ); ?>">
+					<p class="description">Nome da conversão no RD. Use para montar o segmento "inscritos da newsletter".</p></td></tr>
+			</table>
+			<h3>Brevo (opcional)</h3>
+			<table class="form-table">
 				<tr><th>Chave de API do Brevo</th><td><input type="password" class="regular-text" name="dialogos_portal[brevo_api_key]" value="<?php echo esc_attr( $c['brevo_api_key'] ); ?>" autocomplete="off">
 					<p class="description">Brevo › Configurações › SMTP e API › Chaves de API. Sem a chave, as inscrições ficam guardadas em Ferramentas › Inscritos da newsletter.</p></td></tr>
 				<tr><th>ID da lista no Brevo</th><td><input type="number" name="dialogos_portal[brevo_lista_id]" value="<?php echo esc_attr( $c['brevo_lista_id'] ); ?>"></td></tr>
