@@ -50,7 +50,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <header><div class="wrap">
   <p class="meta">Portal Diálogos Estruturantes</p>
   <h1>Checklist de lançamento</h1>
-  <p class="meta">Lançamento: <b>sexta-feira, 11 de dezembro de 2026</b> · Atualizado em <b>22/11/2026, 22h50</b></p>
+  <p class="meta">Lançamento: <b>sexta-feira, 11 de dezembro de 2026</b> · Atualizado em <b>22/11/2026, 22h55</b></p>
 </div></header>
 <nav class="barra"><div class="wrap"><a href="#antes">Até quarta, 09/12</a><a href="#vespera">Quinta, 10/12</a><a href="#dia">Sexta, 11/12</a><a href="#depois">De 12/12 a 18/12</a><a href="#dns">DNS</a><a href="#voltar">Voltar atrás</a>
 <span class="prog"><b id="feitos">0</b> de 28 concluídos <button type="button" id="zerar">Desmarcar tudo</button></span></div></nav>
@@ -73,11 +73,11 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
   </div>
 </article>
 <article class="item" id="a3">
-  <label class="topo"><input type="checkbox" data-id="a3"><span class="t">Lista de endereços antigos da LP</span></label>
+  <label class="topo"><input type="checkbox" data-id="a3"><span class="t">Lista de endereços antigos da LP (levantada em 22/11)</span></label>
   <div class="corpo">
-    <ol><li>Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado).</li><li>Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br.</li></ol>
-    <div class="bloco conferir"><b>Como conferir</b><p>A lista está anotada e revisada antes de 10/12.</p></div>
-    <div class="bloco errado"><b>Se der errado</b><p>Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.</p></div>
+    <ol><li>O sitemap da LP tem só duas páginas: / e /old-home.</li><li>/ passa a abrir a home do portal (é o objetivo; não precisa de redirecionamento).</li><li>/old-home: decidir até 10/12 entre apagar a página no Framer ou redirecionar para https://lancamento.dialogosestruturantes.com.br/old-home.</li><li>Links com UTM e QR codes que apontam para a página principal continuam funcionando e passam a abrir o portal.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir dialogosestruturantes.com.br/sitemap.xml de novo em 10/12 e conferir se não surgiu página nova na LP.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Página nova na LP depois de 22/11: incluir na lista de redirecionamentos do dia 11.</p></div>
   </div>
 </article>
 <article class="item" id="a4">
@@ -193,11 +193,11 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
   </div>
 </article>
 <article class="item" id="d7">
-  <label class="topo"><input type="checkbox" data-id="d7"><span class="t">8h10 · Redirecionamentos da LP antiga</span></label>
+  <label class="topo"><input type="checkbox" data-id="d7"><span class="t">8h10 · Redirecionamento da LP antiga</span></label>
   <div class="corpo">
-    <ol><li>Instalar o plugin Redirection (Plugins › Adicionar novo).</li><li>Ferramentas › Redirection: cadastrar cada endereço da lista do item &quot;Lista de endereços antigos da LP&quot;, tipo 301.</li></ol>
-    <div class="bloco conferir"><b>Como conferir</b><p>Abrir cada endereço antigo: ele leva ao destino certo, sem 404.</p></div>
-    <div class="bloco errado"><b>Se der errado</b><p>Página 404 num endereço antigo: cadastrar o redirecionamento que faltou.</p></div>
+    <ol><li>Se /old-home não foi apagada no Framer: instalar o plugin Redirection (Plugins › Adicionar novo).</li><li>Ferramentas › Redirection: origem /old-home, destino https://lancamento.dialogosestruturantes.com.br/old-home, tipo 301.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir dialogosestruturantes.com.br/old-home: leva à página na lancamento, sem 404.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se aparecer 404: conferir se a origem foi digitada com a barra inicial (/old-home).</p></div>
   </div>
 </article>
 <article class="item" id="d8">
@@ -284,7 +284,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <div class="tabela"><table><thead><tr><th>Tipo</th><th>Nome</th><th>Valor</th><th>Para quê</th></tr></thead><tbody><tr><td>A</td><td>@</td><td>31.43.160.6 e 31.43.161.6</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>CNAME</td><td>www</td><td>sites.framer.app</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>A ou CNAME</td><td>novo</td><td>Hostinger</td><td>Portal até o lançamento</td></tr><tr><td>MX</td><td>@</td><td>smtp.google.com</td><td>E-mail do Google Workspace: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>v=spf1 …</td><td>SPF do e-mail: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>google-site-verification=…</td><td>Search Console: NUNCA mexer</td></tr><tr><td>TXT</td><td>_dmarc</td><td>v=DMARC1 …</td><td>DMARC do e-mail: NUNCA mexer</td></tr><tr><td>CNAME</td><td>emailmkt, relacionamentos, clickcontato, s1._domainkey, s2._domainkey</td><td>RD Station / SendGrid</td><td>E-mail marketing do RD: NUNCA mexer</td></tr></tbody></table></div></section>
 <section id="voltar"><h2>Se for preciso voltar atrás</h2><p class="sub">Use só se o portal não abrir depois de 1 hora da troca. A LP volta ao ar em poucos minutos.</p>
 <ol class="volta"><li>hPanel › Sites › ⋮ › Alterar domínio: voltar o portal para novo.dialogosestruturantes.com.br.</li><li>DNS: apagar os registros A de @ e o CNAME de www que apontam para a Hostinger.</li><li>DNS: recriar A @ → 31.43.160.6, A @ → 31.43.161.6 e CNAME www → sites.framer.app (como no print da véspera).</li><li>Framer › Site Settings › Domains: voltar o domínio do site para dialogosestruturantes.com.br.</li><li>Conferir de novo os registros de e-mail (MX, SPF, DMARC, RD) contra o print.</li></ol></section>
-<section><h2>O que mudou neste checklist</h2><ul class="mud"><li><b>22/11/2026</b> Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.</li><li><b>22/11/2026</b> Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.</li><li><b>22/11/2026</b> Retirado o popup do II Prêmio: não haverá popup do evento.</li></ul></section>
+<section><h2>O que mudou neste checklist</h2><ul class="mud"><li><b>22/11/2026</b> Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.</li><li><b>22/11/2026</b> Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.</li><li><b>22/11/2026</b> Retirado o popup do II Prêmio: não haverá popup do evento.</li><li><b>22/11/2026</b> Levantados os endereços da LP: só / e /old-home. Redirecionamento do dia 11 reduzido a /old-home (ou nenhum, se a página for apagada no Framer).</li></ul></section>
 </main>
 <footer class="wrap">As marcações ficam salvas só neste navegador. O manual do portal tem a mesma lista na seção "Dia do lançamento".</footer>
 <script>

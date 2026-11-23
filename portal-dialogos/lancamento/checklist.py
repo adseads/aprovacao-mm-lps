@@ -5,7 +5,7 @@ Edite só este arquivo e rode:  python3 gerar.py
 Isso gera index.html (página no GitHub) e manual.md (texto para o manual).
 """
 
-ATUALIZADO = '22/11/2026, 22h50'
+ATUALIZADO = '22/11/2026, 22h55'
 LANCAMENTO = 'sexta-feira, 11 de dezembro de 2026'
 
 # Valores de DNS atuais (para conferir e para voltar atrás, se preciso).
@@ -36,11 +36,13 @@ FASES = [
           'Celular: abrir as mesmas páginas no telefone.'],
          'O contato de teste aparece no RD com a conversão newsletter-portal. No GTM (Visualizar), o consentimento muda de denied para granted ao aceitar.',
          'Se a inscrição não chegar ao RD: Configurações › Portal mostra o "Último erro do RD" embaixo da chave. Mandar print.'),
-        ('a3', 'Lista de endereços antigos da LP',
-         ['Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado).',
-          'Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br.'],
-         'A lista está anotada e revisada antes de 10/12.',
-         'Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.'),
+        ('a3', 'Lista de endereços antigos da LP (levantada em 22/11)',
+         ['O sitemap da LP tem só duas páginas: / e /old-home.',
+          '/ passa a abrir a home do portal (é o objetivo; não precisa de redirecionamento).',
+          '/old-home: decidir até 10/12 entre apagar a página no Framer ou redirecionar para https://lancamento.dialogosestruturantes.com.br/old-home.',
+          'Links com UTM e QR codes que apontam para a página principal continuam funcionando e passam a abrir o portal.'],
+         'Abrir dialogosestruturantes.com.br/sitemap.xml de novo em 10/12 e conferir se não surgiu página nova na LP.',
+         'Página nova na LP depois de 22/11: incluir na lista de redirecionamentos do dia 11.'),
         ('a4', 'Avisar a equipe',
          ['Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal.',
           'Confirmar quem estará disponível nesse horário (você e quem mais for testar).'],
@@ -119,11 +121,11 @@ FASES = [
           'Limpar o cache (ícone de losango › Limpar tudo) e desativar e excluir o plugin.'],
          'Abrir uma matéria, clicar com o botão direito › Exibir código-fonte e buscar (Ctrl+F) por "novo.": não deve aparecer.',
          'Fotos quebradas depois da troca: limpar o cache de novo e recarregar com Ctrl+F5.'),
-        ('d7', '8h10 · Redirecionamentos da LP antiga',
-         ['Instalar o plugin Redirection (Plugins › Adicionar novo).',
-          'Ferramentas › Redirection: cadastrar cada endereço da lista do item "Lista de endereços antigos da LP", tipo 301.'],
-         'Abrir cada endereço antigo: ele leva ao destino certo, sem 404.',
-         'Página 404 num endereço antigo: cadastrar o redirecionamento que faltou.'),
+        ('d7', '8h10 · Redirecionamento da LP antiga',
+         ['Se /old-home não foi apagada no Framer: instalar o plugin Redirection (Plugins › Adicionar novo).',
+          'Ferramentas › Redirection: origem /old-home, destino https://lancamento.dialogosestruturantes.com.br/old-home, tipo 301.'],
+         'Abrir dialogosestruturantes.com.br/old-home: leva à página na lancamento, sem 404.',
+         'Se aparecer 404: conferir se a origem foi digitada com a barra inicial (/old-home).'),
         ('d8', '8h20 · Liberar o Google',
          ['WordPress › Configurações › Leitura: DESMARCAR "Evitar que mecanismos de busca indexem este site" e salvar.',
           'Search Console › Sitemaps: enviar wp-sitemap.xml.',
@@ -190,4 +192,5 @@ MUDANCAS = [
     ('22/11/2026', 'Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.'),
     ('22/11/2026', 'Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.'),
     ('22/11/2026', 'Retirado o popup do II Prêmio: não haverá popup do evento.'),
+    ('22/11/2026', 'Levantados os endereços da LP: só / e /old-home. Redirecionamento do dia 11 reduzido a /old-home (ou nenhum, se a página for apagada no Framer).'),
 ]
