@@ -50,7 +50,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <header><div class="wrap">
   <p class="meta">Portal Diálogos Estruturantes</p>
   <h1>Checklist de lançamento</h1>
-  <p class="meta">Lançamento: <b>sexta-feira, 11 de dezembro de 2026</b> · Atualizado em <b>22/11/2026, 22h45</b></p>
+  <p class="meta">Lançamento: <b>sexta-feira, 11 de dezembro de 2026</b> · Atualizado em <b>22/11/2026, 22h50</b></p>
 </div></header>
 <nav class="barra"><div class="wrap"><a href="#antes">Até quarta, 09/12</a><a href="#vespera">Quinta, 10/12</a><a href="#dia">Sexta, 11/12</a><a href="#depois">De 12/12 a 18/12</a><a href="#dns">DNS</a><a href="#voltar">Voltar atrás</a>
 <span class="prog"><b id="feitos">0</b> de 28 concluídos <button type="button" id="zerar">Desmarcar tudo</button></span></div></nav>
@@ -59,7 +59,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <article class="item" id="a1">
   <label class="topo"><input type="checkbox" data-id="a1"><span class="t">Conteúdo do portal completo</span></label>
   <div class="corpo">
-    <ol><li>Home com matérias recentes de todas as editorias.</li><li>Links do YouTube nos episódios e PDF nas edições da revista.</li><li>Foto e cargo dos autores preenchidos (Usuários).</li><li>Popup do II Prêmio criado, com fim em 11/12.</li></ol>
+    <ol><li>Home com matérias recentes de todas as editorias.</li><li>Links do YouTube nos episódios e PDF nas edições da revista.</li><li>Foto e cargo dos autores preenchidos (Usuários).</li></ol>
     <div class="bloco conferir"><b>Como conferir</b><p>Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda.</p></div>
     <div class="bloco errado"><b>Se der errado</b><p>Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).</p></div>
   </div>
@@ -243,7 +243,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <article class="item" id="d13">
   <label class="topo"><input type="checkbox" data-id="d13"><span class="t">9h10 · Volta da equipe e divulgação</span></label>
   <div class="corpo">
-    <ol><li>Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin.</li><li>Trocar o link da bio do Instagram e do LinkedIn para o portal.</li><li>Popup do II Prêmio ativo.</li></ol>
+    <ol><li>Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin.</li><li>Trocar o link da bio do Instagram e do LinkedIn para o portal.</li></ol>
     <div class="bloco conferir"><b>Como conferir</b><p>Equipe consegue entrar com verificação em duas etapas.</p></div>
     
   </div>
@@ -284,7 +284,7 @@ button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px s
 <div class="tabela"><table><thead><tr><th>Tipo</th><th>Nome</th><th>Valor</th><th>Para quê</th></tr></thead><tbody><tr><td>A</td><td>@</td><td>31.43.160.6 e 31.43.161.6</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>CNAME</td><td>www</td><td>sites.framer.app</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>A ou CNAME</td><td>novo</td><td>Hostinger</td><td>Portal até o lançamento</td></tr><tr><td>MX</td><td>@</td><td>smtp.google.com</td><td>E-mail do Google Workspace: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>v=spf1 …</td><td>SPF do e-mail: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>google-site-verification=…</td><td>Search Console: NUNCA mexer</td></tr><tr><td>TXT</td><td>_dmarc</td><td>v=DMARC1 …</td><td>DMARC do e-mail: NUNCA mexer</td></tr><tr><td>CNAME</td><td>emailmkt, relacionamentos, clickcontato, s1._domainkey, s2._domainkey</td><td>RD Station / SendGrid</td><td>E-mail marketing do RD: NUNCA mexer</td></tr></tbody></table></div></section>
 <section id="voltar"><h2>Se for preciso voltar atrás</h2><p class="sub">Use só se o portal não abrir depois de 1 hora da troca. A LP volta ao ar em poucos minutos.</p>
 <ol class="volta"><li>hPanel › Sites › ⋮ › Alterar domínio: voltar o portal para novo.dialogosestruturantes.com.br.</li><li>DNS: apagar os registros A de @ e o CNAME de www que apontam para a Hostinger.</li><li>DNS: recriar A @ → 31.43.160.6, A @ → 31.43.161.6 e CNAME www → sites.framer.app (como no print da véspera).</li><li>Framer › Site Settings › Domains: voltar o domínio do site para dialogosestruturantes.com.br.</li><li>Conferir de novo os registros de e-mail (MX, SPF, DMARC, RD) contra o print.</li></ol></section>
-<section><h2>O que mudou neste checklist</h2><ul class="mud"><li><b>22/11/2026</b> Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.</li><li><b>22/11/2026</b> Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.</li></ul></section>
+<section><h2>O que mudou neste checklist</h2><ul class="mud"><li><b>22/11/2026</b> Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.</li><li><b>22/11/2026</b> Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.</li><li><b>22/11/2026</b> Retirado o popup do II Prêmio: não haverá popup do evento.</li></ul></section>
 </main>
 <footer class="wrap">As marcações ficam salvas só neste navegador. O manual do portal tem a mesma lista na seção "Dia do lançamento".</footer>
 <script>

@@ -5,7 +5,7 @@ Edite só este arquivo e rode:  python3 gerar.py
 Isso gera index.html (página no GitHub) e manual.md (texto para o manual).
 """
 
-ATUALIZADO = '22/11/2026, 22h45'
+ATUALIZADO = '22/11/2026, 22h50'
 LANCAMENTO = 'sexta-feira, 11 de dezembro de 2026'
 
 # Valores de DNS atuais (para conferir e para voltar atrás, se preciso).
@@ -26,8 +26,7 @@ FASES = [
         ('a1', 'Conteúdo do portal completo',
          ['Home com matérias recentes de todas as editorias.',
           'Links do YouTube nos episódios e PDF nas edições da revista.',
-          'Foto e cargo dos autores preenchidos (Usuários).',
-          'Popup do II Prêmio criado, com fim em 11/12.'],
+          'Foto e cargo dos autores preenchidos (Usuários).'],
          'Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda.',
          'Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).'),
         ('a2', 'Teste completo no endereço novo',
@@ -154,8 +153,7 @@ FASES = [
          'Inscrição não chegou: Configurações › Portal › "Último erro do RD". As inscrições ficam guardadas em Ferramentas › Inscritos da newsletter e podem ser reenviadas pelo botão "Enviar ao RD as inscrições pendentes".'),
         ('d13', '9h10 · Volta da equipe e divulgação',
          ['Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin.',
-          'Trocar o link da bio do Instagram e do LinkedIn para o portal.',
-          'Popup do II Prêmio ativo.'],
+          'Trocar o link da bio do Instagram e do LinkedIn para o portal.'],
          'Equipe consegue entrar com verificação em duas etapas.',
          ''),
     ]),
@@ -191,4 +189,5 @@ VOLTAR_ATRAS = [
 MUDANCAS = [
     ('22/11/2026', 'Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.'),
     ('22/11/2026', 'Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.'),
+    ('22/11/2026', 'Retirado o popup do II Prêmio: não haverá popup do evento.'),
 ]

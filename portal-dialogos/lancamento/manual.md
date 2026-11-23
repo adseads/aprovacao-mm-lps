@@ -1,12 +1,12 @@
 ## Dia do lançamento (11 de dezembro de 2026)
 
-Checklist completo, com marcação de cada item, na página de lançamento. Atualizado em 22/11/2026, 22h45. Abaixo, o mesmo roteiro.
+Checklist completo, com marcação de cada item, na página de lançamento. Atualizado em 22/11/2026, 22h50. Abaixo, o mesmo roteiro.
 
 ### Até quarta, 09/12: preparação
 
 Tudo que pode ser feito antes, sem risco para a LP.
 
-- [ ] **Conteúdo do portal completo.** Home com matérias recentes de todas as editorias. Links do YouTube nos episódios e PDF nas edições da revista. Foto e cargo dos autores preenchidos (Usuários). Popup do II Prêmio criado, com fim em 11/12. *Como conferir:* Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda. *Se der errado:* Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).
+- [ ] **Conteúdo do portal completo.** Home com matérias recentes de todas as editorias. Links do YouTube nos episódios e PDF nas edições da revista. Foto e cargo dos autores preenchidos (Usuários). *Como conferir:* Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda. *Se der errado:* Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).
 - [ ] **Teste completo no endereço novo.** Inscrição na newsletter com um e-mail de teste. Banner de cookies: aceitar, rejeitar e reabrir pelo rodapé. Busca, página 404 e formulário de contato. Celular: abrir as mesmas páginas no telefone. *Como conferir:* O contato de teste aparece no RD com a conversão newsletter-portal. No GTM (Visualizar), o consentimento muda de denied para granted ao aceitar. *Se der errado:* Se a inscrição não chegar ao RD: Configurações › Portal mostra o "Último erro do RD" embaixo da chave. Mandar print.
 - [ ] **Lista de endereços antigos da LP.** Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado). Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br. *Como conferir:* A lista está anotada e revisada antes de 10/12. *Se der errado:* Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.
 - [ ] **Avisar a equipe.** Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal. Confirmar quem estará disponível nesse horário (você e quem mais for testar). *Como conferir:* Mensagem enviada e confirmada.
@@ -39,7 +39,7 @@ Começar às 7h, nesta ordem. Não pular etapas.
 - [ ] **8h40 · Cookies no domínio definitivo.** Complianz › Assistente › Varredura do site: Iniciar (autenticar de novo, agora no domínio definitivo) e Examinar. Cookiedatabase.org: Sincronizar. Limpar o cache. *Como conferir:* Janela anônima: o banner aparece; "Preferências de cookies" no rodapé reabre o banner. *Se der errado:* Banner não aparece: limpar o cache e testar de novo; persistindo, Complianz › Banner de consentimento e conferir se está ativado.
 - [ ] **8h50 · Medição.** GTM › Visualizar com https://dialogosestruturantes.com.br. GA4 › Relatórios › Tempo real. *Como conferir:* Antes de aceitar: consentimento denied. Depois de aceitar: granted, e a visita aparece no Tempo real do GA4. *Se der errado:* Nada no Tempo real: conferir se o contêiner GTM-MNKNGL3X foi publicado e se o Complianz está com o ID certo.
 - [ ] **9h00 · Newsletter e RD.** Inscrever um e-mail de teste no portal (rodapé ou página Newsletter). No RD, conferir o contato com a conversão newsletter-portal. Agendar ou disparar a newsletter da estreia para o segmento Newsletter do portal. *Como conferir:* Contato de teste no RD; newsletter enviada; links abrem o portal. *Se der errado:* Inscrição não chegou: Configurações › Portal › "Último erro do RD". As inscrições ficam guardadas em Ferramentas › Inscritos da newsletter e podem ser reenviadas pelo botão "Enviar ao RD as inscrições pendentes".
-- [ ] **9h10 · Volta da equipe e divulgação.** Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin. Trocar o link da bio do Instagram e do LinkedIn para o portal. Popup do II Prêmio ativo. *Como conferir:* Equipe consegue entrar com verificação em duas etapas.
+- [ ] **9h10 · Volta da equipe e divulgação.** Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin. Trocar o link da bio do Instagram e do LinkedIn para o portal. *Como conferir:* Equipe consegue entrar com verificação em duas etapas.
 
 ### De 12/12 a 18/12: primeira semana
 
