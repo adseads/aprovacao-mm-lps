@@ -2,19 +2,26 @@
 /* Portal Diálogos Estruturantes: comportamento das páginas. */
 (function(){
   var dl = window.dataLayer = window.dataLayer || [];
+  // Envia um evento limpando os parâmetros de eventos anteriores (a camada de dados guarda o último valor de cada chave).
+  function ev(nome, extra) {
+    var o = {event: nome, componente: undefined, posicao: undefined, setor: undefined, mes: undefined, plataforma: undefined};
+    for (var k in (extra || {})) { o[k] = extra[k]; }
+    dl.push(o);
+  }
+  window.dtEvento = ev;
   var CFG = window.DT || {};
 
   // Cliques rastreados: qualquer elemento com data-componente
   document.addEventListener('click', function(e){
     var el = e.target.closest('[data-componente]');
     if (el && el.dataset.componente !== 'anuncio') {
-      dl.push({event:'clique_conteudo', componente:el.dataset.componente, posicao:el.dataset.posicao||''});
+      ev('clique_conteudo', {componente:el.dataset.componente, posicao:el.dataset.posicao||''});
     }
     var cp = e.target.closest('[data-copiar]');
     if (cp) { e.preventDefault(); try { navigator.clipboard.writeText(cp.href); cp.setAttribute('aria-label','Link copiado'); } catch(x){} }
     var ck = e.target.closest('[data-preferencias-cookies]');
     if (ck) {
-      e.preventDefault(); dl.push({event:'abrir_preferencias_cookies'});
+      e.preventDefault(); ev('abrir_preferencias_cookies');
       // Complianz: reabre o banner pelo botão "Gerenciar consentimento" que ele mesmo coloca na página
       var cm = document.querySelector('#cmplz-manage-consent button.cmplz-manage-consent') || document.querySelector('button.cmplz-manage-consent');
       if (cm) { cm.click(); }
@@ -32,7 +39,7 @@
       f.querySelectorAll('button').forEach(function(b){ b.disabled = true; });
       fetch(CFG.ajax, {method:'POST', body:dados, credentials:'same-origin'}).then(function(r){ return r.json(); }).then(function(r){
         if (out) out.textContent = (r.data && r.data.msg) || 'Pronto. Confira seu e-mail para confirmar a inscrição.';
-        if (r.success) { dl.push({event:'minuta_inscricao', posicao:f.dataset.posicao}); f.querySelectorAll('input').forEach(function(x){ x.disabled = true; }); }
+        if (r.success) { ev('minuta_inscricao', {posicao:f.dataset.posicao}); f.querySelectorAll('input').forEach(function(x){ x.disabled = true; }); }
         else f.querySelectorAll('button').forEach(function(b){ b.disabled = false; });
       }).catch(function(){ if (out) out.textContent = 'Não foi possível enviar agora. Tente de novo em instantes.'; f.querySelectorAll('button').forEach(function(b){ b.disabled = false; }); });
     });
@@ -42,7 +49,7 @@
   document.querySelectorAll('div[data-video]').forEach(function(v){
     function abrir(){
       var id = v.dataset.video; if (!id) return;
-      dl.push({event:'podcast_play', plataforma:'youtube'});
+      ev('podcast_play', {plataforma:'youtube'});
       v.classList.add('is-on');
       v.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="Vídeo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';
     }
@@ -115,7 +122,7 @@
     });
   }
   var f = document.querySelector('.fecha-ancora');
-  if (f) f.addEventListener('click', function(){ f.parentNode.classList.add('fechado'); (window.dataLayer=window.dataLayer||[]).push({event:'anuncio_ancora_fechado'}); });
+  if (f) f.addEventListener('click', function(){ f.parentNode.classList.add('fechado'); window.dtEvento('anuncio_ancora_fechado'); });
 })();
 
 (function(){
@@ -189,7 +196,7 @@
     grade.classList.toggle('filtrado', !!s);
     if (salvar){
       try { localStorage.setItem('setor_preferido', s); } catch(e){}
-      (window.dataLayer = window.dataLayer || []).push({event:'setor_preferido', setor:s});
+      window.dtEvento('setor_preferido', {setor:s});
     }
   }
   chips.forEach(function(c){ c.addEventListener('click', function(){
@@ -216,7 +223,7 @@
       h.hidden = !tem;
     });
     document.querySelector('.vazio').style.display = vis ? 'none' : 'block';
-    (window.dataLayer = window.dataLayer || []).push({event:'filtro_agenda', setor:s, mes:m});
+    window.dtEvento('filtro_agenda', {setor:s, mes:m});
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ btns.forEach(function(x){ x.setAttribute('aria-pressed', x === b); }); aplicar(); }); });
   sel.addEventListener('change', aplicar);

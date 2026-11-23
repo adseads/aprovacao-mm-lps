@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DT_VERSAO', '0.1.2' );
+define( 'DT_VERSAO', '0.1.3' );
 define( 'DT_URI', get_template_directory_uri() );
 
 require_once get_template_directory() . '/inc/ajudantes.php';
