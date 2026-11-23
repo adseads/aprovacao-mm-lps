@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Checklist de lançamento · Diálogos Estruturantes</title>
+<style>
+@font-face{font-family:"Public Sans";src:url(../templates/assets/fontes/public-sans-latin-wght-normal.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:"Source Serif 4";src:url(../templates/assets/fontes/source-serif-4-latin-wght-normal.woff2) format("woff2");font-weight:200 900}
+:root{--marinho:#00054c;--laranja:#d95924;--tinta:#1d2033;--suave:#5b6072;--linha:#dfe2ea;--fundo:#f4f5f9;--ok:#209961;--alerta:#b3261e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.55 "Public Sans",Arial,sans-serif}
+header{background:var(--marinho);color:#fff;padding:28px 16px 22px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header .wrap{padding:0}
+h1{font:700 clamp(26px,5vw,36px)/1.15 "Source Serif 4",Georgia,serif;margin:4px 0 8px}
+.meta{color:#c9cbe0;font-size:14px;margin:0}
+.meta b{color:#fff}
+.barra{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--linha)}
+.barra .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;padding:10px 16px}
+.barra a{color:var(--marinho);font-weight:600;font-size:14px;text-decoration:none}
+.prog{margin-left:auto;font-size:14px;color:var(--suave)}
+.prog b{color:var(--laranja)}
+main{padding:8px 0 40px}
+h2{font:700 24px/1.2 "Source Serif 4",Georgia,serif;color:var(--marinho);margin:34px 0 4px}
+.sub{color:var(--suave);margin:0 0 14px}
+.item{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--linha);margin:0 0 10px}
+.item.feito{border-left-color:var(--ok)}
+.item.feito .t{color:var(--suave);text-decoration:line-through}
+.topo{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;cursor:pointer;font-weight:700;color:var(--marinho)}
+.topo input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ok);flex:none}
+.corpo{padding:0 16px 14px 48px}
+.corpo ol{margin:0 0 10px;padding-left:18px}
+.corpo li{margin:2px 0}
+.bloco{font-size:15px;padding:8px 12px;margin:8px 0 0;background:var(--fundo)}
+.bloco p{margin:2px 0 0}
+.conferir{border-left:3px solid var(--marinho)}
+.errado{border-left:3px solid var(--laranja)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--linha);vertical-align:top}
+th{background:var(--marinho);color:#fff;font-weight:600}
+.tabela{overflow-x:auto}
+.volta{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--alerta);padding:12px 16px 12px 36px}
+.mud li{margin:4px 0}
+footer{color:var(--suave);font-size:13px;padding:24px 0 40px}
+button{font:600 14px "Public Sans",Arial,sans-serif;background:none;border:1px solid var(--linha);padding:6px 10px;cursor:pointer;color:var(--marinho)}
+:focus-visible{outline:3px solid var(--laranja);outline-offset:2px}
+@media (max-width:600px){.corpo{padding-left:16px}}
+@media print{.barra,button{display:none}.item{break-inside:avoid}}
+</style></head>
+<body>
+<header><div class="wrap">
+  <p class="meta">Portal Diálogos Estruturantes</p>
+  <h1>Checklist de lançamento</h1>
+  <p class="meta">Lançamento: <b>sexta-feira, 11 de dezembro de 2026</b> · Atualizado em <b>22/11/2026</b></p>
+</div></header>
+<nav class="barra"><div class="wrap"><a href="#antes">Até quarta, 09/12</a><a href="#vespera">Quinta, 10/12</a><a href="#dia">Sexta, 11/12</a><a href="#depois">De 12/12 a 18/12</a><a href="#dns">DNS</a><a href="#voltar">Voltar atrás</a>
+<span class="prog"><b id="feitos">0</b> de 26 concluídos <button type="button" id="zerar">Desmarcar tudo</button></span></div></nav>
+<main class="wrap">
+<section class="fase" id="antes"><h2>Até quarta, 09/12: preparação</h2><p class="sub">Tudo que pode ser feito antes, sem risco para a LP.</p>
+<article class="item" id="a1">
+  <label class="topo"><input type="checkbox" data-id="a1"><span class="t">Conteúdo do portal completo</span></label>
+  <div class="corpo">
+    <ol><li>Home com matérias recentes de todas as editorias.</li><li>Links do YouTube nos episódios e PDF nas edições da revista.</li><li>Foto e cargo dos autores preenchidos (Usuários).</li><li>Popup do II Prêmio criado, com fim em 11/12.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).</p></div>
+  </div>
+</article>
+<article class="item" id="a2">
+  <label class="topo"><input type="checkbox" data-id="a2"><span class="t">Teste completo no endereço novo</span></label>
+  <div class="corpo">
+    <ol><li>Inscrição na newsletter com um e-mail de teste.</li><li>Banner de cookies: aceitar, rejeitar e reabrir pelo rodapé.</li><li>Busca, página 404 e formulário de contato.</li><li>Celular: abrir as mesmas páginas no telefone.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>O contato de teste aparece no RD com a conversão newsletter-portal. No GTM (Visualizar), o consentimento muda de denied para granted ao aceitar.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se a inscrição não chegar ao RD: Configurações › Portal mostra o &quot;Último erro do RD&quot; embaixo da chave. Mandar print.</p></div>
+  </div>
+</article>
+<article class="item" id="a3">
+  <label class="topo"><input type="checkbox" data-id="a3"><span class="t">Lista de endereços antigos da LP</span></label>
+  <div class="corpo">
+    <ol><li>Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado).</li><li>Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>A lista está anotada e revisada antes de 10/12.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.</p></div>
+  </div>
+</article>
+<article class="item" id="a4">
+  <label class="topo"><input type="checkbox" data-id="a4"><span class="t">Avisar a equipe</span></label>
+  <div class="corpo">
+    <ol><li>Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal.</li><li>Confirmar quem estará disponível nesse horário (você e quem mais for testar).</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Mensagem enviada e confirmada.</p></div>
+    
+  </div>
+</article>
+<article class="item" id="a5">
+  <label class="topo"><input type="checkbox" data-id="a5"><span class="t">Decidir os anúncios do lançamento</span></label>
+  <div class="corpo">
+    <ol><li>Em Configurações › Portal, definir se os anúncios ficam Desligados ou em Prévia no dia 11.</li><li>Sem a conta do Ad Manager, o recomendado é Desligado.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir uma matéria numa janela anônima e ver se aparecem ou não os espaços cinza de &quot;Publicidade&quot;.</p></div>
+    
+  </div>
+</article></section><section class="fase" id="vespera"><h2>Quinta, 10/12: véspera</h2><p class="sub">Ajustes que encurtam a troca do dia seguinte.</p>
+<article class="item" id="v1">
+  <label class="topo"><input type="checkbox" data-id="v1"><span class="t">Print completo do DNS atual</span></label>
+  <div class="corpo">
+    <ol><li>hPanel › Domínios › dialogosestruturantes.com.br › DNS / Servidores de nome.</li><li>Tirar print de TODOS os registros (rolar até o fim) e guardar.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>O print mostra os registros da tabela &quot;DNS de hoje&quot; desta página.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>É esse print que permite voltar atrás no dia 11, se algo der errado.</p></div>
+  </div>
+</article>
+<article class="item" id="v2">
+  <label class="topo"><input type="checkbox" data-id="v2"><span class="t">Baixar o tempo de propagação (TTL)</span></label>
+  <div class="corpo">
+    <ol><li>No mesmo DNS, editar os registros A de @ e o CNAME de www.</li><li>Trocar o TTL para 300 (5 minutos) e salvar.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Os dois registros aparecem com TTL 300.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se o hPanel não deixar mudar o TTL, seguir assim mesmo: a troca só demora mais para aparecer para todo mundo (até algumas horas).</p></div>
+  </div>
+</article>
+<article class="item" id="v3">
+  <label class="topo"><input type="checkbox" data-id="v3"><span class="t">Backup manual</span></label>
+  <div class="corpo">
+    <ol><li>hPanel › Sites › Painel do site › Backups › Gerar novo backup.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>O backup aparece na lista com a data de 10/12.</p></div>
+    
+  </div>
+</article>
+<article class="item" id="v4">
+  <label class="topo"><input type="checkbox" data-id="v4"><span class="t">Newsletter da estreia pronta no RD</span></label>
+  <div class="corpo">
+    <ol><li>Modelo preenchido com o conteúdo do dia 11, logo hospedado no RD, segmento Newsletter do portal.</li><li>Enviar teste para você e para mais uma pessoa.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>O teste chega, o logo aparece e o rodapé tem o endereço real e o &quot;cancele sua inscrição&quot;.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Não agendar o disparo antes de o portal estar no ar: os links apontam para dialogosestruturantes.com.br.</p></div>
+  </div>
+</article></section><section class="fase" id="dia"><h2>Sexta, 11/12: dia do lançamento</h2><p class="sub">Começar às 7h, nesta ordem. Não pular etapas.</p>
+<article class="item" id="d1">
+  <label class="topo"><input type="checkbox" data-id="d1"><span class="t">7h00 · Backup e print de segurança</span></label>
+  <div class="corpo">
+    <ol><li>Gerar um backup novo no hPanel.</li><li>Conferir que o print do DNS da véspera está à mão.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Backup com a data de 11/12 na lista.</p></div>
+    
+  </div>
+</article>
+<article class="item" id="d2">
+  <label class="topo"><input type="checkbox" data-id="d2"><span class="t">7h10 · Mudar a LP para lancamento.dialogosestruturantes.com.br</span></label>
+  <div class="corpo">
+    <ol><li>No hPanel, DNS do domínio: adicionar CNAME com nome lancamento e valor sites.framer.app.</li><li>No Framer: Site Settings › Domains › trocar o domínio do site para lancamento.dialogosestruturantes.com.br.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir lancamento.dialogosestruturantes.com.br: a LP aparece, com o cadeado.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>O certificado do Framer pode levar alguns minutos. Se passar de 30 minutos, conferir se o CNAME foi digitado sem erro (sem ponto no final, sem https).</p></div>
+  </div>
+</article>
+<article class="item" id="d3">
+  <label class="topo"><input type="checkbox" data-id="d3"><span class="t">7h30 · Apontar o domínio principal para o portal</span></label>
+  <div class="corpo">
+    <ol><li>hPanel › Sites › ⋮ no site novo.dialogosestruturantes.com.br › Alterar domínio.</li><li>Digitar dialogosestruturantes.com.br e concluir.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>No DNS: os registros A de @ não apontam mais para 31.43.160.6 / 31.43.161.6, e sim para o IP da Hostinger. O CNAME de www não aponta mais para sites.framer.app.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se os registros do Framer continuarem lá, apagar os dois A de @ (31.43.160.6 e 31.43.161.6) e o CNAME www → sites.framer.app. O hPanel recria os da Hostinger ao conectar o domínio.</p></div>
+  </div>
+</article>
+<article class="item" id="d4">
+  <label class="topo"><input type="checkbox" data-id="d4"><span class="t">7h40 · Conferir o e-mail (o mais importante)</span></label>
+  <div class="corpo">
+    <ol><li>Comparar o DNS de agora com o print da véspera.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>MX, SPF, DMARC, google-site-verification e os registros do RD (emailmkt, relacionamentos, clickcontato, s1/s2._domainkey) estão IGUAIS ao print. Mandar um e-mail de fora para o seu endereço @dialogosestruturantes.com.br e ver se chega.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se algum registro de e-mail sumiu ou mudou: recriar exatamente como no print. É a única coisa que não pode esperar.</p></div>
+  </div>
+</article>
+<article class="item" id="d5">
+  <label class="topo"><input type="checkbox" data-id="d5"><span class="t">7h50 · Cadeado e endereço do WordPress</span></label>
+  <div class="corpo">
+    <ol><li>Abrir https://dialogosestruturantes.com.br e https://www.dialogosestruturantes.com.br.</li><li>No WordPress: Configurações › Geral, os dois endereços devem ser https://dialogosestruturantes.com.br.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Os dois endereços abrem o portal com cadeado; o www leva ao endereço sem www.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Sem cadeado: hPanel › Sites › Painel › Segurança › SSL › Instalar SSL para o domínio. Esperar até 30 minutos. Se o www não abrir, criar CNAME www → dialogosestruturantes.com.br.</p></div>
+  </div>
+</article>
+<article class="item" id="d6">
+  <label class="topo"><input type="checkbox" data-id="d6"><span class="t">8h00 · Trocar endereços antigos dentro do conteúdo</span></label>
+  <div class="corpo">
+    <ol><li>Instalar o plugin Better Search Replace (Plugins › Adicionar novo).</li><li>Ferramentas › Better Search Replace: procurar novo.dialogosestruturantes.com.br e trocar por dialogosestruturantes.com.br, em todas as tabelas.</li><li>Rodar primeiro com &quot;Teste&quot; marcado; depois sem.</li><li>Limpar o cache (ícone de losango › Limpar tudo) e desativar e excluir o plugin.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir uma matéria, clicar com o botão direito › Exibir código-fonte e buscar (Ctrl+F) por &quot;novo.&quot;: não deve aparecer.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Fotos quebradas depois da troca: limpar o cache de novo e recarregar com Ctrl+F5.</p></div>
+  </div>
+</article>
+<article class="item" id="d7">
+  <label class="topo"><input type="checkbox" data-id="d7"><span class="t">8h10 · Redirecionamentos da LP antiga</span></label>
+  <div class="corpo">
+    <ol><li>Instalar o plugin Redirection (Plugins › Adicionar novo).</li><li>Ferramentas › Redirection: cadastrar cada endereço da lista do item &quot;Lista de endereços antigos da LP&quot;, tipo 301.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir cada endereço antigo: ele leva ao destino certo, sem 404.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Página 404 num endereço antigo: cadastrar o redirecionamento que faltou.</p></div>
+  </div>
+</article>
+<article class="item" id="d8">
+  <label class="topo"><input type="checkbox" data-id="d8"><span class="t">8h20 · Liberar o Google</span></label>
+  <div class="corpo">
+    <ol><li>WordPress › Configurações › Leitura: DESMARCAR &quot;Evitar que mecanismos de busca indexem este site&quot; e salvar.</li><li>Search Console › Sitemaps: enviar wp-sitemap.xml.</li><li>Search Console › Inspeção de URL: testar a home e pedir indexação.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>O sitemap aparece como &quot;Processado&quot; (pode levar algumas horas). O painel do WordPress não mostra mais o aviso &quot;Motores de busca desencorajados&quot;.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Se esquecer de desmarcar, o Google não indexa o portal. É o erro mais comum de lançamento.</p></div>
+  </div>
+</article>
+<article class="item" id="d9">
+  <label class="topo"><input type="checkbox" data-id="d9"><span class="t">8h30 · Domínio .com</span></label>
+  <div class="corpo">
+    <ol><li>hPanel › Domínios › dialogosestruturantes.com › Redirecionar para https://dialogosestruturantes.com.br (permanente, 301).</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Abrir dialogosestruturantes.com: vai para o .com.br.</p></div>
+    
+  </div>
+</article>
+<article class="item" id="d10">
+  <label class="topo"><input type="checkbox" data-id="d10"><span class="t">8h40 · Cookies no domínio definitivo</span></label>
+  <div class="corpo">
+    <ol><li>Complianz › Assistente › Varredura do site: Iniciar (autenticar de novo, agora no domínio definitivo) e Examinar.</li><li>Cookiedatabase.org: Sincronizar.</li><li>Limpar o cache.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Janela anônima: o banner aparece; &quot;Preferências de cookies&quot; no rodapé reabre o banner.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Banner não aparece: limpar o cache e testar de novo; persistindo, Complianz › Banner de consentimento e conferir se está ativado.</p></div>
+  </div>
+</article>
+<article class="item" id="d11">
+  <label class="topo"><input type="checkbox" data-id="d11"><span class="t">8h50 · Medição</span></label>
+  <div class="corpo">
+    <ol><li>GTM › Visualizar com https://dialogosestruturantes.com.br.</li><li>GA4 › Relatórios › Tempo real.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Antes de aceitar: consentimento denied. Depois de aceitar: granted, e a visita aparece no Tempo real do GA4.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Nada no Tempo real: conferir se o contêiner GTM-MNKNGL3X foi publicado e se o Complianz está com o ID certo.</p></div>
+  </div>
+</article>
+<article class="item" id="d12">
+  <label class="topo"><input type="checkbox" data-id="d12"><span class="t">9h00 · Newsletter e RD</span></label>
+  <div class="corpo">
+    <ol><li>Inscrever um e-mail de teste no portal (rodapé ou página Newsletter).</li><li>No RD, conferir o contato com a conversão newsletter-portal.</li><li>Agendar ou disparar a newsletter da estreia para o segmento Newsletter do portal.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Contato de teste no RD; newsletter enviada; links abrem o portal.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Inscrição não chegou: Configurações › Portal › &quot;Último erro do RD&quot;. As inscrições ficam guardadas em Ferramentas › Inscritos da newsletter e podem ser reenviadas pelo botão &quot;Enviar ao RD as inscrições pendentes&quot;.</p></div>
+  </div>
+</article>
+<article class="item" id="d13">
+  <label class="topo"><input type="checkbox" data-id="d13"><span class="t">9h10 · Volta da equipe e divulgação</span></label>
+  <div class="corpo">
+    <ol><li>Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin.</li><li>Trocar o link da bio do Instagram e do LinkedIn para o portal.</li><li>Popup do II Prêmio ativo.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Equipe consegue entrar com verificação em duas etapas.</p></div>
+    
+  </div>
+</article></section><section class="fase" id="depois"><h2>De 12/12 a 18/12: primeira semana</h2><p class="sub">Acompanhar todo dia, de manhã.</p>
+<article class="item" id="p1">
+  <label class="topo"><input type="checkbox" data-id="p1"><span class="t">Erros e páginas não encontradas</span></label>
+  <div class="corpo">
+    <ol><li>Search Console › Páginas e Search Console › Sitemaps.</li><li>Redirection › 404 (registro de endereços que deram erro).</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Sem aumento de erros 404 nem páginas &quot;Não encontrada&quot;.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Cadastrar redirecionamento para cada 404 que vier de link antigo.</p></div>
+  </div>
+</article>
+<article class="item" id="p2">
+  <label class="topo"><input type="checkbox" data-id="p2"><span class="t">Densidade de anúncios (se os anúncios forem ligados)</span></label>
+  <div class="corpo">
+    <ol><li>Search Console › Experiência › Relatório de experiência de anúncios (Ad Experience Report).</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Status &quot;Aprovado&quot; ou &quot;Não revisado&quot;.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Status &quot;Com falha&quot;: reduzir o nível de anúncios das páginas citadas e pedir revisão. Ver a seção &quot;Alertas e regras do Google&quot; do manual.</p></div>
+  </div>
+</article>
+<article class="item" id="p3">
+  <label class="topo"><input type="checkbox" data-id="p3"><span class="t">Cota do RD e base</span></label>
+  <div class="corpo">
+    <ol><li>RD › consumo do plano: envios do mês e base ativa.</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>Consumo abaixo de 70% da cota.</p></div>
+    <div class="bloco errado"><b>Se der errado</b><p>Acima de 70%: decidir com a diretoria entre plano maior ou disparos pelo Brevo (seção &quot;Newsletter e RD Station&quot; do manual).</p></div>
+  </div>
+</article>
+<article class="item" id="p4">
+  <label class="topo"><input type="checkbox" data-id="p4"><span class="t">Desfazer o TTL baixo</span></label>
+  <div class="corpo">
+    <ol><li>DNS: voltar o TTL dos registros A de @ e www para o padrão (14400 ou o que estava no print).</li></ol>
+    <div class="bloco conferir"><b>Como conferir</b><p>TTL de volta ao padrão.</p></div>
+    
+  </div>
+</article></section>
+<section id="dns"><h2>DNS de hoje</h2><p class="sub">Referência para conferir no dia 11. Os registros de e-mail nunca mudam.</p>
+<div class="tabela"><table><thead><tr><th>Tipo</th><th>Nome</th><th>Valor</th><th>Para quê</th></tr></thead><tbody><tr><td>A</td><td>@</td><td>31.43.160.6 e 31.43.161.6</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>CNAME</td><td>www</td><td>sites.framer.app</td><td>LP no Framer (sai no lançamento)</td></tr><tr><td>A ou CNAME</td><td>novo</td><td>Hostinger</td><td>Portal até o lançamento</td></tr><tr><td>MX</td><td>@</td><td>smtp.google.com</td><td>E-mail do Google Workspace: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>v=spf1 …</td><td>SPF do e-mail: NUNCA mexer</td></tr><tr><td>TXT</td><td>@</td><td>google-site-verification=…</td><td>Search Console: NUNCA mexer</td></tr><tr><td>TXT</td><td>_dmarc</td><td>v=DMARC1 …</td><td>DMARC do e-mail: NUNCA mexer</td></tr><tr><td>CNAME</td><td>emailmkt, relacionamentos, clickcontato, s1._domainkey, s2._domainkey</td><td>RD Station / SendGrid</td><td>E-mail marketing do RD: NUNCA mexer</td></tr></tbody></table></div></section>
+<section id="voltar"><h2>Se for preciso voltar atrás</h2><p class="sub">Use só se o portal não abrir depois de 1 hora da troca. A LP volta ao ar em poucos minutos.</p>
+<ol class="volta"><li>hPanel › Sites › ⋮ › Alterar domínio: voltar o portal para novo.dialogosestruturantes.com.br.</li><li>DNS: apagar os registros A de @ e o CNAME de www que apontam para a Hostinger.</li><li>DNS: recriar A @ → 31.43.160.6, A @ → 31.43.161.6 e CNAME www → sites.framer.app (como no print da véspera).</li><li>Framer › Site Settings › Domains: voltar o domínio do site para dialogosestruturantes.com.br.</li><li>Conferir de novo os registros de e-mail (MX, SPF, DMARC, RD) contra o print.</li></ol></section>
+<section><h2>O que mudou neste checklist</h2><ul class="mud"><li><b>22/11/2026</b> Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.</li></ul></section>
+</main>
+<footer class="wrap">As marcações ficam salvas só neste navegador. O manual do portal tem a mesma lista na seção "Dia do lançamento".</footer>
+<script>
+(function(){
+  var CH='dialogos-lancamento', s={};
+  try{s=JSON.parse(localStorage.getItem(CH)||'{}')}catch(e){}
+  var cx=[].slice.call(document.querySelectorAll('input[data-id]'));
+  function conta(){var n=0;cx.forEach(function(c){c.closest('.item').classList.toggle('feito',c.checked);if(c.checked)n++});document.getElementById('feitos').textContent=n}
+  function salva(){try{localStorage.setItem(CH,JSON.stringify(s))}catch(e){}}
+  cx.forEach(function(c){c.checked=!!s[c.dataset.id];c.addEventListener('change',function(){s[c.dataset.id]=c.checked;salva();conta()})});
+  document.getElementById('zerar').addEventListener('click',function(){s={};salva();cx.forEach(function(c){c.checked=false});conta()});
+  conta();
+})();
+</script>
+</body></html>

@@ -1,0 +1,59 @@
+## Dia do lançamento (11 de dezembro de 2026)
+
+Checklist completo, com marcação de cada item, na página de lançamento. Atualizado em 22/11/2026. Abaixo, o mesmo roteiro.
+
+### Até quarta, 09/12: preparação
+
+Tudo que pode ser feito antes, sem risco para a LP.
+
+- [ ] **Conteúdo do portal completo.** Home com matérias recentes de todas as editorias. Links do YouTube nos episódios e PDF nas edições da revista. Foto e cargo dos autores preenchidos (Usuários). Popup do II Prêmio criado, com fim em 11/12. *Como conferir:* Abrir novo.dialogosestruturantes.com.br numa janela anônima e navegar por home, uma matéria de cada editoria, Podcast, Revista e Agenda. *Se der errado:* Corrigir no painel e limpar o cache (ícone de losango › Limpar tudo).
+- [ ] **Teste completo no endereço novo.** Inscrição na newsletter com um e-mail de teste. Banner de cookies: aceitar, rejeitar e reabrir pelo rodapé. Busca, página 404 e formulário de contato. Celular: abrir as mesmas páginas no telefone. *Como conferir:* O contato de teste aparece no RD com a conversão newsletter-portal. No GTM (Visualizar), o consentimento muda de denied para granted ao aceitar. *Se der errado:* Se a inscrição não chegar ao RD: Configurações › Portal mostra o "Último erro do RD" embaixo da chave. Mandar print.
+- [ ] **Lista de endereços antigos da LP.** Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado). Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br. *Como conferir:* A lista está anotada e revisada antes de 10/12. *Se der errado:* Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.
+- [ ] **Avisar a equipe.** Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal. Confirmar quem estará disponível nesse horário (você e quem mais for testar). *Como conferir:* Mensagem enviada e confirmada.
+- [ ] **Decidir os anúncios do lançamento.** Em Configurações › Portal, definir se os anúncios ficam Desligados ou em Prévia no dia 11. Sem a conta do Ad Manager, o recomendado é Desligado. *Como conferir:* Abrir uma matéria numa janela anônima e ver se aparecem ou não os espaços cinza de "Publicidade".
+
+### Quinta, 10/12: véspera
+
+Ajustes que encurtam a troca do dia seguinte.
+
+- [ ] **Print completo do DNS atual.** hPanel › Domínios › dialogosestruturantes.com.br › DNS / Servidores de nome. Tirar print de TODOS os registros (rolar até o fim) e guardar. *Como conferir:* O print mostra os registros da tabela "DNS de hoje" desta página. *Se der errado:* É esse print que permite voltar atrás no dia 11, se algo der errado.
+- [ ] **Baixar o tempo de propagação (TTL).** No mesmo DNS, editar os registros A de @ e o CNAME de www. Trocar o TTL para 300 (5 minutos) e salvar. *Como conferir:* Os dois registros aparecem com TTL 300. *Se der errado:* Se o hPanel não deixar mudar o TTL, seguir assim mesmo: a troca só demora mais para aparecer para todo mundo (até algumas horas).
+- [ ] **Backup manual.** hPanel › Sites › Painel do site › Backups › Gerar novo backup. *Como conferir:* O backup aparece na lista com a data de 10/12.
+- [ ] **Newsletter da estreia pronta no RD.** Modelo preenchido com o conteúdo do dia 11, logo hospedado no RD, segmento Newsletter do portal. Enviar teste para você e para mais uma pessoa. *Como conferir:* O teste chega, o logo aparece e o rodapé tem o endereço real e o "cancele sua inscrição". *Se der errado:* Não agendar o disparo antes de o portal estar no ar: os links apontam para dialogosestruturantes.com.br.
+
+### Sexta, 11/12: dia do lançamento
+
+Começar às 7h, nesta ordem. Não pular etapas.
+
+- [ ] **7h00 · Backup e print de segurança.** Gerar um backup novo no hPanel. Conferir que o print do DNS da véspera está à mão. *Como conferir:* Backup com a data de 11/12 na lista.
+- [ ] **7h10 · Mudar a LP para lancamento.dialogosestruturantes.com.br.** No hPanel, DNS do domínio: adicionar CNAME com nome lancamento e valor sites.framer.app. No Framer: Site Settings › Domains › trocar o domínio do site para lancamento.dialogosestruturantes.com.br. *Como conferir:* Abrir lancamento.dialogosestruturantes.com.br: a LP aparece, com o cadeado. *Se der errado:* O certificado do Framer pode levar alguns minutos. Se passar de 30 minutos, conferir se o CNAME foi digitado sem erro (sem ponto no final, sem https).
+- [ ] **7h30 · Apontar o domínio principal para o portal.** hPanel › Sites › ⋮ no site novo.dialogosestruturantes.com.br › Alterar domínio. Digitar dialogosestruturantes.com.br e concluir. *Como conferir:* No DNS: os registros A de @ não apontam mais para 31.43.160.6 / 31.43.161.6, e sim para o IP da Hostinger. O CNAME de www não aponta mais para sites.framer.app. *Se der errado:* Se os registros do Framer continuarem lá, apagar os dois A de @ (31.43.160.6 e 31.43.161.6) e o CNAME www → sites.framer.app. O hPanel recria os da Hostinger ao conectar o domínio.
+- [ ] **7h40 · Conferir o e-mail (o mais importante).** Comparar o DNS de agora com o print da véspera. *Como conferir:* MX, SPF, DMARC, google-site-verification e os registros do RD (emailmkt, relacionamentos, clickcontato, s1/s2._domainkey) estão IGUAIS ao print. Mandar um e-mail de fora para o seu endereço @dialogosestruturantes.com.br e ver se chega. *Se der errado:* Se algum registro de e-mail sumiu ou mudou: recriar exatamente como no print. É a única coisa que não pode esperar.
+- [ ] **7h50 · Cadeado e endereço do WordPress.** Abrir https://dialogosestruturantes.com.br e https://www.dialogosestruturantes.com.br. No WordPress: Configurações › Geral, os dois endereços devem ser https://dialogosestruturantes.com.br. *Como conferir:* Os dois endereços abrem o portal com cadeado; o www leva ao endereço sem www. *Se der errado:* Sem cadeado: hPanel › Sites › Painel › Segurança › SSL › Instalar SSL para o domínio. Esperar até 30 minutos. Se o www não abrir, criar CNAME www → dialogosestruturantes.com.br.
+- [ ] **8h00 · Trocar endereços antigos dentro do conteúdo.** Instalar o plugin Better Search Replace (Plugins › Adicionar novo). Ferramentas › Better Search Replace: procurar novo.dialogosestruturantes.com.br e trocar por dialogosestruturantes.com.br, em todas as tabelas. Rodar primeiro com "Teste" marcado; depois sem. Limpar o cache (ícone de losango › Limpar tudo) e desativar e excluir o plugin. *Como conferir:* Abrir uma matéria, clicar com o botão direito › Exibir código-fonte e buscar (Ctrl+F) por "novo.": não deve aparecer. *Se der errado:* Fotos quebradas depois da troca: limpar o cache de novo e recarregar com Ctrl+F5.
+- [ ] **8h10 · Redirecionamentos da LP antiga.** Instalar o plugin Redirection (Plugins › Adicionar novo). Ferramentas › Redirection: cadastrar cada endereço da lista do item "Lista de endereços antigos da LP", tipo 301. *Como conferir:* Abrir cada endereço antigo: ele leva ao destino certo, sem 404. *Se der errado:* Página 404 num endereço antigo: cadastrar o redirecionamento que faltou.
+- [ ] **8h20 · Liberar o Google.** WordPress › Configurações › Leitura: DESMARCAR "Evitar que mecanismos de busca indexem este site" e salvar. Search Console › Sitemaps: enviar wp-sitemap.xml. Search Console › Inspeção de URL: testar a home e pedir indexação. *Como conferir:* O sitemap aparece como "Processado" (pode levar algumas horas). O painel do WordPress não mostra mais o aviso "Motores de busca desencorajados". *Se der errado:* Se esquecer de desmarcar, o Google não indexa o portal. É o erro mais comum de lançamento.
+- [ ] **8h30 · Domínio .com.** hPanel › Domínios › dialogosestruturantes.com › Redirecionar para https://dialogosestruturantes.com.br (permanente, 301). *Como conferir:* Abrir dialogosestruturantes.com: vai para o .com.br.
+- [ ] **8h40 · Cookies no domínio definitivo.** Complianz › Assistente › Varredura do site: Iniciar (autenticar de novo, agora no domínio definitivo) e Examinar. Cookiedatabase.org: Sincronizar. Limpar o cache. *Como conferir:* Janela anônima: o banner aparece; "Preferências de cookies" no rodapé reabre o banner. *Se der errado:* Banner não aparece: limpar o cache e testar de novo; persistindo, Complianz › Banner de consentimento e conferir se está ativado.
+- [ ] **8h50 · Medição.** GTM › Visualizar com https://dialogosestruturantes.com.br. GA4 › Relatórios › Tempo real. *Como conferir:* Antes de aceitar: consentimento denied. Depois de aceitar: granted, e a visita aparece no Tempo real do GA4. *Se der errado:* Nada no Tempo real: conferir se o contêiner GTM-MNKNGL3X foi publicado e se o Complianz está com o ID certo.
+- [ ] **9h00 · Newsletter e RD.** Inscrever um e-mail de teste no portal (rodapé ou página Newsletter). No RD, conferir o contato com a conversão newsletter-portal. Agendar ou disparar a newsletter da estreia para o segmento Newsletter do portal. *Como conferir:* Contato de teste no RD; newsletter enviada; links abrem o portal. *Se der errado:* Inscrição não chegou: Configurações › Portal › "Último erro do RD". As inscrições ficam guardadas em Ferramentas › Inscritos da newsletter e podem ser reenviadas pelo botão "Enviar ao RD as inscrições pendentes".
+- [ ] **9h10 · Volta da equipe e divulgação.** Avisar a equipe que o painel está liberado, agora em dialogosestruturantes.com.br/wp-admin. Trocar o link da bio do Instagram e do LinkedIn para o portal. Popup do II Prêmio ativo. *Como conferir:* Equipe consegue entrar com verificação em duas etapas.
+
+### De 12/12 a 18/12: primeira semana
+
+Acompanhar todo dia, de manhã.
+
+- [ ] **Erros e páginas não encontradas.** Search Console › Páginas e Search Console › Sitemaps. Redirection › 404 (registro de endereços que deram erro). *Como conferir:* Sem aumento de erros 404 nem páginas "Não encontrada". *Se der errado:* Cadastrar redirecionamento para cada 404 que vier de link antigo.
+- [ ] **Densidade de anúncios (se os anúncios forem ligados).** Search Console › Experiência › Relatório de experiência de anúncios (Ad Experience Report). *Como conferir:* Status "Aprovado" ou "Não revisado". *Se der errado:* Status "Com falha": reduzir o nível de anúncios das páginas citadas e pedir revisão. Ver a seção "Alertas e regras do Google" do manual.
+- [ ] **Cota do RD e base.** RD › consumo do plano: envios do mês e base ativa. *Como conferir:* Consumo abaixo de 70% da cota. *Se der errado:* Acima de 70%: decidir com a diretoria entre plano maior ou disparos pelo Brevo (seção "Newsletter e RD Station" do manual).
+- [ ] **Desfazer o TTL baixo.** DNS: voltar o TTL dos registros A de @ e www para o padrão (14400 ou o que estava no print). *Como conferir:* TTL de volta ao padrão.
+
+### Se for preciso voltar atrás
+
+Use só se o portal não abrir depois de 1 hora da troca.
+
+1. hPanel › Sites › ⋮ › Alterar domínio: voltar o portal para novo.dialogosestruturantes.com.br.
+2. DNS: apagar os registros A de @ e o CNAME de www que apontam para a Hostinger.
+3. DNS: recriar A @ → 31.43.160.6, A @ → 31.43.161.6 e CNAME www → sites.framer.app (como no print da véspera).
+4. Framer › Site Settings › Domains: voltar o domínio do site para dialogosestruturantes.com.br.
+5. Conferir de novo os registros de e-mail (MX, SPF, DMARC, RD) contra o print.
