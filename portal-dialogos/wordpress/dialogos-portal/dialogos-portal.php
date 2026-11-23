@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Diálogos Estruturantes – Portal
  * Description: Tipos de conteúdo (episódios, edições, eventos, popups), campos do painel, níveis de anúncio, dataLayer, newsletter e popups do portal.
- * Version: 0.1.3
+ * Version: 0.1.4
  * Requires at least: 6.4
  * Requires PHP: 8.1
  * Author: Diálogos Estruturantes
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DP_VERSAO', '0.1.3' );
+define( 'DP_VERSAO', '0.1.4' );
 define( 'DP_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DP_URL', plugin_dir_url( __FILE__ ) );
 
@@ -24,6 +24,7 @@ require_once DP_DIR . 'inc/rastreamento.php';
 require_once DP_DIR . 'inc/newsletter.php';
 require_once DP_DIR . 'inc/popups.php';
 require_once DP_DIR . 'inc/instalacao.php';
+require_once DP_DIR . 'inc/sistema-interno.php';
 
 register_activation_hook( __FILE__, function () {
 	dp_registrar_conteudos();
