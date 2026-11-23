@@ -5,7 +5,7 @@ Edite só este arquivo e rode:  python3 gerar.py
 Isso gera index.html (página no GitHub) e manual.md (texto para o manual).
 """
 
-ATUALIZADO = '22/11/2026'
+ATUALIZADO = '22/11/2026, 22h45'
 LANCAMENTO = 'sexta-feira, 11 de dezembro de 2026'
 
 # Valores de DNS atuais (para conferir e para voltar atrás, se preciso).
@@ -46,6 +46,20 @@ FASES = [
          ['Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal.',
           'Confirmar quem estará disponível nesse horário (você e quem mais for testar).'],
          'Mensagem enviada e confirmada.',
+         ''),
+        ('a0', 'GA4: marcar minuta_inscricao como evento principal (a partir de 23/11)',
+         ['Depois de publicar o GTM, fazer uma inscrição de teste no portal aceitando os cookies.',
+          'GA4 › Administrador › Exibição de dados › Eventos › aba Eventos recentes.',
+          'Achar minuta_inscricao e clicar na estrela ao lado. NÃO usar o botão "Criar evento".'],
+         'O evento aparece na aba Eventos principais com a estrela preenchida.',
+         'Se minuta_inscricao não aparecer em Eventos recentes depois de 24 horas: conferir no GTM se a versão foi publicada e repetir a inscrição de teste com os cookies aceitos.'),
+        ('a0b', 'GA4: configurações da propriedade',
+         ['11 dimensões personalizadas criadas (escopo Evento): tipo_pagina, editoria, tema, autor, formato, pacote_anuncios, versao_layout, componente, posicao, setor, plataforma.',
+          'Retenção de dados de eventos em 14 meses.',
+          'Tráfego interno com o IP do escritório e filtro em Testando (depois Ativo).',
+          'Search Console vinculado ao fluxo Domínio principal.',
+          'Medição otimizada sem Interações com formulários e sem Engajamento com vídeo.'],
+         'GA4 › Administrador: cada item conferido na tela correspondente.',
          ''),
         ('a5', 'Decidir os anúncios do lançamento',
          ['Em Configurações › Portal, definir se os anúncios ficam Desligados ou em Prévia no dia 11.',
@@ -176,4 +190,5 @@ VOLTAR_ATRAS = [
 
 MUDANCAS = [
     ('22/11/2026', 'Checklist criado. Lançamento definido para 11/12, dia do evento do II Prêmio.'),
+    ('22/11/2026', 'Incluídos os itens do GA4: evento principal minuta_inscricao (marcar a partir de 23/11) e configurações da propriedade.'),
 ]

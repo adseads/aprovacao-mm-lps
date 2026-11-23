@@ -1,6 +1,6 @@
 ## Dia do lançamento (11 de dezembro de 2026)
 
-Checklist completo, com marcação de cada item, na página de lançamento. Atualizado em 22/11/2026. Abaixo, o mesmo roteiro.
+Checklist completo, com marcação de cada item, na página de lançamento. Atualizado em 22/11/2026, 22h45. Abaixo, o mesmo roteiro.
 
 ### Até quarta, 09/12: preparação
 
@@ -10,6 +10,8 @@ Tudo que pode ser feito antes, sem risco para a LP.
 - [ ] **Teste completo no endereço novo.** Inscrição na newsletter com um e-mail de teste. Banner de cookies: aceitar, rejeitar e reabrir pelo rodapé. Busca, página 404 e formulário de contato. Celular: abrir as mesmas páginas no telefone. *Como conferir:* O contato de teste aparece no RD com a conversão newsletter-portal. No GTM (Visualizar), o consentimento muda de denied para granted ao aceitar. *Se der errado:* Se a inscrição não chegar ao RD: Configurações › Portal mostra o "Último erro do RD" embaixo da chave. Mandar print.
 - [ ] **Lista de endereços antigos da LP.** Listar todas as páginas da LP no Framer (ex.: /inscricao, /premio, /obrigado). Para cada uma, decidir para onde vai no portal ou se continua em lancamento.dialogosestruturantes.com.br. *Como conferir:* A lista está anotada e revisada antes de 10/12. *Se der errado:* Sem a lista, links antigos divulgados em redes e e-mails vão cair na página 404 do portal.
 - [ ] **Avisar a equipe.** Comunicar que em 11/12, das 7h às 9h, ninguém publica nem edita no portal. Confirmar quem estará disponível nesse horário (você e quem mais for testar). *Como conferir:* Mensagem enviada e confirmada.
+- [ ] **GA4: marcar minuta_inscricao como evento principal (a partir de 23/11).** Depois de publicar o GTM, fazer uma inscrição de teste no portal aceitando os cookies. GA4 › Administrador › Exibição de dados › Eventos › aba Eventos recentes. Achar minuta_inscricao e clicar na estrela ao lado. NÃO usar o botão "Criar evento". *Como conferir:* O evento aparece na aba Eventos principais com a estrela preenchida. *Se der errado:* Se minuta_inscricao não aparecer em Eventos recentes depois de 24 horas: conferir no GTM se a versão foi publicada e repetir a inscrição de teste com os cookies aceitos.
+- [ ] **GA4: configurações da propriedade.** 11 dimensões personalizadas criadas (escopo Evento): tipo_pagina, editoria, tema, autor, formato, pacote_anuncios, versao_layout, componente, posicao, setor, plataforma. Retenção de dados de eventos em 14 meses. Tráfego interno com o IP do escritório e filtro em Testando (depois Ativo). Search Console vinculado ao fluxo Domínio principal. Medição otimizada sem Interações com formulários e sem Engajamento com vídeo. *Como conferir:* GA4 › Administrador: cada item conferido na tela correspondente.
 - [ ] **Decidir os anúncios do lançamento.** Em Configurações › Portal, definir se os anúncios ficam Desligados ou em Prévia no dia 11. Sem a conta do Ad Manager, o recomendado é Desligado. *Como conferir:* Abrir uma matéria numa janela anônima e ver se aparecem ou não os espaços cinza de "Publicidade".
 
 ### Quinta, 10/12: véspera
